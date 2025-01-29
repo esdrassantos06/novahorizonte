@@ -16,7 +16,7 @@ const Navbar = () => {
     const location = useLocation();
 
     return (
-        <header className=' bg-primary flex'>
+        <header className='bg-primary flex fixed top-0 w-full z-50'>
             <nav className='flex w-full items-center justify-between'>
                 <Link to='/' className='select-none -space-y-3 ml-10 mb-1 flex flex-col items-center'>
                     <img src={image} className='w-14 select-none h-14 object-contain' alt='Logo' />

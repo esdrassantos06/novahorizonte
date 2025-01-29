@@ -1,24 +1,5 @@
-/***** Css reset *****/
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-}
-
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-button {
-    cursor: pointer;
-}
-
-/***** End css reset *****/
-
 /* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
     font-family: 'CircularStd';
@@ -106,4 +87,11 @@ button {
 .titilliumSemiBold {
     font-family: 'TitilliumWeb', sans-serif;
     font-weight: 600;
+}
+
+
+
+.montserrat{
+    font-family: 'Montserrat', serif;
+    color: white;
 }

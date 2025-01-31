@@ -27,7 +27,7 @@ const AnimatedAside = () => {
   }, []);
 
   return (
-    <aside id="animated-aside" className="w-1/2 p-10 flex space-x-40">
+    <aside id="animated-aside" className="w-1/2 select-none p-10 flex space-x-40">
       <div className="flex gap-2 items-center">
         <span className="text-6xl titilliumBold text-secondary">
           {number1}+

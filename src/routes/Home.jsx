@@ -38,13 +38,13 @@ function Home() {
                     </div>
                     <div className="absolute select-none left-[80%] transform z-40 -skew-1 -translate-x-1/2 bottom-[-50px] w-fit text-nowrap bg-orange-500 text-white p-6 rounded-lg shadow-lg">
                         <ul className="space-y-2 circularBook">
-                            <li className="flex items-center  animate-pulse transform transition-all duration-200 gap-2">
+                            <li className="flex items-center  animate-pulse transform transition-all gap-2">
                                 <CheckCircle size={28} /> Sistema de Qualidade Rigoroso, Garantia de Satisfação a 100%!
                             </li>
-                            <li className="flex items-center animate-pulse transform transition-all duration-200 gap-2">
+                            <li className="flex items-center animate-pulse transform transition-all  gap-2">
                                 <CheckCircle size={28} /> Equipa Profissional Altamente Qualificada, Processos de Testes Precisos!
                             </li>
-                            <li className="flex items-center animate-pulse transform transition-all duration-200 gap-2">
+                            <li className="flex items-center animate-pulse transform transition-all  gap-2">
                                 <CheckCircle size={28} /> Mão-de-obra Imbatível, Profissionais Certificados e Experientes!
                             </li>
                         </ul>
@@ -54,7 +54,7 @@ function Home() {
                 <AnimatedAside />
                 <section className="w-full bg-primary flex items-center p-30 h-screen">
                     <div className="container space-x-20 relative px-20 flex flex-row items-center justify-between">
-                        <img src={peopleHome} alt="Construtora" className="w-[45rem] h-auto" />
+                        <img src={peopleHome} alt="Construtora" className="w-[45rem] select-none h-auto" />
                         <div>
                             <h1 className="text-6xl/15 circularBold text-white"><span className="text-secondary">25 anos</span> <br /> de experiência!</h1>
 

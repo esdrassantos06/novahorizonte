@@ -1,8 +1,13 @@
 import { CaretUp } from "@phosphor-icons/react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 
 const Footer = () => {
+
+
+    const location = useLocation();
+
+
     return (
         <footer className="relative w-full h-72 bg-primary text-white p-4 flex flex-col justify-between items-center">
                     <div className="flex pl-40 flex-col text-start -space-y-1 self-start">
@@ -52,7 +57,7 @@ const Footer = () => {
                 <div className="flex titilliumSemiBold gap-2 text-start flex-col items-start self-stretch">
                     <h2 className="text-lg">Contacto</h2>
                     <p className="w-[15rem] titilliumRegular text-sm">novahorizonteempresa@gmail.com</p>
-                    <p className="w-[15rem] titilliumRegular text-sm">Telefone: +351 912 345 678</p>
+                    <p className="w-[15rem] titilliumRegular text-sm">Telefone: (+351) 912 345 678</p>
                 </div>
 
                 <div className="flex titilliumSemiBold gap-2 text-start flex-col items-start self-stretch">
@@ -66,15 +71,15 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div
+                <div 
                     id="backToTop"
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                    className="flex gap-1 titilliumRegular flex-col items-center cursor-pointer"
+                    className={`flex ${location.pathname=== '/obrigado-pelo-contacto' ? 'hidden' : ''} gap-1 titilliumRegular flex-col items-center cursor-pointer`}
                 >
                     <button className="bg-secondary cursor-pointer p-3 rounded-full shadow-lg hover:bg-amber-700 transition">
                         <CaretUp />
                     </button>
-                    <span className="text-sm">Back to Top</span>
+                    <span className={`text-sm`}>Back to Top</span>
                 </div>
             </div>
 

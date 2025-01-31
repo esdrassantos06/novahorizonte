@@ -4,7 +4,7 @@ function App() {
 
 
   return (
-    <div className='App'>
+    <div className='App min-h-screen w-full'>
     <Outlet/>
     </div>
   )

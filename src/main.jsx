@@ -12,6 +12,7 @@ import ErrorPage from './routes/errorPage.jsx'
 import Servicos from './routes/Serviços.jsx'
 import Obras from './routes/Obras.jsx'
 import QuemSomos from './routes/QuemSomos.jsx'
+import Thanks from './routes/Thanks.jsx'
 
 
 // Usando o react router para criar rotas para as páginas que estarão no website
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/obras",
         element: <Obras />
+      },
+      {
+        path: "/obrigado-pelo-contacto",
+        element: <Thanks />
       },
     ]
   }

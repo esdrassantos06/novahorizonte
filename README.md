@@ -1,4 +1,3 @@
-
 # Construtora Nova Horizonte
 
 Sobre o Projeto
@@ -9,26 +8,25 @@ Nova Horizonte é um projeto voltado para serviços de construção civil e enge
 
 ## Frontend:
 
-* React (com Vite para otimização)
+- React (com Vite para otimização)
 
-* Tailwind CSS (para estilização rápida e responsiva)
+- Tailwind CSS (para estilização rápida e responsiva)
 
-* Phosphor Icons (biblioteca de ícones modernos)
+- Phosphor Icons (biblioteca de ícones modernos)
 
 ## Envio de Formulários:
 
-* EmailJS (para envio de mensagens por e-mail diretamente do frontend, sem necessidade de backend)
+- EmailJS (para envio de mensagens por e-mail diretamente do frontend, sem necessidade de backend)
 
 ## Funcionalidades
 
-* Formulário de Contato: Permite que usuários preencham e enviem solicitações de orçamento.
+- Formulário de Contato: Permite que usuários preencham e enviem solicitações de orçamento.
 
-* Validação de Campos: Utiliza regex para validar nome, email e telefone antes do envio.
+- Validação de Campos: Utiliza regex para validar nome, email e telefone antes do envio.
 
-* Feedback Visual: Mensagens de erro dinâmicas para ajudar os usuários a preencher corretamente.
+- Feedback Visual: Mensagens de erro dinâmicas para ajudar os usuários a preencher corretamente.
 
-* Interface Responsiva: Projetada para funcionar em todos os dispositivos.
-
+- Interface Responsiva: Projetada para funcionar em todos os dispositivos.
 
 ## Contribuição
 
@@ -37,34 +35,34 @@ Sinta-se à vontade para contribuir com melhorias no projeto! Basta criar um for
 # Licença
 
 Este projeto está licenciado sob a MIT License.
+
 ## 🛠 Habilidades
+
 React, NodeJS
 
 Javascript, HTML, CSS...
-
-
 
 ## Deploy
 
 1. Clone o repositório:
 
-``` bash
- git clone https://github.com/seuusuario/novahorizonte.git
-cd novahorizonte
+```bash
+ git clone https://github.com/esdrassantos06/novahorizonte.git
+ 
+ cd novahorizonte
 
 ```
 
 2. Instale as dependências:
 
-``` bash
+```bash
 npm install
 
 ```
 
 3. Inicie o projeto:
 
-``` bash
+```bash
 npm run dev
 
 ```
-

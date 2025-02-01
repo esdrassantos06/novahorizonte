@@ -9,7 +9,7 @@ const Footer = () => {
 
 
     return (
-        <footer className="relative w-full h-72 bg-primary text-white p-4 flex flex-col justify-between items-center">
+        <footer className="relative w-full h-80 bg-primary text-white p-4 flex flex-col justify-between items-center">
                     <div className="flex pl-40 flex-col text-start -space-y-1 self-start">
                         <p className='montserrat text-base'>Construtora</p>
                         <p className='montserrat text-nowrap text-lg font-bold'>Nova <span className='text-secondary'>Horizonte</span></p>
@@ -84,8 +84,8 @@ const Footer = () => {
                     <span className={`text-sm`}>Back to Top</span>
                 </div>
             </div>
-
             <p className="text-sm text-gray-600 titilliumRegular">Copyright &copy; {new Date().getFullYear()} Esdras Santos. All Rights Reserved.</p>
+
 
         </footer>
     )

@@ -76,7 +76,7 @@ function Home() {
                             </p>
 
                             <div className="pt-5">
-                                <img className="invert-100 w-40" src={signature} alt="assinatura" />
+                                <img className="invert-100 w-40 select-none" src={signature} alt="assinatura" />
                                 <p className="text-start w-full text-white italic titilliumRegular text-sm mt-2">Esdras Santos - Fundador</p>
                             </div>
 

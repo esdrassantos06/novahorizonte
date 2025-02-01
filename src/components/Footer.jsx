@@ -10,12 +10,12 @@ const Footer = () => {
 
     return (
         <footer className="relative w-full h-80 bg-primary text-white p-4 flex flex-col justify-between items-center">
-                    <div className="flex pl-40 flex-col text-start -space-y-1 self-start">
-                        <p className='montserrat text-base'>Construtora</p>
-                        <p className='montserrat text-nowrap text-lg font-bold'>Nova <span className='text-secondary'>Horizonte</span></p>
-                    </div>
+            <div className="flex pl-24 flex-col text-start -space-y-1 self-start">
+                <p className='montserrat text-base'>Construtora</p>
+                <p className='montserrat text-nowrap text-lg font-bold'>Nova <span className='text-secondary'>Horizonte</span></p>
+            </div>
 
-            <div className="flex pl-40 w-full items-center space-x-24">
+            <div className="flex pl-24 w-full items-center space-x-24">
 
 
 
@@ -62,21 +62,25 @@ const Footer = () => {
 
                 <div className="flex titilliumSemiBold gap-2 text-start flex-col items-start self-stretch">
                     <h2 className="text-lg">Link</h2>
-                    <ul className="titilliumRegular text-base">
-                        <li className="hover:text-secondary transition-colors duration-200"><Link to='/'>Home</Link></li>
-                        <li className="hover:text-secondary transition-colors duration-200"><Link to='/quem-somos'>Quem Somos</Link></li>
-                        <li className="hover:text-secondary transition-colors duration-200"><Link to='/obras'>Obras em Destaque</Link></li>
-                        <li className="hover:text-secondary transition-colors duration-200"><Link to='/obras'>Nossos Serviços</Link></li>
+                    <ul className="titilliumRegular flex gap-4 text-base">
+                        <div>
+                            <li className="hover:text-secondary transition-colors duration-200"><Link to='/'>Home</Link></li>
+                            <li className="hover:text-secondary transition-colors duration-200"><Link to='/quem-somos'>Quem Somos</Link></li>
+                            <li className="hover:text-secondary transition-colors duration-200"><Link to='/obras'>Obras em Destaque</Link></li>
+                            <li className="hover:text-secondary transition-colors duration-200"><Link to='/obras'>Nossos Serviços</Link></li>
+                        </div>
+                        <div className="text-sm">
                         <li className="hover:text-secondary transition-colors duration-200"><Link to='/privacy-policy'>Política de Privacidade</Link></li>
                         <li className="hover:text-secondary transition-colors duration-200"><Link to='/legal-notice'>Aviso Legal</Link></li>
                         <li className="hover:text-secondary transition-colors duration-200"><Link to='/cookies'>Política de Cookies</Link></li>
+                        </div>
                     </ul>
                 </div>
 
-                <div 
+                <div
                     id="backToTop"
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                    className={`flex ${location.pathname=== '/obrigado-pelo-contacto' ? 'hidden' : ''} gap-1 titilliumRegular flex-col items-center cursor-pointer`}
+                    className={`flex ${location.pathname === '/obrigado-pelo-contacto' ? 'hidden' : ''} gap-1 titilliumRegular flex-col items-center cursor-pointer`}
                 >
                     <button className="bg-secondary cursor-pointer p-3 rounded-full shadow-lg hover:bg-amber-700 transition">
                         <CaretUp />

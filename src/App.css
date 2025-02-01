@@ -91,16 +91,17 @@
 
 
 
-.montserrat{
+.montserrat {
     font-family: 'Montserrat', serif;
     color: white;
 }
 
-.backgroundHome1{
+.backgroundHome1 {
     background: url('./assets/images/backgroundHome.jpg') no-repeat center center fixed;
     background-size: cover;
 }
-.backgroundThanks{
+
+.backgroundThanks {
     background: url('./assets/images/backgroundThanks.jpg') no-repeat center center fixed;
     background-size: cover;
 }
@@ -111,23 +112,45 @@
     height: 8px;
     background-color: #191A19;
     z-index: 100;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background-color: #FF7420;
     border-radius: 8px;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     background-color: #191A19;
     border-radius: 8px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background-color: #FF5722; /* Color change on hover */
-  }
-  
-  ::-webkit-scrollbar-track:hover {
-    background-color: #2C2C2C; /* Slightly lighter track on hover */
-  }
-  
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FF5722;
+    /* Color change on hover */
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #2C2C2C;
+    /* Slightly lighter track on hover */
+}
+
+
+.backgroundDestaque1 {
+    background: url(./assets/images/destaques/destaque1.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+.backgroundDestaque2 {
+    background: url(./assets/images/destaques/destaque2.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+.backgroundDestaque3 {
+    background: url(./assets/images/destaques/destaque3.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+.backgroundDestaque4 {
+    background: url(./assets/images/destaques/destaque4.jpg) no-repeat center center scroll;
+    background-size: cover;
+}

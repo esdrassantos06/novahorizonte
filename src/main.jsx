@@ -37,11 +37,11 @@ const router = createBrowserRouter([
         element: <Cookies />
       },
       {
-        path: "/legal-warning",
+        path: "/legal-notice",
         element: <Warning />
       },
       {
-        path: "/policies",
+        path: "/privacy-policy",
         element: <Policies />
       },
       {

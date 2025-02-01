@@ -1,12 +1,15 @@
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 function QuemSomos() {
   return (
-    <div>
+    <>
     <Navbar />
-
-    QuemSomos
-    </div>
+    <main className="w-full bg-primary  min-h-screen">
+      Quem somos
+    </main>
+    <Footer />
+  </>
   )
 }
 

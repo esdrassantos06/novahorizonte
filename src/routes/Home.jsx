@@ -4,6 +4,7 @@ import Footer from "../components/Footer"
 import AnimatedAside from "../components/AnimatedAside"
 import { ArrowCircleRight, CheckCircle } from '@phosphor-icons/react'
 import peopleHome from '../assets/images/PeopleHome.png'
+import signature from '../assets/images/signature.png'
 
 function Home() {
     return (
@@ -12,7 +13,6 @@ function Home() {
             <main className="w-full bg-primary  min-h-screen">
                 <section className="hero-section relative h-[50em]">
 
-                    {/* Div para o background com sombra e overlay escuro */}
                     <div className="backgroundHome1 absolute inset-0 backdrop-brightness-50 
         before:absolute before:top-0 before:left-0 before:w-1/3 before:h-full 
         before:bg-gradient-to-r before:from-black/100 before:to-transparent 
@@ -29,11 +29,11 @@ function Home() {
                             A Construtora Nova Horizonte é especializada em construção civil, oferecendo serviços completos para projetos residenciais, comerciais e industriais. Nosso compromisso é com a qualidade, segurança e inovação em cada obra.
                         </p>
                         <div className="buttons mt-4 space-x-15 flex">
-                            <Link className="text-white flex items-center gap-2 text-base circularMedium px-2 py-3 transition-all duration-150 transform hover:scale-105 bg-secondary hover:bg-amber-700 rounded-lg" to='/servicos'>Nossos Serviços <ArrowCircleRight size={28}/> </Link>
+                            <Link className="text-white flex items-center gap-2 text-base circularMedium px-2 py-3 transition-all duration-150 transform hover:scale-105 bg-secondary hover:bg-amber-700 rounded-lg" to='/servicos'>Nossos Serviços <ArrowCircleRight size={28} /> </Link>
 
 
                             <Link className="text-black  transform hover:scale-105 flex items-center text-base circularMedium px-2 py-3 bg-white transition-all duration-150 hover:bg-gray-400 rounded-lg" to='/obras'>
-                            <p>Veja Nossos Projetos</p></Link>
+                                <p>Veja Nossos Projetos</p></Link>
                         </div>
                     </div>
                     <div className="absolute select-none left-[80%] transform z-40 -skew-1 -translate-x-1/2 bottom-[-50px] w-fit text-nowrap bg-orange-500 text-white p-6 rounded-lg shadow-lg">
@@ -54,8 +54,8 @@ function Home() {
                 <AnimatedAside />
                 <section className="w-full bg-primary flex items-center p-30 h-screen">
                     <div className="container space-x-20 relative px-20 flex flex-row items-center justify-between">
-                        <img src={peopleHome} alt="Construtora" className="w-[45rem] select-none h-auto" />
-                        <div>
+                        <img src={peopleHome} alt="Construtora" className="w-[50rem] select-none h-auto" />
+                        <div className="space-y-5">
                             <h1 className="text-6xl/15 circularBold text-white"><span className="text-secondary">25 anos</span> <br /> de experiência!</h1>
 
 
@@ -75,7 +75,10 @@ function Home() {
                                 Seja na construção de imóveis residenciais, comerciais ou em reformas que rejuvenescem espaços, nossa missão é transformar cada projeto em realidade, sem abrir mão da qualidade e da segurança. Acreditamos que a transparência e a comunicação são fundamentais para construir relacionamentos sólidos e duradouros.
                             </p>
 
-
+                            <div className="pt-5">
+                                <img className="invert-100 w-40" src={signature} alt="assinatura" />
+                                <p className="text-start w-full text-white italic titilliumRegular text-sm mt-2">Esdras Santos - Fundador</p>
+                            </div>
 
 
                         </div>

@@ -56,7 +56,7 @@ function Contact() {
         email: formData.email,
         phone: formData.phone,
         service: formData.service,
-    };
+    }; // Parâmetros do template que eu estou utilizando para fazer o envio do formulário
 
 
 

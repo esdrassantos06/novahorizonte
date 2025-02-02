@@ -69,7 +69,7 @@ const Footer = () => {
                             <li className="hover:text-secondary transition-colors duration-200"><Link to='/obras'>Obras em Destaque</Link></li>
                             <li className="hover:text-secondary transition-colors duration-200"><Link to='/obras'>Nossos Serviços</Link></li>
                         </div>
-                        <div className="text-sm">
+                        <div className="text-base">
                         <li className="hover:text-secondary transition-colors duration-200"><Link to='/privacy-policy'>Política de Privacidade</Link></li>
                         <li className="hover:text-secondary transition-colors duration-200"><Link to='/legal-notice'>Aviso Legal</Link></li>
                         <li className="hover:text-secondary transition-colors duration-200"><Link to='/cookies'>Política de Cookies</Link></li>

@@ -117,7 +117,7 @@ function Contact() {
                     <div className="container rounded-lg bg-secondary p-10 w-[60%] formDiv">
                         <div className="title flex mb-5 flex-col">
                             <h2 className="mb-5 text-white text-3xl circularBold">Solicitar um Orçamento</h2>
-                            <p className="w-[80%] titilliumRegular text-white">Oferecemos aos nossos clientes os melhores preços e serviços com qualidade garantida. Orgulhamo-nos de tudo o que fazemos na Nova Horizonte.</p>
+                            <p className="w-[80%] titilliumRegular text-base text-white">Oferecemos aos nossos clientes os melhores preços e serviços com qualidade garantida. Orgulhamo-nos de tudo o que fazemos na Nova Horizonte.</p>
                         </div>
 
                         <form onSubmit={handleSubmit} className="flex titilliumRegular w-full flex-col">

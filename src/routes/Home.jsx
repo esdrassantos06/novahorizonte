@@ -25,7 +25,7 @@ function Home() {
                         <h1 className="text-5xl/tight  circularBold text-white">
                             Construindo o Futuro, <br /> Tijolo por <span className="text-secondary">Tijolo</span>.
                         </h1>
-                        <p className="text-white w-1/2 titilliumRegular">
+                        <p className="text-white w-1/2 text-base titilliumRegular">
                             A Construtora Nova Horizonte é especializada em construção civil, oferecendo serviços completos para projetos residenciais, comerciais e industriais. Nosso compromisso é com a qualidade, segurança e inovação em cada obra.
                         </p>
                         <div className="buttons mt-4 space-x-15 flex">

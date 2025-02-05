@@ -47,29 +47,30 @@ const Testemunhas = () => {
     const currentTestimonial = testemunhas[currentIndex];
 
     return (
-        <div className="max-w-md mx-auto titilliumRegular shadow-lg rounded-lg overflow-hidden">
+        <div className="max-w-md mx-auto bg-zinc-800 titilliumRegular shadow-lg rounded-lg overflow-hidden">
             <div className="p-6">
-                <p className="text-white text-base">
+                <p className="text-white text-center">
                     &quot;{currentTestimonial.text}&quot;
                 </p>
                 <div className="mt-4 flex flex-col items-center justify-center">
                     <p className="text-white font-bold text-lg">{currentTestimonial.author}</p>
-                    <p className="text-white mb-1 text-sm">{currentTestimonial.role}</p>
-                    <img src={currentTestimonial.photo} alt="cliente" className="w-14 object-cover h-14 rounded-full" />
+                    <p className="text-white mb-2 text-sm">{currentTestimonial.role}</p>
                 </div>
             </div>
-            <div className="flex justify-between px-6 py-4 bg-gray-100">
+
+            <div className="buttons-testemonials flex w-full items-center justify-between px-20 pb-10">
                 <button
                     onClick={anterior}
-                    className="text-gray-700 gap-2 flex items-center hover:text-gray-900"
+                    className="text-gray-700 cursor-pointer p-2 rounded-full bg-secondary hover:bg-amber-500 duration-200 transition flex items-center hover:text-gray-900"
                 >
-                    <ArrowLeft /> Anterior
+                    <ArrowLeft color="#fff" />
                 </button>
+                <img src={currentTestimonial.photo} alt="cliente" className="w-14 object-cover h-14 rounded-full" />
                 <button
                     onClick={proximo}
-                    className="text-gray-700 gap-2 flex items-center hover:text-gray-900"
+                    className="text-gray-700 cursor-pointer bg-secondary hover:bg-amber-500 duration-200 transition p-2 rounded-full flex items-center hover:text-gray-900"
                 >
-                    Próximo <ArrowRight />
+                    <ArrowRight color="#fff" />
                 </button>
             </div>
         </div>

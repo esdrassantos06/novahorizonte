@@ -25,7 +25,7 @@ function Obras() {
 
         <div className="flex w-full flex-col space-y-5 items-center justify-center bg-primary h-[30em]">
           <div className="pb-5">
-            <h1 className="text-2xl text-secondary titilliumBold">Opniões de nossos clientes</h1>
+            <h1 className="text-5xl text-secondary titilliumBold">Opniões de nossos clientes</h1>
           </div>
 
           <Testemunhas />

@@ -15,7 +15,7 @@ function Home() {
                 <section className="hero-section relative h-[50em]">
 
                     <div className="backgroundHome1 absolute inset-0 backdrop-brightness-50 
-        before:absolute before:top-0 before:left-0 before:w-1/3 before:h-full 
+        before:absolute before:top-0 before:left-0 before:w-1/2 before:h-full 
         before:bg-gradient-to-r before:from-black/100 before:to-transparent 
         before:pointer-events-none 
         after:absolute after:inset-0 after:bg-black/40">
@@ -75,7 +75,7 @@ function Home() {
                     </div>
                 </section>
                 <AnimatedAside />
-                <section className="w-full bg-primary flex items-center p-30 h-screen">
+                <section className="w-full block-appear bg-primary flex items-center p-30 h-screen">
                     <div className="container space-x-20 relative px-20 flex flex-row items-center justify-between">
                         <img src={peopleHome} alt="Construtora" className="w-[50rem] select-none h-auto" />
                         <div className="space-y-5">
@@ -86,11 +86,11 @@ function Home() {
                                 A Construtora Nova Horizonte é referência no mercado, com 25 anos de tradição que atestam nosso compromisso com a qualidade e a confiança em todos os projetos de construção e reforma. Desde a nossa fundação, trabalhamos incansavelmente para oferecer soluções que atendam não apenas às necessidades estruturais, mas que também reflitam o sonho e a visão de nossos clientes.
                             </p>
 
-                            <p className="text-start w-full text-white italic titilliumRegular text-base mt-2">
+                            <p className="text-start w-full  text-white italic titilliumRegular text-base mt-2">
                                 Nossa equipe é composta por profissionais altamente qualificados, cuja expertise e dedicação se traduzem em cada projeto executado. Estamos constantemente atualizados com as últimas tendências e técnicas do setor, garantindo que cada obra seja realizada com os melhores materiais e práticas da construção civil.
                             </p>
 
-                            <p className="text-start w-full text-white italic titilliumRegular text-base mt-2">
+                            <p className="text-start w-full  text-white italic titilliumRegular text-base mt-2">
                                 Nós entendemos que cada obra é única, e por isso, adotamos uma abordagem personalizada em cada etapa do processo. Desde o primeiro contato, ouvimos atentamente as necessidades e expectativas de nossos clientes, proporcionando um atendimento que prioriza a satisfação e a confiança.
                             </p>
 

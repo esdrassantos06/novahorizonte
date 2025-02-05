@@ -77,7 +77,7 @@ const Footer = () => {
                         <div
                             id="backToTop"
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            className={`flex ${location.pathname === '/obrigado-pelo-contacto' ? 'hidden' : ''} gap-1 titilliumRegular flex-col justify-center items-center cursor-pointer`}
+                            className={`flex ${location.pathname === '/obrigado-pelo-contacto' ? 'hidden' : ''} gap-1 titilliumSemiBold flex-col justify-center items-center cursor-pointer`}
                         >
                             <button className="bg-secondary cursor-pointer p-3 rounded-full shadow-lg hover:bg-amber-700 transition">
                                 <CaretUp />

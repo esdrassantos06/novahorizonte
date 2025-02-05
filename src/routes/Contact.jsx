@@ -104,20 +104,20 @@ function Contact() {
         <>
             <main className="w-full pt-10 flex items-center flex-col justify-center px-20 bg-primary min-h-screen">
                 <div className="container mb-10 w-full items-center justify-center flex flex-col">
-                    <h1 className="text-6xl circularBold text-white">Liderança na Construção Civil e Engenharia</h1>
+                    <h1 className="text-6xl circularBold text-text">Liderança na Construção Civil e Engenharia</h1>
                     <div className="icons-contact titilliumRegular flex space-x-4 p-2">
-                        <p className="gap-1 text-white flex"><CheckCircle size={24} color="#fefbfb" weight="fill" /> Equipa Profissional</p>
-                        <p className="gap-1 text-white flex"><CheckCircle size={24} color="#fefbfb" weight="fill" /> 100% Satisfação</p>
-                        <p className="gap-1 text-white flex"><CheckCircle size={24} color="#fefbfb" weight="fill" /> Testes Precisos</p>
-                        <p className="gap-1 text-white flex"><CheckCircle size={24} color="#fefbfb" weight="fill" /> Preços Transparentes</p>
+                        <p className="gap-1 text-text flex"><CheckCircle size={24} color="#fefbfb" weight="fill" /> Equipa Profissional</p>
+                        <p className="gap-1 text-text flex"><CheckCircle size={24} color="#fefbfb" weight="fill" /> 100% Satisfação</p>
+                        <p className="gap-1 text-text flex"><CheckCircle size={24} color="#fefbfb" weight="fill" /> Testes Precisos</p>
+                        <p className="gap-1 text-text flex"><CheckCircle size={24} color="#fefbfb" weight="fill" /> Preços Transparentes</p>
                     </div>
                 </div>
 
                 <div className="principal mb-10 space-x-5 w-full flex">
                     <div className="container rounded-lg bg-secondary p-10 w-[60%] formDiv">
                         <div className="title flex mb-5 flex-col">
-                            <h2 className="mb-5 text-white text-3xl circularBold">Solicitar um Orçamento</h2>
-                            <p className="w-[80%] titilliumRegular text-base text-white">Oferecemos aos nossos clientes os melhores preços e serviços com qualidade garantida. Orgulhamo-nos de tudo o que fazemos na Nova Horizonte.</p>
+                            <h2 className="mb-5 text-text text-3xl circularBold">Solicitar um Orçamento</h2>
+                            <p className="w-[80%] titilliumRegular text-base text-text">Oferecemos aos nossos clientes os melhores preços e serviços com qualidade garantida. Orgulhamo-nos de tudo o que fazemos na Nova Horizonte.</p>
                         </div>
 
                         <form onSubmit={handleSubmit} className="flex titilliumRegular w-full flex-col">
@@ -200,7 +200,7 @@ function Contact() {
                             <div className="flex items-center justify-center">
                                 <button
                                     type="submit"
-                                    className="w-full flex items-center justify-center bg-primary transition-colors duration-200 cursor-pointer hover:bg-zinc-800 text-white px-5 py-3 rounded-lg"
+                                    className="w-full flex items-center justify-center bg-primary transition-colors duration-200 cursor-pointer hover:bg-zinc-800 text-text px-5 py-3 rounded-lg"
                                 >
                                     Submeter Pedido
                                 </button>
@@ -210,26 +210,26 @@ function Contact() {
                     </div>
 
                     <div className="container rounded-lg contactDiv p-10 bg-secondary w-[40%]">
-                        <h1 className="mb-5 text-white text-3xl circularBold">Contactos</h1>
+                        <h1 className="mb-5 text-text text-3xl circularBold">Contactos</h1>
 
                         <div className="info-contact mb-5">
-                            <h2 className="text-white text-lg circularMedium">Nossa Localização</h2>
-                            <p className="titilliumRegular text-sm text-white">Avenida dos Construtores, 456, Porto, Portugal</p>
+                            <h2 className="text-text text-lg circularMedium">Nossa Localização</h2>
+                            <p className="titilliumRegular text-sm text-text">Avenida dos Construtores, 456, Porto, Portugal</p>
                         </div>
 
 
                         <div className="info-contact mb-5">
-                            <h2 className="text-white text-lg circularMedium">Contacto Rápido</h2>
+                            <h2 className="text-text text-lg circularMedium">Contacto Rápido</h2>
                             <div className="space-y-2">
-                                <p className="titilliumRegular text-sm text-white">novahorizonteempresa@gmail.com</p>
-                                <p className="titilliumRegular text-sm text-white">Telefone: (+351) 912 345 678</p>
+                                <p className="titilliumRegular text-sm text-text">novahorizonteempresa@gmail.com</p>
+                                <p className="titilliumRegular text-sm text-text">Telefone: (+351) 912 345 678</p>
                             </div>
                         </div>
 
                         <div className="info-contact mb-5">
-                            <h2 className="text-white text-lg circularMedium">Horário</h2>
-                            <p className="titilliumRegular text-sm text-white">Segunda - Sexta</p>
-                            <p className="titilliumRegular text-sm text-white">09:00 - 19:00 </p>
+                            <h2 className="text-text text-lg circularMedium">Horário</h2>
+                            <p className="titilliumRegular text-sm text-text">Segunda - Sexta</p>
+                            <p className="titilliumRegular text-sm text-text">09:00 - 19:00 </p>
                         </div>
                     </div>
                 </div>

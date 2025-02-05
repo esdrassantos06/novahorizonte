@@ -12,8 +12,8 @@ const Thanks = () => {
                 </div>
 
                 <div className="container relative z-10 pl-44 flex space-y-5 flex-col justify-center">
-                    <h1 className="text-6xl text-white titilliumBold">Recebemos a sua <span className="text-secondary">mensagem</span>.</h1>
-                    <p className="text-white titilliumRegular">Em breve entraremos em contacto consigo para marcar uma conversa pessoalmente!</p>
+                    <h1 className="text-6xl text-text titilliumBold">Recebemos a sua <span className="text-secondary">mensagem</span>.</h1>
+                    <p className="text-text titilliumRegular">Em breve entraremos em contacto consigo para marcar uma conversa pessoalmente!</p>
                 </div>
             </main>
             <Footer />

@@ -26,20 +26,20 @@ const Navbar = () => {
                     </div>
                 </Link>
                 <ul className='flex titilliumSemiBold space-x-5'>
-                    <li className={`${location.pathname === '/' ? 'text-secondary underline' : 'text-white hover:underline'} underline-offset-5 decoration-2 decoration-secondary transition-all duration-300`}>
+                    <li className={`${location.pathname === '/' ? 'text-secondary underline' : 'text-text hover:underline'} underline-offset-5 decoration-2 decoration-secondary transition-all duration-300`}>
                         <Link translate='no' to='/'>Home</Link>
                     </li>
-                    <li className={`${location.pathname === '/quem-somos' ? 'text-secondary underline' : 'text-white hover:underline'} underline-offset-5 decoration-2 decoration-secondary transition-all duration-300`}>
+                    <li className={`${location.pathname === '/quem-somos' ? 'text-secondary underline' : 'text-text hover:underline'} underline-offset-5 decoration-2 decoration-secondary transition-all duration-300`}>
                         <Link to='/quem-somos'>Quem somos</Link>
                     </li>
-                    <li className={`${location.pathname === '/obras' ? 'text-secondary underline' : 'text-white hover:underline'} underline-offset-5 decoration-2 decoration-secondary transition-all duration-300`}>
+                    <li className={`${location.pathname === '/obras' ? 'text-secondary underline' : 'text-text hover:underline'} underline-offset-5 decoration-2 decoration-secondary transition-all duration-300`}>
                         <Link to='/obras'>Obras em Destaque</Link>
                     </li>
-                    <li className={`${location.pathname === '/servicos' ? 'text-secondary underline' : 'text-white hover:underline'} underline-offset-5 decoration-2 decoration-secondary transition-all duration-300`}>
+                    <li className={`${location.pathname === '/servicos' ? 'text-secondary underline' : 'text-text hover:underline'} underline-offset-5 decoration-2 decoration-secondary transition-all duration-300`}>
                         <Link to='/servicos'>Nossos Serviços</Link>
                     </li>
                 </ul>
-                <Link className='text-white titilliumBold mr-10 cursor-pointer px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-amber-700 bg-secondary' to='/contact'>Contacte-nos</Link>
+                <Link className='text-text titilliumBold mr-10 cursor-pointer px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-amber-700 bg-secondary' to='/contact'>Contacte-nos</Link>
             </nav>
         </header>
 

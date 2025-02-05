@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 function legalWarning(){
     return(
 <>
-<div className="w-full mx-auto px-6 py-10 text-white flex flex-col items-center titilliumRegular bg-primary min-h-screen">
+<div className="w-full mx-auto px-6 py-10 text-text flex flex-col items-center titilliumRegular bg-primary min-h-screen">
                 <h1 className="text-5xl titilliumBold mb-6">Aviso Legal</h1>
                 <p className="mb-4">Este Aviso Legal regula o acesso, a navegação e a utilização deste website (doravante, o “Website”).</p>
                 

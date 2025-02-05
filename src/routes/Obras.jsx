@@ -15,7 +15,7 @@ function Obras() {
 
         <div className="p-20 flex flex-col w-full">
           <div className="TitleObras mb-10">
-            <h1 className="text-primary text-5xl circularBold">Obras Em <span className="text-white">Destaque</span></h1>
+            <h1 className="text-primary text-5xl circularBold">Obras Em <span className="text-text">Destaque</span></h1>
           </div>
 
 

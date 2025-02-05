@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 function Cookies() {
     return (
         <>
-            <div className="w-full mx-auto px-6 py-10 text-white flex flex-col items-center titilliumRegular bg-primary min-h-screen">
+            <div className="w-full mx-auto px-6 py-10 text-text flex flex-col items-center titilliumRegular bg-primary min-h-screen">
                 <h1 className="text-5xl titilliumBold mb-6">Política de Cookies</h1>
                 <p className="mb-4">Esta Política de Cookies explica como o <strong>Nova Horizonte</strong> utiliza cookies e tecnologias similares para reconhecer você quando visita nosso site.</p>
 

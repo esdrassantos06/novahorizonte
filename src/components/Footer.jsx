@@ -9,7 +9,7 @@ const Footer = () => {
 
 
     return (
-        <footer className="relative w-full h-80 bg-primary text-white p-4 flex flex-col justify-between items-center">
+        <footer className="relative w-full h-80 bg-primary text-text p-4 flex flex-col justify-between items-center">
 
 
             <div className="flex w-full flex-col items-center justify-center">

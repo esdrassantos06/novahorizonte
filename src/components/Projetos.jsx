@@ -40,7 +40,7 @@ const Projetos = () => {
                 {projetosVisiveis.map((projeto, index) => (
                     <div
                         key={index}
-                        className={`relative text-white ${projeto.background} rounded-lg flex flex-col items-center justify-end pb-14 h-[35em] w-[25em]`}
+                        className={`relative text-text ${projeto.background} rounded-lg flex flex-col items-center justify-end pb-14 h-[35em] w-[25em]`}
                     >
                         <div className="absolute inset-0 bg-black opacity-50 rounded-lg"></div>
                         <h2 className="text-xl z-10 circularBook">{projeto.nome}</h2>

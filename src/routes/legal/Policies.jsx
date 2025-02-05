@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 function Policies() {
     return (
         <>
-            <div className="w-full mx-auto px-6 py-10 text-white flex flex-col items-center titilliumRegular bg-primary min-h-screen">
+            <div className="w-full mx-auto px-6 py-10 text-text flex flex-col items-center titilliumRegular bg-primary min-h-screen">
                 <h1 className="text-5xl titilliumBold mb-6">Política de Privacidade</h1>
                 <p className="mb-4">A sua privacidade é importante para nós. É política da <strong>Nova Horizonte</strong> respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site <strong>Nova Horizonte</strong>, e outros sites que possuímos e operamos.</p>
 

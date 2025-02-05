@@ -32,7 +32,7 @@ const AnimatedAside = () => {
         <span className="text-6xl titilliumBold text-secondary">
           {number1}+
         </span>
-        <span className="text-white text-sm titilliumRegular">
+        <span className="text-text text-sm titilliumRegular">
           Anos de <br />experiência
         </span>
       </div>
@@ -41,7 +41,7 @@ const AnimatedAside = () => {
         <span className="text-6xl titilliumBold text-secondary">
           {number2}+
         </span>
-        <span className="text-white text-sm titilliumRegular">
+        <span className="text-text text-sm titilliumRegular">
           Projetos <br />Completos
         </span>
       </div>
@@ -50,7 +50,7 @@ const AnimatedAside = () => {
         <span className="text-6xl titilliumBold text-secondary">
           {number3}+
         </span>
-        <span className="text-white text-sm titilliumRegular">
+        <span className="text-text text-sm titilliumRegular">
           Prémios <br />Globais
         </span>
       </div>

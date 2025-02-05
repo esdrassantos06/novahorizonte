@@ -1,4 +1,4 @@
-import { ArrowLeft, ArrowRight } from "@phosphor-icons/react";
+import { CaretLeft, CaretRight } from "@phosphor-icons/react";
 import { useState } from "react";
 import people1 from '../assets/images/testemonials/people1.jpg'
 import people2 from '../assets/images/testemonials/people2.jpg'
@@ -47,30 +47,30 @@ const Testemunhas = () => {
     const currentTestimonial = testemunhas[currentIndex];
 
     return (
-        <div className="max-w-md mx-auto bg-zinc-800 titilliumRegular shadow-lg rounded-lg overflow-hidden">
+        <div className="max-w-md mx-auto  bg-zinc-800 titilliumRegular shadow-2xl rounded-lg overflow-hidden">
             <div className="p-6">
-                <p className="text-white text-center">
+                <p className="text-text text-center">
                     &quot;{currentTestimonial.text}&quot;
                 </p>
                 <div className="mt-4 flex flex-col items-center justify-center">
-                    <p className="text-white font-bold text-lg">{currentTestimonial.author}</p>
-                    <p className="text-white mb-2 text-sm">{currentTestimonial.role}</p>
+                    <p className="text-text font-bold text-lg">{currentTestimonial.author}</p>
+                    <p className="text-text mb-2 text-sm">{currentTestimonial.role}</p>
                 </div>
             </div>
 
             <div className="buttons-testemonials flex w-full items-center justify-between px-20 pb-10">
                 <button
                     onClick={anterior}
-                    className="text-gray-700 cursor-pointer p-2 rounded-full bg-secondary hover:bg-amber-500 duration-200 transition flex items-center hover:text-gray-900"
+                    className="text-gray-700 cursor-pointer p-2 rounded-full bg-secondary hover:bg-amber-600 duration-200 transition flex items-center hover:text-gray-900"
                 >
-                    <ArrowLeft color="#fff" />
+                    <CaretLeft  color="#F5F5F5 " />
                 </button>
                 <img src={currentTestimonial.photo} alt="cliente" className="w-14 object-cover h-14 rounded-full" />
                 <button
                     onClick={proximo}
-                    className="text-gray-700 cursor-pointer bg-secondary hover:bg-amber-500 duration-200 transition p-2 rounded-full flex items-center hover:text-gray-900"
+                    className="text-gray-700 cursor-pointer bg-secondary hover:bg-amber-600 duration-200 transition p-2 rounded-full flex items-center hover:text-gray-900"
                 >
-                    <ArrowRight color="#fff" />
+                    <CaretRight  color="#F5F5F5 " />
                 </button>
             </div>
         </div>

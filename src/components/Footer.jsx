@@ -15,10 +15,11 @@ const Footer = () => {
             <div className="flex w-full flex-col items-center justify-center">
 
                 <div className="principal-footer  flex border-b border-gray-600/70 space-y-6 pb-5 flex-col">
-                    <div className="logo-footer flex flex-col text-start -space-y-1 self-start">
+
+                    <Link to='/' className="logo-footer cursor-pointer select-none flex flex-col text-start -space-y-1 self-start">
                         <p className='montserrat text-base'>Construtora</p>
                         <p className='montserrat text-nowrap text-lg font-bold'>Nova <span className='text-secondary'>Horizonte</span></p>
-                    </div>
+                    </Link>
 
                     <div className="everything-footer gap-16 flex">
 

@@ -37,7 +37,7 @@ function Home() {
                                 Serviços
                                 <span className="relative w-7 h-7 flex items-center justify-center">
                                     <ArrowCircleUpRight
-                                        size={26}
+                                        size={27}
                                         className="absolute transition-all duration-300 ease-in-out transform group-hover:rotate-45"
                                     />
                                 </span>

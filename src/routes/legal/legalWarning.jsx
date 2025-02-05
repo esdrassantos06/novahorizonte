@@ -14,7 +14,7 @@ function legalWarning(){
                 <p className="mb-4">O acesso e/ou utilização do Website confere-lhe o estatuto de Usuário, aceitando, a partir desse acesso e/ou utilização, este Aviso Legal.</p>
                 
                 <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">Uso do Website</h2>
-                <p className="mb-4">O usuário se compromete a fazer uso adequado do conteúdo e das informações oferecidas no <strong>Nova Horizonte</strong>, incluindo, mas não se limitando a:</p>
+                <p className="mb-4">O usuário se compromete a fazer uso adequado do conteúdo e das informações oferecidas na <strong>Nova Horizonte</strong>, incluindo, mas não se limitando a:</p>
                 <ul className="list-disc pl-6 space-y-2">
                     <li>Não se envolver em atividades ilícitas ou contrárias à ordem pública.</li>
                     <li>Não difundir conteúdo racista, xenofóbico, pornográfico ilegal ou que promova ódio ou violência.</li>
@@ -22,16 +22,16 @@ function legalWarning(){
                 </ul>
                 
                 <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">Propriedade Intelectual</h2>
-                <p className="mb-4">Todos os direitos de propriedade intelectual do conteúdo deste Website pertencem exclusivamente ao <strong>Nova Horizonte</strong> ou a terceiros que autorizaram seu uso. É proibida a reprodução, distribuição ou modificação sem a devida autorização.</p>
+                <p className="mb-4">Todos os direitos de propriedade intelectual do conteúdo deste Website pertencem exclusivamente à <strong>Nova Horizonte</strong> ou a terceiros que autorizaram seu uso. É proibida a reprodução, distribuição ou modificação sem a devida autorização.</p>
                 
                 <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">Responsabilidade e Garantias</h2>
-                <p className="mb-4">O <strong>Nova Horizonte</strong> não garante que o Website estará livre de erros, vírus ou componentes prejudiciais. Não nos responsabilizamos por eventuais danos causados pelo uso indevido do Website.</p>
+                <p className="mb-4">A <strong>Nova Horizonte</strong> não garante que o Website estará livre de erros, vírus ou componentes prejudiciais. Não nos responsabilizamos por eventuais danos causados pelo uso indevido do Website.</p>
                 
                 <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">Links para Sites Externos</h2>
                 <p className="mb-4">Nosso site pode conter links para sites de terceiros. Não nos responsabilizamos pelo conteúdo e políticas desses sites.</p>
                 
                 <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">Modificações</h2>
-                <p className="mb-4">O <strong>Nova Horizonte</strong> reserva-se o direito de modificar este Aviso Legal a qualquer momento. O uso contínuo do Website implica na aceitação das condições atualizadas.</p>
+                <p className="mb-4">A <strong>Nova Horizonte</strong> reserva-se o direito de modificar este Aviso Legal a qualquer momento. O uso contínuo do Website implica na aceitação das condições atualizadas.</p>
             </div>
             <Footer/>
 </>

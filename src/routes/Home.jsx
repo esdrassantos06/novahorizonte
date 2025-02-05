@@ -2,11 +2,12 @@ import { Link } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import AnimatedAside from "../components/AnimatedAside"
-import { ArrowCircleRight, CheckCircle } from '@phosphor-icons/react'
+import { ReadCvLogo ,CheckCircle, ArrowCircleUpRight } from '@phosphor-icons/react'
 import peopleHome from '../assets/images/PeopleHome.png'
 import signature from '../assets/images/signature.png'
 
 function Home() {
+
     return (
         <>
             <Navbar />
@@ -28,12 +29,34 @@ function Home() {
                         <p className="text-white w-1/2 text-base titilliumRegular">
                             A Construtora Nova Horizonte é especializada em construção civil, oferecendo serviços completos para projetos residenciais, comerciais e industriais. Nosso compromisso é com a qualidade, segurança e inovação em cada obra.
                         </p>
-                        <div className="buttons mt-4 space-x-15 flex">
-                            <Link className="text-white flex items-center gap-2 text-base circularMedium px-2 py-3 transition-all duration-150 transform hover:scale-105 bg-secondary hover:bg-amber-700 rounded-lg" to='/servicos'>Nossos Serviços <ArrowCircleRight size={28} /> </Link>
+                        <div className="buttons mt-4 gap-8 flex">
+                            <Link
+                                className="group text-white flex items-center gap-2 text-base px-4 py-2 circularBook transition-all duration-300 ease-in-out transform bg-secondary hover:bg-amber-700 rounded-2xl"
+                                to="/servicos"
+                            >
+                                Serviços
+                                <span className="relative w-7 h-7 flex items-center justify-center">
+                                    <ArrowCircleUpRight
+                                        size={26}
+                                        className="absolute transition-all duration-300 ease-in-out transform group-hover:rotate-45"
+                                    />
+                                </span>
+                            </Link>
 
 
-                            <Link className="text-black  transform hover:scale-105 flex items-center text-base circularMedium px-2 py-3 bg-white transition-all duration-150 hover:bg-gray-400 rounded-lg" to='/obras'>
-                                <p>Veja Nossos Projetos</p></Link>
+
+                            <Link className="text-black gap-2 group  transform flex items-center justify-center px-4 py-2 text-base circularBook p-1 border border-gray-800 bg-white transition-all duration-150 hover:bg-gray-300 rounded-2xl" to='/obras'>
+                                Projetos
+                                
+                                <span className="relative w-7 h-7 flex items-center justify-center">
+                                    <ReadCvLogo
+                                        size={26}
+                                        className="absolute transition-all duration-300 ease-in-out transform group-hover:scale-105"
+                                    />
+                                </span>
+                                </Link>
+
+
                         </div>
                     </div>
                     <div className="absolute select-none left-[80%] transform z-40 -skew-1 -translate-x-1/2 bottom-[-50px] w-fit text-nowrap bg-orange-500 text-white p-6 rounded-lg shadow-lg">

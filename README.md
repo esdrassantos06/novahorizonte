@@ -32,10 +32,6 @@ Nova Horizonte é um projeto voltado para serviços de construção civil e enge
 
 Sinta-se à vontade para contribuir com melhorias no projeto! Basta criar um fork, desenvolver a funcionalidade e abrir um pull request.
 
-# Licença
-
-Este projeto está licenciado sob a MIT License.
-
 ## 🛠 Habilidades
 
 React, NodeJS

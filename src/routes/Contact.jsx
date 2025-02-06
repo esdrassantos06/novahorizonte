@@ -116,7 +116,7 @@ function Contact() {
                 <div className="principal mb-10 space-x-5 w-full flex">
                     <div className="container rounded-lg bg-secondary p-10 w-[60%] formDiv">
                         <div className="title flex mb-5 flex-col">
-                            <h2 className="mb-5 text-text text-3xl circularBold">Solicitar um Orçamento</h2>
+                            <h2 className="mb-5 text-text text-4xl circularBold">Solicitar um Orçamento</h2>
                             <p className="w-[80%] titilliumRegular text-base text-text">Oferecemos aos nossos clientes os melhores preços e serviços com qualidade garantida. Orgulhamo-nos de tudo o que fazemos na Nova Horizonte.</p>
                         </div>
 
@@ -210,26 +210,26 @@ function Contact() {
                     </div>
 
                     <div className="container rounded-lg contactDiv p-10 bg-secondary w-[40%]">
-                        <h1 className="mb-5 text-text text-3xl circularBold">Contactos</h1>
+                        <h1 className="mb-5 text-text text-4xl circularBold">Contactos</h1>
 
                         <div className="info-contact mb-5">
-                            <h2 className="text-text text-lg circularMedium">Nossa Localização</h2>
-                            <p className="titilliumRegular text-sm text-text">Avenida dos Construtores, 456, Porto, Portugal</p>
+                            <h2 className="text-text text-xl circularMedium">Nossa Localização</h2>
+                            <p className="titilliumRegular text-base text-text">Avenida dos Construtores, 456, Porto, Portugal</p>
                         </div>
 
 
                         <div className="info-contact mb-5">
-                            <h2 className="text-text text-lg circularMedium">Contacto Rápido</h2>
+                            <h2 className="text-text text-xl circularMedium">Contacto</h2>
                             <div className="space-y-2">
-                                <p className="titilliumRegular text-sm text-text">novahorizonteempresa@gmail.com</p>
-                                <p className="titilliumRegular text-sm text-text">Telefone: (+351) 912 345 678</p>
+                                <p className="titilliumRegular text-base text-text">novahorizonteempresa@gmail.com</p>
+                                <p className="titilliumRegular text-base text-text">Telefone: (+351) 912 345 678</p>
                             </div>
                         </div>
 
                         <div className="info-contact mb-5">
-                            <h2 className="text-text text-lg circularMedium">Horário</h2>
-                            <p className="titilliumRegular text-sm text-text">Segunda - Sexta</p>
-                            <p className="titilliumRegular text-sm text-text">09:00 - 19:00 </p>
+                            <h2 className="text-text text-xl circularMedium">Horário</h2>
+                            <p className="titilliumRegular text-base text-text">Segunda - Sexta</p>
+                            <p className="titilliumBold  text-base text-text">09:00 - 19:00 </p>
                         </div>
                     </div>
                 </div>

@@ -90,15 +90,15 @@ function Home() {
                             </h2>
 
                             <div className="about-content">
-                                <p className="mt-4 w-full text-start text-text italic titilliumRegular text-base">
+                                <p className="mt-4  w-full text-justify text-text italic titilliumRegular text-base">
                                     A Construtora Nova Horizonte é referência no mercado, com 25 anos de tradição que atestam nosso compromisso com a qualidade e a confiança em todos os projetos de construção e reforma.
                                 </p>
 
-                                <p className="text-start w-full text-text italic titilliumRegular text-base mt-2">
+                                <p className="text-justify w-full text-text italic titilliumRegular text-base mt-2">
                                     Nossa equipe é composta por profissionais altamente qualificados, cuja expertise e dedicação se traduzem em cada projeto executado.
                                 </p>
 
-                                <p className="text-start w-full text-text italic titilliumRegular text-base mt-2">
+                                <p className="text-justify w-full text-text italic titilliumRegular text-base mt-2">
                                     Nós entendemos que cada obra é única, e por isso, adotamos uma abordagem personalizada em cada etapa do processo.
                                 </p>
 

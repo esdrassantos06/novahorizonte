@@ -22,7 +22,7 @@ function Home() {
                     </div>
 
                     {/* Container do conteúdo sem sombra */}
-                    <div className="container relative z-10 px-20 flex space-y-5 flex-col justify-center h-full">
+                    <div className="relative z-10 px-20 flex space-y-5 flex-col justify-center h-full">
                         <h1 className="text-5xl/tight  circularBold text-text">
                             Construindo o Futuro, <br /> Tijolo por <span className="text-secondary">Tijolo</span>.
                         </h1>
@@ -75,9 +75,9 @@ function Home() {
                     </div>
                 </section>
                 <AnimatedAside />
-                <section className="w-full block-appear bg-primary flex items-center p-30 h-screen">
-                    <div className="container space-x-20 relative px-20 flex flex-row items-center justify-between">
-                        <img src={peopleHome} alt="Construtora" className="w-[50rem] select-none h-auto" />
+                <section className="w-full bg-primary flex items-center p-30 h-screen">
+                    <div className="space-x-20 relative px-20 flex flex-row items-center justify-between">
+                        <img src={peopleHome} alt="Construtora" className="md:w-[50rem] select-none h-auto" />
                         <div className="space-y-5">
                             <h1 className="text-6xl/15 circularBold text-text"><span className="text-secondary">25 anos</span> <br /> de experiência!</h1>
 

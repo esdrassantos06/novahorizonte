@@ -154,3 +154,50 @@
     background: url(./assets/images/destaques/destaque4.jpg) no-repeat center center scroll;
     background-size: cover;
 }
+
+
+
+.slider{
+    width: 100%;
+    position: relative;
+    height: var(--height);
+    background-color: rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+}
+
+.slider .list{
+    display: flex;
+    min-width: calc(var(--width) * var(--quantity));
+    
+}
+
+.slider .list .item{
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    left: 100%;
+    animation: autoScroll 10s linear infinite;
+    animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1)  );
+}
+
+.image-scroll{
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+    user-select: none;
+}
+
+@keyframes autoScroll{
+    from{
+        left: 100%;
+    }
+    to{
+        left: calc(var(--width) * -1);
+    }
+}
+
+.slider:hover .item{
+    animation-play-state: paused;
+}

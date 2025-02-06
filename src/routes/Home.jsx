@@ -31,7 +31,7 @@ function Home() {
                         </p>
                         <nav className="buttons mt-4 gap-8 flex">
                             <Link
-                                className="group text-text flex items-center gap-2 text-base px-4 py-2 circularBook transition-all duration-300 ease-in-out transform bg-secondary hover:bg-amber-700 rounded-2xl"
+                                className="group text-text flex items-center gap-2 text-base px-4 py-2 circularBook transition-all duration-300 ease-in-out transform bg-secondary hover:bg-secondary/70 rounded-2xl"
                                 to="/servicos"
                                 aria-label="Ir para página de serviços"
                             >
@@ -46,7 +46,7 @@ function Home() {
                             </Link>
 
                             <Link
-                                className="text-black gap-2 group transform flex items-center justify-center px-4 py-2 text-base circularBook p-1 border border-gray-800 bg-white transition-all duration-150 hover:bg-gray-300 rounded-2xl"
+                                className="text-black gap-2 group transform flex items-center justify-center px-4 py-2 text-base circularBook p-1 border border-gray-800 bg-white transition-all duration-150 hover:bg-text/80 rounded-2xl"
                                 to='/obras'
                                 aria-label="Ir para página de projetos"
                             >

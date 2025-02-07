@@ -215,3 +215,12 @@
 }
 
 /* Scroll Component End */
+
+.swiper-scrollbar-drag{
+    background-color: #FF7420 !important;
+  }
+  
+  
+  .swiper-scrollbar{
+    background-color: rgba(245, 245, 245, 0.082) !important;
+  }

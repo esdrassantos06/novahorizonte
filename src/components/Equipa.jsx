@@ -3,12 +3,20 @@ import fotohomem1 from '../assets/images/equipa/homem1.jpg'
 import fotohomem2 from '../assets/images/equipa/homem2.webp'
 import fotohomem3 from '../assets/images/equipa/homem3.webp'
 import fotohomem4 from '../assets/images/equipa/homem4.webp'
-import { useState } from 'react'
+
+import { Navigation, Pagination, Scrollbar, Keyboard, Autoplay } from 'swiper/modules';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 
 
 const Equipa = () => {
-    const [startIndex, setStartIndex] = useState(0)
 
     const equipa = [
         {
@@ -34,55 +42,68 @@ const Equipa = () => {
     ]
 
 
-    const handleNext = () => {
-        setStartIndex((prev) => (prev + 1) % equipa.length)
-    }
-
-    const handlePrev = () => {
-        setStartIndex((prev) => (prev - 1 + equipa.length) % equipa.length)
-    }
-
-    const visibleMembers = [...equipa.slice(startIndex), ...equipa.slice(0, startIndex)]
-        .slice(0, 3)
-
-    // Faz aparecer só 3 funcionários por vez
-
     return (
-        <div className='equipa-container relative flex gap-4'>
+        <div className="h-full rounded-lg w-full flex items-center p-20 justify-center relative">
 
-            <div className='prev-button flex items-center justify-center mr-2'>
-                <button
-                    onClick={handlePrev}
-                    className='bg-primary/50 outline-text/20 outline hover:bg-primary/70 cursor-pointer p-2 rounded-lg'
-                >
-                    <ArrowLeft size={25} color='#fff' />
-                </button>
+
+            {/* Custom Buttons (Fora do Swiper) */}
+            <div className="prev-button absolute left-[30px] top-[40%] -translate-y-1/2 z-50">
+                <div className="bg-primary outline-text/20 outline hover:bg-zinc-800 cursor-pointer p-2 rounded-lg">
+                    <ArrowLeft size={25} color="#fff" />
+                </div>
             </div>
 
-            <div className='flex gap-4'>
-                {visibleMembers.map((membro, index) => (
-                    <div key={index} className='membro  flex text-text flex-col items-center gap-2'>
-                        <img
-                            src={membro.foto}
-                            className='w-82.5 h-94 select-none rounded-lg object-cover'
-                            alt={membro.nome}
-                        />
-                        <div className='flex flex-col'>
-                            <h3 className='text-lg circularBold'>{membro.nome}</h3>
-                            <p className='text-base titilliumRegular'>{membro.cargo}</p>
+            <div className="next-button absolute right-[30px] top-[40%] -translate-y-1/2 z-50">
+                <div className="bg-primary outline-text/20 outline hover:bg-zinc-800 cursor-pointer p-2 rounded-lg">
+                    <ArrowRight size={25} color="#fff" />
+                </div>
+            </div>
+
+
+            {/* Swiper */}
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, Keyboard, Autoplay]}
+                spaceBetween={20}
+                slidesPerView={1}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
+                keyboard={{
+                    enabled: true,
+                }}
+                breakpoints={{
+                    769: {
+                        slidesPerView: 2,
+                    },
+                    1025: {
+                        slidesPerView: 3,
+                    },
+                }}
+                navigation={{
+                    nextEl: ".next-button",
+                    prevEl: ".prev-button",
+                }}
+                scrollbar={true}
+                loop={true}
+            >
+                {equipa.map((membro, index) => (
+                    <SwiperSlide key={index}>
+                        <div className="membro mb-20 flex text-text flex-col items-center gap-2">
+                            <img
+                                src={membro.foto}
+                                className="w-82.5 h-94 select-none rounded-lg object-cover"
+                                alt={membro.nome}
+                            />
+                            <div className="flex flex-col">
+                                <h3 className="text-lg circularBold">{membro.nome}</h3>
+                                <p className="text-base titilliumRegular">{membro.cargo}</p>
+                            </div>
                         </div>
-                    </div>
+                    </SwiperSlide>
                 ))}
-            </div>
+            </Swiper>
 
-            <div className='next-button ml-2 flex items-center justify-center'>
-                <button
-                    onClick={handleNext}
-                    className='bg-primary/50 outline-text/20 outline hover:bg-primary/70 cursor-pointer p-2 rounded-lg'
-                >
-                    <ArrowRight size={25} color='#fff' />
-                </button>
-            </div>
 
         </div>
     )

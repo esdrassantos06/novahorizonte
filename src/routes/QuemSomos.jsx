@@ -57,7 +57,7 @@ function QuemSomos() {
 
             <div className="title-mission flex flex-col gap-3 w-full ">
               <h2 className="text-primary titilliumBold text-lg">COMO TRABALHAMOS?</h2>
-              <h1 className="text-text w-[60%] text-5xl circularBold">Como Trabalhar com a Nova Horizonte</h1>
+              <h1 className="text-text w-[60%] text-5xl circularBold">Como Trabalhar com a Nova <span className="text-primary">Horizonte</span></h1>
             </div>
 
             <div className="flex flex-col gap-10 w-full px-10 mt-10">

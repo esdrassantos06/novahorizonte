@@ -97,12 +97,12 @@
 }
 
 .backgroundHome1 {
-    background: url('./assets/images/backgroundHome.jpg') no-repeat center center fixed;
+    background: url('./assets/images/backgroundHome.webp') no-repeat center center fixed;
     background-size: cover;
 }
 
 .backgroundThanks {
-    background: url('./assets/images/backgroundThanks.jpg') no-repeat center center fixed;
+    background: url('./assets/images/backgroundThanks.webp') no-repeat center center fixed;
     background-size: cover;
 }
 

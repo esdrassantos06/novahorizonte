@@ -62,17 +62,20 @@ const Testemunhas = () => {
                 <button
                     onClick={anterior}
                     className="text-gray-700 cursor-pointer p-2 rounded-full bg-secondary hover:bg-amber-600 duration-200 transition flex items-center hover:text-gray-900"
+                    aria-label="Ir para o testemunho anterior"
                 >
-                    <CaretLeft  color="#F5F5F5 " />
+                    <CaretLeft color="#F5F5F5 " />
                 </button>
                 <img src={currentTestimonial.photo} alt="cliente" className="w-14 object-cover h-14 rounded-full" />
                 <button
                     onClick={proximo}
                     className="text-gray-700 cursor-pointer bg-secondary hover:bg-amber-600 duration-200 transition p-2 rounded-full flex items-center hover:text-gray-900"
+                    aria-label="Ir para o próximo testemunho"
                 >
-                    <CaretRight  color="#F5F5F5 " />
+                    <CaretRight color="#F5F5F5 " />
                 </button>
             </div>
+
         </div>
     );
 };

@@ -47,17 +47,24 @@ const Equipa = () => {
 
 
             {/* Custom Buttons (Fora do Swiper) */}
-            <div className="prev-button absolute left-[30px] top-[40%] -translate-y-1/2 z-50">
+            <button
+                className="prev-button absolute left-[30px] top-[40%] -translate-y-1/2 z-50"
+                aria-label="Ir para a imagem anterior"
+            >
                 <div className="bg-primary outline-text/20 outline hover:bg-zinc-800 cursor-pointer p-2 rounded-lg">
                     <ArrowLeft size={25} color="#fff" />
                 </div>
-            </div>
+            </button>
 
-            <div className="next-button absolute right-[30px] top-[40%] -translate-y-1/2 z-50">
+            <button
+                className="next-button absolute right-[30px] top-[40%] -translate-y-1/2 z-50"
+                aria-label="Ir para a próxima imagem"
+            >
                 <div className="bg-primary outline-text/20 outline hover:bg-zinc-800 cursor-pointer p-2 rounded-lg">
                     <ArrowRight size={25} color="#fff" />
                 </div>
-            </div>
+            </button>
+
 
 
             {/* Swiper */}

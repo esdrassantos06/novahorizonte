@@ -201,9 +201,11 @@ function Contact() {
                                 <button
                                     type="submit"
                                     className="w-full flex items-center justify-center bg-primary transition-colors duration-200 cursor-pointer hover:bg-zinc-800 text-text px-5 py-3 rounded-lg"
+                                    aria-label="Submeter pedido"
                                 >
                                     Submeter Pedido
                                 </button>
+
                             </div>
                         </form>
 
@@ -234,7 +236,7 @@ function Contact() {
                     </div>
                 </div>
             </main>
-                <Footer />
+            <Footer />
         </>
     );
 }

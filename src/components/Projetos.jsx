@@ -146,11 +146,15 @@ const Projetos = () => {
 
 
             <div className="flex text-primary mt-4 pr-40 w-full items-center justify-end">
-                <button onClick={() => setMostrarProj(!mostrarProj)} className="gap-2 cursor-pointer hover:underline underline-offset-2 circularBold flex items-center">
-
+                <button
+                    onClick={() => setMostrarProj(!mostrarProj)}
+                    className="gap-2 cursor-pointer hover:underline underline-offset-2 circularBold flex items-center"
+                    aria-label={mostrarProj ? "Mostrar menos projetos" : "Explorar todos os projetos"}
+                >
                     {mostrarProj ? "Mostrar menos projetos" : "Explore todos os projetos"} {/* Quando clicar no botão, o texto vai mudar */}
+                    <ArrowCircleRight weight="fill" size={26} />
+                </button>
 
-                    <ArrowCircleRight weight="fill" size={26} /></button>
             </div>
         </>
     )

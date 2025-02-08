@@ -57,7 +57,7 @@ function QuemSomos() {
 
             <div className="title-mission flex flex-col gap-3 w-full ">
               <h2 className="text-primary titilliumBold text-lg">COMO TRABALHAMOS?</h2>
-              <h1 className="text-text w-[60%] text-5xl circularBold">Como Trabalhar com a Nova <span className="text-primary">Horizonte</span></h1>
+              <h1 className="text-text w-[60%] text-5xl circularBold">Como Trabalhar com a Nova Horizonte</h1>
             </div>
 
             <div className="flex flex-col gap-10 w-full px-10 mt-10">
@@ -124,7 +124,7 @@ function QuemSomos() {
 
           <div className="flex flex-col bg-primary shadow-2xl shadow-primary rounded-lg p-10 items-center justify-center w-[80vw]">
             <div className="title-our-team py-4 flex items-center justify-start ml-60 w-full">
-              <h1 className="text-text circularBold text-5xl">Uma Equipa Dedicada de Profissionais Qualificados <br/> Comprometidos com a <span className="text-secondary">Excelência</span></h1>
+              <h1 className="text-text circularBold text-5xl">Uma Equipa Dedicada de Profissionais Qualificados <br /> Comprometidos com a <span className="text-secondary">Excelência</span></h1>
             </div>
 
             <Equipa />

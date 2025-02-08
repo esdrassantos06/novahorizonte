@@ -54,7 +54,7 @@
     font-weight: 900;
 }
 
-.flex {
+.circularBold {
     font-family: 'CircularStd', serif;
     font-weight: 700;
 }
@@ -159,7 +159,7 @@
 /* Scroll Component Start */
 
 
-.slider{
+.slider {
     width: 100%;
     position: relative;
     height: var(--height);
@@ -169,58 +169,59 @@
     mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
 }
 
-.slider .list{
+.slider .list {
     display: flex;
     min-width: calc(var(--width) * var(--quantity));
-    
+
 }
 
-.slider .list .item{
+.slider .list .item {
     width: var(--width);
     height: var(--height);
     position: absolute;
     left: 100%;
     animation: autoScroll 10s linear infinite;
-    animation-delay: calc( (10s / var(--quantity)) * (var(--position) - 1)  );
+    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
     transition: filter 0.5s;
 
 }
 
-.image-scroll{
+.image-scroll {
     width: 90%;
     height: 90%;
     object-fit: contain;
     user-select: none;
 }
 
-@keyframes autoScroll{
-    from{
+@keyframes autoScroll {
+    from {
         left: 100%;
     }
-    to{
+
+    to {
         left: calc(var(--width) * -1);
     }
 }
 
-.slider:hover .item{
+.slider:hover .item {
     animation-play-state: paused;
     filter: grayscale(1);
     filter: invert(0);
 }
 
-.slider .item:hover{
+.slider .item:hover {
     filter: grayscale(0);
     filter: invert(1);
-    
+
 }
 
 /* Scroll Component End */
 
-.swiper-scrollbar-drag{
+.swiper-scrollbar-drag {
     background-color: #FF7420 !important;
-  }
-  
-  
-  .swiper-scrollbar{
+}
+
+
+.swiper-scrollbar {
     background-color: rgba(245, 245, 245, 0.082) !important;
-  }
+}

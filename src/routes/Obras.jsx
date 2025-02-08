@@ -13,7 +13,7 @@ function Obras() {
 
       <main className="w-full pt-20 flex flex-col items-center bg-secondary min-h-screen">
 
-        <div className="p-20 flex flex-col w-full">
+        <div className="p-20 flex flex-col items-center w-full">
           <div className="TitleObras mb-10">
             <h1 className="text-primary text-5xl circularBold">Obras Em <span className="text-text">Destaque</span></h1>
           </div>
@@ -23,7 +23,7 @@ function Obras() {
 
         </div>
 
-        <div className="flex w-full flex-col space-y-5 items-center justify-center bg-primary h-[30em]">
+        <div className="flex w-full flex-col gap-5 items-center justify-center bg-primary h-[30em]">
           <div className="pb-5">
             <h1 className="text-5xl text-secondary titilliumBold">Opniões de nossos clientes</h1>
           </div>

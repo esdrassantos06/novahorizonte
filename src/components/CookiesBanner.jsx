@@ -27,7 +27,7 @@ const CookiesBanner = () => {
         </p>
         <button
           onClick={handleAccept}
-          className="bg-secondary cursor-pointer text-text px-4 py-2 rounded hover:bg-amber-600">
+          className="bg-secondary cursor-pointer text-text px-4 py-2 rounded hover:bg-secondary/80">
           Aceitar
         </button>
       </div>

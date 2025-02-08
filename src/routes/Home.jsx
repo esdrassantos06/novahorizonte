@@ -14,7 +14,7 @@ function Home() {
                 {/* Hero Section */}
                 <article className="hero-section relative h-[50em]">
                     {/* Background Overlay */}
-                    <div className="backgroundHome1 absolute inset-0 backdrop-brightness-50 
+                    <div  className="backgroundHome1 absolute inset-0 backdrop-brightness-50 
                         before:absolute before:top-0 before:left-0 before:w-1/2 before:h-full 
                         before:bg-gradient-to-r before:from-black/100 before:to-transparent 
                         before:pointer-events-none 
@@ -108,7 +108,7 @@ function Home() {
                             </div>
 
                             <footer className="pt-5">
-                                <img className="invert-100 w-40 select-none" src={signature} alt="Assinatura do fundador Esdras Santos" />
+                                <img className="invert-100 w-40 select-none" loading="lazy" src={signature} alt="Assinatura do fundador Esdras Santos" />
                                 <p className="text-start w-full text-text italic titilliumRegular text-sm mt-2">Esdras Santos - Fundador</p>
                             </footer>
                         </div>

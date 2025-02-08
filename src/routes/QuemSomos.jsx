@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import ScrollComponent from "../components/ScrollComponent"
 import photo1 from '../assets/images/01.webp'
-import photo2 from '../assets/images/HowWeWork.jpg'
+import photo2 from '../assets/images/HowWeWork.webp'
 import { Hammer, LightbulbFilament, HandWithdraw } from "@phosphor-icons/react"
 import Equipa from "../components/Equipa"
 
@@ -32,7 +32,7 @@ function QuemSomos() {
           <div className="basis-1/2 flex justify-start pl-5 items-center titilliumRegular part-2">
             <div className="w-150 select-none h-150 flex flex-col items-center justify-center shadow-2xl shadow-secondary/20  rounded-lg">
 
-              <img src={photo1} className="w-full inset-shadow-sm inset-shadow-black  h-full object-cover rounded-lg" alt="Foto de uma pessoa segurando uma chave de construção" />
+              <img src={photo1} className="w-full inset-shadow-sm inset-shadow-black  h-full object-cover rounded-lg" alt="Duas pessoas na construção" />
             </div>
           </div>
 
@@ -49,7 +49,7 @@ function QuemSomos() {
           <div className="basis-1/2 flex pr-20 justify-end items-center titilliumRegular part-2">
             <div className="w-180 select-none h-180 flex flex-col items-center justify-center shadow-2xl shadow-secondary/20  rounded-lg">
 
-              <img src={photo2} className="w-full inset-shadow-sm inset-shadow-black  h-full object-cover rounded-lg" alt="Foto de uma pessoa segurando uma chave de construção" />
+              <img src={photo2} loading="lazy" className="w-full inset-shadow-sm inset-shadow-black  h-full object-cover rounded-lg" alt="Foto de uma pessoa segurando uma chave de construção" />
             </div>
           </div>
 

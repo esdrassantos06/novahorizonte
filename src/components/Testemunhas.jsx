@@ -1,8 +1,8 @@
 import { CaretLeft, CaretRight } from "@phosphor-icons/react";
 import { useState } from "react";
-import people1 from '../assets/images/testemonials/people1.jpg'
-import people2 from '../assets/images/testemonials/people2.jpg'
-import people3 from '../assets/images/testemonials/people3.jpg'
+import people1 from '../assets/images/testemonials/people1.webp'
+import people2 from '../assets/images/testemonials/people2.webp'
+import people3 from '../assets/images/testemonials/people3.webp'
 
 const testemunhas = [
     {

@@ -1,5 +1,5 @@
 import { ArrowLeft, ArrowRight } from '@phosphor-icons/react'
-import fotohomem1 from '../assets/images/equipa/homem1.jpg'
+import fotohomem1 from '../assets/images/equipa/homem1.webp'
 import fotohomem2 from '../assets/images/equipa/homem2.webp'
 import fotohomem3 from '../assets/images/equipa/homem3.webp'
 import fotohomem4 from '../assets/images/equipa/homem4.webp'

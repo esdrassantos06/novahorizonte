@@ -23,12 +23,13 @@ function Obras() {
 
         </div>
 
-        <div className="flex w-full flex-col gap-5 items-center justify-center bg-primary h-[30em]">
+        <div className="flex w-full flex-col gap-5 pt-20 items-center justify-center bg-primary h-[30em]">
           <div className="pb-5">
             <h1 className="text-5xl text-secondary titilliumBold">Opniões de nossos clientes</h1>
           </div>
 
           <Testemunhas />
+
         </div>
 
 

@@ -80,7 +80,7 @@ const Footer = () => {
 
                         <div className="flex titilliumSemiBold gap-2 text-start flex-col items-start self-stretch">
                             <h2 className="text-lg">Link</h2>
-                            <ul className="titilliumRegular flex gap-4 text-base">
+                            <ul className="titilliumRegular flex flex-col text-base">
                                     <li className="hover:text-secondary transition-colors duration-200">
                                         <Link to='/' aria-label="Página inicial">Home</Link>
                                     </li>

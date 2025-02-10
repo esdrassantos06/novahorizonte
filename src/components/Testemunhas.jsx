@@ -44,27 +44,27 @@ const Testemunhas = () => {
 
 
     return (
-        <div className="max-w-md mx-auto relative  bg-zinc-800 titilliumRegular shadow-2xl rounded-lg overflow-hidden">
+        <div className="w-150 pb-4 mx-auto relative bg-zinc-800 px-14 titilliumRegular shadow-2xl rounded-lg overflow-hidden">
 
             {/* Custom Buttons (Fora do Swiper) */}
             <button
-                    className="prev-button absolute z-50  text-gray-700 left-2 bottom-1/2 translate-y-1/2 cursor-pointer p-2 rounded-full bg-secondary hover:bg-amber-600 duration-200 transition flex items-center hover:text-gray-900"
-                    aria-label="Ir para o testemunho anterior"
-                >
-                    <CaretLeft color="#F5F5F5 " />
-                </button>
+                className="prev-button absolute z-50  text-gray-700 left-2 bottom-1/2 translate-y-1/2 cursor-pointer p-2 w-10 h-10 justify-center rounded-full bg-secondary hover:bg-amber-600 duration-200 transition flex items-center hover:text-gray-900"
+                aria-label="Ir para o testemunho anterior"
+            >
+                <CaretLeft color="#F5F5F5" size={20} />
+            </button>
 
-                <button
-                    className="next-button absolute z-50 text-gray-700 right-2 bottom-1/2 translate-y-1/2 cursor-pointer bg-secondary hover:bg-amber-600 duration-200 transition p-2 rounded-full flex items-center hover:text-gray-900"
-                    aria-label="Ir para o próximo testemunho"
-                >
-                    <CaretRight color="#F5F5F5 " />
-                </button>
+            <button
+                className="next-button absolute z-50 text-gray-700 right-2 bottom-1/2 translate-y-1/2 cursor-pointer bg-secondary hover:bg-amber-600 duration-200 transition p-2 w-10 h-10 justify-center rounded-full flex items-center hover:text-gray-900"
+                aria-label="Ir para o próximo testemunho"
+            >
+                <CaretRight color="#F5F5F5" size={20} />
+            </button>
 
 
 
             {/* Swiper */}
-            <Swiper
+            <Swiper className="h-full"
                 modules={[Navigation, Pagination, Scrollbar, Keyboard, Autoplay]}
                 spaceBetween={10}
                 slidesPerView={1}
@@ -84,8 +84,9 @@ const Testemunhas = () => {
             >
                 {testemunhas.map((membro, index) => (
                     <SwiperSlide key={index}>
-                        <div className="px-10 min-h-90 justify-center  flex flex-col">
-                            <p className="text-text text-center">
+
+                        <div className="px-10 pb-10 min-h-90 justify-center  flex flex-col">
+                            <p className="text-text z-50 min-h-20 text-center">
                                 &quot;{membro.text}&quot;
                             </p>
                             <div className="flex flex-col pt-4 gap-1 items-center justify-center">
@@ -94,6 +95,7 @@ const Testemunhas = () => {
                                 <img src={membro.photo} alt={membro.author} className="w-14 object-cover h-14 rounded-full" />
                             </div>
                         </div>
+
                     </SwiperSlide>
                 ))}
             </Swiper>

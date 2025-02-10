@@ -12,11 +12,12 @@ function Serviços() {
 
 
   class Service {
-    constructor(title, description, icon, image) {
+    constructor(title, description, icon, image, alt) {
       this.title = title;
       this.description = description;
       this.icon = icon;
       this.image = image;
+      this.alt = alt;
     }
   }
 
@@ -25,25 +26,29 @@ function Serviços() {
       "Instalação de HVAC",
       "Oferecemos soluções especializadas para a instalação e manutenção de sistemas de aquecimento, ventilação e ar-condicionado, garantindo eficiência e conforto para o seu ambiente.",
       <GearSix size={50} className="text-secondary" />,
-      hvac
+      hvac,
+      "Imagem representando um sistema HVAC"
     ),
     new Service(
       "Engenharia Estrutural",
       "Desenvolvemos projetos estruturais seguros e eficientes, utilizando as melhores práticas da engenharia para garantir a durabilidade e a resistência das construções.",
       <HardHat size={50} className="text-secondary" />,
-      estrutura
+      estrutura,
+      "Imagem de um projeto de engenharia estrutural"
     ),
     new Service(
       "Melhoria do Local",
       "Implementamos melhorias em espaços industriais e comerciais, otimizando a infraestrutura para aumentar a produtividade e a segurança no local de trabalho.",
       <HandCoins size={50} className="text-secondary -rotate-10" />,
-      melhoria
+      melhoria,
+      "Imagem ilustrando a melhoria do local"
     ),
     new Service(
       "Pós-Construção",
       "Oferecemos serviços de finalização e ajustes após a construção, incluindo acabamentos, inspeções e manutenção para garantir a qualidade do projeto concluído.",
       <HouseLine size={50} className="text-secondary" />,
-      post
+      post,
+      "Imagem de um edifício pós-construção"
     )
   ];
 
@@ -65,7 +70,7 @@ function Serviços() {
 
               <div className="px-5 py-7 gap-4 flex flex-col">
 
-                <div className='icon select-none outline outline-neutral-800 flex items-center justify-center h-18 w-18 bg-primary/40 rounded-lg'>
+                <div className='icon select-none hover:bg-neutral-800/70 transition-colors duration-300 ease-in-out outline outline-neutral-800 flex items-center justify-center h-18 w-18 bg-primary/40 rounded-lg'>
 
                   {servico.icon}
 
@@ -77,7 +82,7 @@ function Serviços() {
                   <p className='description text-neutral-400 text-base titilliumRegular'>{servico.description}</p>
                 </div>
               </div>
-              <img src={servico.image} alt="" loading="lazy" className="w-full h-[50%] select-none object-cover rounded-lg" />
+              <img src={servico.image} alt={servico.alt} className="w-full h-[50%] select-none object-cover rounded-lg" />
             </div>
 
           ))}

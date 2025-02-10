@@ -81,7 +81,6 @@ const Footer = () => {
                         <div className="flex titilliumSemiBold gap-2 text-start flex-col items-start self-stretch">
                             <h2 className="text-lg">Link</h2>
                             <ul className="titilliumRegular flex gap-4 text-base">
-                                <div>
                                     <li className="hover:text-secondary transition-colors duration-200">
                                         <Link to='/' aria-label="Página inicial">Home</Link>
                                     </li>
@@ -94,8 +93,6 @@ const Footer = () => {
                                     <li className="hover:text-secondary transition-colors duration-200">
                                         <Link to='/obras' aria-label="Nossos serviços">Nossos Serviços</Link>
                                     </li>
-
-                                </div>
                             </ul>
                         </div>
 

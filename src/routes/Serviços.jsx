@@ -68,7 +68,7 @@ function Serviços() {
                   <p className='description text-neutral-400 text-base titilliumRegular'>{servico.description}</p>
                 </div>
               </div>
-              <img src={servico.image} alt="" className="w-full h-[60%] select-none object-cover rounded-lg" />
+              <img src={servico.image} alt="" loading="lazy" className="w-full h-[60%] select-none object-cover rounded-lg" />
             </div>
 
           ))}

@@ -48,14 +48,14 @@ const Testemunhas = () => {
 
             {/* Custom Buttons (Fora do Swiper) */}
             <button
-                    className="prev-button absolute z-50  text-gray-700 left-2 bottom-20 cursor-pointer p-2 rounded-full bg-secondary hover:bg-amber-600 duration-200 transition flex items-center hover:text-gray-900"
+                    className="prev-button absolute z-50  text-gray-700 left-2 bottom-1/2 translate-y-1/2 cursor-pointer p-2 rounded-full bg-secondary hover:bg-amber-600 duration-200 transition flex items-center hover:text-gray-900"
                     aria-label="Ir para o testemunho anterior"
                 >
                     <CaretLeft color="#F5F5F5 " />
                 </button>
 
                 <button
-                    className="next-button absolute z-50 text-gray-700 right-2 bottom-20 cursor-pointer bg-secondary hover:bg-amber-600 duration-200 transition p-2 rounded-full flex items-center hover:text-gray-900"
+                    className="next-button absolute z-50 text-gray-700 right-2 bottom-1/2 translate-y-1/2 cursor-pointer bg-secondary hover:bg-amber-600 duration-200 transition p-2 rounded-full flex items-center hover:text-gray-900"
                     aria-label="Ir para o próximo testemunho"
                 >
                     <CaretRight color="#F5F5F5 " />
@@ -84,7 +84,7 @@ const Testemunhas = () => {
             >
                 {testemunhas.map((membro, index) => (
                     <SwiperSlide key={index}>
-                        <div className="px-10 min-h-90 justify-start pt-12 flex flex-col">
+                        <div className="px-10 min-h-90 justify-center  flex flex-col">
                             <p className="text-text text-center">
                                 &quot;{membro.text}&quot;
                             </p>

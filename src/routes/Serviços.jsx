@@ -61,7 +61,7 @@ function Serviços() {
       <Navbar />
       <main className="w-full bg-primary flex flex-col items-center justify-center gap-10 min-h-screen">
 
-        <h1 className="text-5xl text-center -mt-30 text-text circularBold">Fornecemos um serviço excelente <br /> para nossos clientes</h1>
+        <h1 className="text-5xl text-center -mt-34 text-text circularBold">Fornecemos um serviço excelente <br /> para nossos clientes</h1>
 
         <div className="cards flex items-center justify-center gap-10 w-full">
 

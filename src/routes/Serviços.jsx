@@ -11,33 +11,42 @@ import melhoria from '../assets/services/melhoria.webp'
 function Serviços() {
 
 
-  const services = [
-    {
-      title: "Instalação de HVAC",
-      description: "Oferecemos soluções especializadas para a instalação e manutenção de sistemas de aquecimento, ventilação e ar-condicionado, garantindo eficiência e conforto para o seu ambiente.",
-      icon: <GearSix size={50} className="text-secondary" />,
-      image: hvac
-    },
-    {
-      title: "Engenharia Estrutural",
-      description: "Desenvolvemos projetos estruturais seguros e eficientes, utilizando as melhores práticas da engenharia para garantir a durabilidade e a resistência das construções.",
-      icon: <HardHat size={50} className="text-secondary" />,
-      image: estrutura
-
-    },
-    {
-      title: "Melhoria do Local",
-      description: "Implementamos melhorias em espaços industriais e comerciais, otimizando a infraestrutura para aumentar a produtividade e a segurança no local de trabalho.",
-      icon: <HandCoins size={50} className="text-secondary -rotate-10" />,
-      image: melhoria
-    },
-    {
-      title: "Pós-Construção",
-      description: "Oferecemos serviços de finalização e ajustes após a construção, incluindo acabamentos, inspeções e manutenção para garantir a qualidade do projeto concluído.",
-      icon: <HouseLine size={50} className="text-secondary" />,
-      image: post
+  class Service {
+    constructor(title, description, icon, image) {
+      this.title = title;
+      this.description = description;
+      this.icon = icon;
+      this.image = image;
     }
+  }
+
+  const services = [
+    new Service(
+      "Instalação de HVAC",
+      "Oferecemos soluções especializadas para a instalação e manutenção de sistemas de aquecimento, ventilação e ar-condicionado, garantindo eficiência e conforto para o seu ambiente.",
+      <GearSix size={50} className="text-secondary" />,
+      hvac
+    ),
+    new Service(
+      "Engenharia Estrutural",
+      "Desenvolvemos projetos estruturais seguros e eficientes, utilizando as melhores práticas da engenharia para garantir a durabilidade e a resistência das construções.",
+      <HardHat size={50} className="text-secondary" />,
+      estrutura
+    ),
+    new Service(
+      "Melhoria do Local",
+      "Implementamos melhorias em espaços industriais e comerciais, otimizando a infraestrutura para aumentar a produtividade e a segurança no local de trabalho.",
+      <HandCoins size={50} className="text-secondary -rotate-10" />,
+      melhoria
+    ),
+    new Service(
+      "Pós-Construção",
+      "Oferecemos serviços de finalização e ajustes após a construção, incluindo acabamentos, inspeções e manutenção para garantir a qualidade do projeto concluído.",
+      <HouseLine size={50} className="text-secondary" />,
+      post
+    )
   ];
+
 
 
 
@@ -68,7 +77,7 @@ function Serviços() {
                   <p className='description text-neutral-400 text-base titilliumRegular'>{servico.description}</p>
                 </div>
               </div>
-              <img src={servico.image} alt="" loading="lazy" className="w-full h-[60%] select-none object-cover rounded-lg" />
+              <img src={servico.image} alt="" loading="lazy" className="w-full h-[50%] select-none object-cover rounded-lg" />
             </div>
 
           ))}

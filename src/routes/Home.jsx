@@ -81,9 +81,9 @@ function Home() {
                 <AnimatedAside />
 
                 {/* About Section */}
-                <article className="w-full bg-primary flex items-center p-30 h-screen">
+                <article className="w-full bg-primary flex items-center -mt-30 p-30 h-screen">
                     <div className="space-x-20 relative px-20 flex flex-row items-center justify-between">
-                        <img src={peopleHome} alt="Equipe da Construtora Nova Horizonte" className="md:w-[50rem] select-none h-auto" />
+                        <img src={peopleHome} loading="lazy" alt="Equipe da Construtora Nova Horizonte" className="md:w-[50rem] select-none h-auto" />
                         <div className="space-y-5">
                             <h2 className="text-6xl/15 circularBold text-text">
                                 <span className="text-secondary">25 anos</span> <br /> de experiência!

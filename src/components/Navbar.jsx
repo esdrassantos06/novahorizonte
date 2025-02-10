@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <header className='bg-primary flex fixed top-0 w-full h-20 z-50'>
             <nav className='flex w-full items-center justify-between'>
-                <Link to='/' className='select-none -space-y-3 ml-10 mb-1 flex flex-col items-center' aria-label='Ir para a página inicial'>
+                <Link to='/' title='Construtora Nova Horizonte' className='select-none -space-y-3 ml-10 mb-1 flex flex-col items-center' aria-label='Ir para a página inicial'>
                     <img src={image} className='w-14 select-none h-14 object-contain' alt='Logo' />
                     <div className='flex select-none flex-col items-center -space-y-1'>
                         <p className='montserrat select-none text-xs'>Construtora</p>

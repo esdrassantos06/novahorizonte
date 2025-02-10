@@ -92,7 +92,7 @@ const Equipa = () => {
                             <img
                                 src={membro.foto}
                                 className="w-82.5 h-94 select-none rounded-lg object-cover"
-                                alt={membro.nome}
+                                alt={membro.nome} loading='lazy'
                             />
                             <div className="flex flex-col">
                                 <h3 className="text-lg circularBold">{membro.nome}</h3>

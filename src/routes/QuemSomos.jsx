@@ -12,7 +12,7 @@ function QuemSomos() {
       <Navbar />
       <main className="w-full bg-primary pt-20 min-h-screen">
         <section className="about-us-container flex w-full h-[84vh]">
-          <div className="basis-1/2 p-36 flex items-start h-full part-1">
+          <div className="basis-1/2 px-20 py-30 flex items-start h-full part-1">
             <div className="w-full pt-18 flex flex-col items-center justify-center">
               <div className="title-about-us mb-10">
                 <h1 className="text-text circularBold text-6xl">Sobre <span className="text-secondary">Nós</span></h1>
@@ -55,7 +55,7 @@ function QuemSomos() {
 
           <div className="basis-1/2 h-full bg-secondary flex flex-col justify-center items-center">
 
-            <div className="title-mission flex flex-col gap-3 w-full ">
+            <div className="title-mission flex flex-col pt-4 gap-3 w-full ">
               <h2 className="text-primary titilliumBold text-lg">COMO TRABALHAMOS?</h2>
               <h1 className="text-text w-[60%] text-5xl circularBold">Como Trabalhar com a Nova Horizonte</h1>
             </div>

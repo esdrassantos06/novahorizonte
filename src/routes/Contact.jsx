@@ -12,6 +12,23 @@ import { useNavigate } from "react-router-dom"; // Para navegar para pagina de a
 
 function Contact() {
 
+    // Como esse é menor, não vou utilizar classes
+    const servicos = [
+        {
+          title: "Instalação de HVAC",
+        },
+        {
+          title: "Engenharia Estrutural",
+        },
+        {
+          title: "Melhoria do Local",
+        },
+        {
+          title: "Pós-Construção",
+        }
+      ];
+      
+
     const navigate = useNavigate();
 
     
@@ -190,9 +207,9 @@ function Contact() {
                                         onChange={handleChange}
                                     >
                                         <option value="" className="text-gray-500">Selecione o seu Serviço *</option>
-                                        <option className="text-black" value="Serviço 1">Serviço 1</option>
-                                        <option className="text-black" value="Serviço 2">Serviço 2</option>
-                                        <option className="text-black" value="Serviço 3">Serviço 3</option>
+                                        {servicos.map((servico, i) => (
+                                            <option key={i} value={servico.title} className="text-black">{servico.title}</option>
+                                        ))}
                                     </select>
                                 </div>
                             </div>

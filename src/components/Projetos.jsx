@@ -7,79 +7,28 @@ const Projetos = () => {
     const [mostrarProj, setMostrarProj] = useState(false);
 
 
+
+    class Projeto {
+        constructor(nome, tipo, background, cliente, data, duracao, preco) {
+            this.nome = nome;
+            this.tipo = tipo;
+            this.background = background;
+            this.cliente = cliente;
+            this.data = data;
+            this.duracao = duracao;
+            this.preco = preco + " €";
+        }
+    } // Classe para criar objetos de projetos e deixar código mais fácil de fazer manutenção
+
     const projetos = [
-        {
-            nome: "Casa de 2 Andares",
-            tipo: "Lorem Ipsum",
-            background: "backgroundDestaque1",
-            cliente: "Stellar Ltda",
-            data: "15 Out 2020",
-            duracao: "8M",
-            preco: (Math.floor(Math.random() * (450000 - 250000) + 250000)).toLocaleString('pt-PT') + " €"
-        },
-        {
-            nome: "Prédio Branco",
-            tipo: "Lorem Ipsum",
-            background: "backgroundDestaque2",
-            cliente: "Construtora Apex S.A.",
-            data: "23 Mar 2021",
-            duracao: "1A, 2M",
-            preco: (Math.floor(Math.random() * (900000 - 600000) + 600000)).toLocaleString('pt-PT') + " €"
-        },
-        {
-            nome: "Prédio Amarelo",
-            tipo: "Lorem Ipsum",
-            background: "backgroundDestaque4",
-            cliente: "Incorporadora Summit",
-            data: "07 Jan 2022",
-            duracao: "1A",
-            preco: (Math.floor(Math.random() * (800000 - 500000) + 500000)).toLocaleString('pt-PT') + " €"
-        },
-        {
-            nome: "Casa em Grécia",
-            tipo: "Lorem Ipsum",
-            background: "backgroundDestaque3",
-            cliente: "Global Ventures Corp",
-            data: "30 Jun 2021",
-            duracao: "6M",
-            preco: (Math.floor(Math.random() * (350000 - 200000) + 200000)).toLocaleString('pt-PT') + " €"
-        },
-        {
-            nome: "Casa de 2 Andares",
-            tipo: "Lorem Ipsum",
-            background: "backgroundDestaque1",
-            cliente: "PI Group",
-            data: "12 Ago 2022",
-            duracao: "9M",
-            preco: (Math.floor(Math.random() * (450000 - 250000) + 250000)).toLocaleString('pt-PT') + " €"
-        },
-        {
-            nome: "Prédio Branco",
-            tipo: "Lorem Ipsum",
-            background: "backgroundDestaque2",
-            cliente: "Elite Properties Inc",
-            data: "19 Nov 2021",
-            duracao: "1A, 3M",
-            preco: (Math.floor(Math.random() * (900000 - 600000) + 600000)).toLocaleString('pt-PT') + " €"
-        },
-        {
-            nome: "Prédio Amarelo",
-            tipo: "Lorem Ipsum",
-            background: "backgroundDestaque4",
-            cliente: "Nexus Development",
-            data: "03 Mai 2022",
-            duracao: "11M",
-            preco: (Math.floor(Math.random() * (800000 - 50000) + 500000)).toLocaleString('pt-PT') + " €"
-        },
-        {
-            nome: "Casa em Grécia",
-            tipo: "Lorem Ipsum",
-            background: "backgroundDestaque3",
-            cliente: "Horizon Builders Group",
-            data: "28 Fev 2021",
-            duracao: "7M",
-            preco: (Math.floor(Math.random() * (350000 - 200000) + 20000)).toLocaleString('pt-PT') + " €"
-        },
+        new Projeto("Casa de 2 Andares", "Lorem Ipsum", "backgroundDestaque1", "Stellar Ltda", "15 Out 2020", "8M", 234567),
+        new Projeto("Prédio Branco", "Lorem Ipsum", "backgroundDestaque2", "Construtora Apex S.A.", "23 Mar 2021", "1A, 2M", 345678),
+        new Projeto("Prédio Amarelo", "Lorem Ipsum", "backgroundDestaque4", "Incorporadora Summit", "07 Jan 2022", "1A", 456789),
+        new Projeto("Casa em Grécia", "Lorem Ipsum", "backgroundDestaque3", "Global Ventures Corp", "30 Jun 2021", "6M", 567890),
+        new Projeto("Casa de 2 Andares", "Lorem Ipsum", "backgroundDestaque1", "PI Group", "12 Ago 2022", "9M", 678901),
+        new Projeto("Prédio Branco", "Lorem Ipsum", "backgroundDestaque2", "Elite Properties Inc", "19 Nov 2021", "1A, 3M", 789012),
+        new Projeto("Prédio Amarelo", "Lorem Ipsum", "backgroundDestaque4", "Nexus Development", "03 Mai 2022", "11M", 890123),
+        new Projeto("Casa em Grécia", "Lorem Ipsum", "backgroundDestaque3", "Horizon Builders Group", "28 Fev 2021", "7M", 901234),
     ];
 
 

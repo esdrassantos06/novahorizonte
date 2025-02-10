@@ -22,8 +22,8 @@ const ScrollComponent = () => {
 
     return (
         <div className='slider' style={{
-            '--width': '100px', '--height': '70px', '--quantity': '8'
-        }}>
+            '--width': '100px', '--height': '70px', '--quantity': '8'}}>
+
             <div className="list">
 
 
@@ -40,8 +40,10 @@ const ScrollComponent = () => {
 
 
             </div>
+            
         </div>
     )
+
 }
 
 export default ScrollComponent

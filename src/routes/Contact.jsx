@@ -13,6 +13,8 @@ import { useNavigate } from "react-router-dom"; // Para navegar para pagina de a
 function Contact() {
 
     const navigate = useNavigate();
+
+    
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -20,6 +22,8 @@ function Contact() {
         service: "",
         details: "",
     }); //Armazenar dados do form
+
+
 
     const [errors, setErrors] = useState({});
 
@@ -29,14 +33,22 @@ function Contact() {
         phone: /^(\+351\s?)?\d{9}$/,
     }; // Regex para validar email, nome e telefone
 
+
     const validateField = (field, value) => {
+        // value é o valor digitado pelo usuario
+
+
         let errorMsg = "";
+
+
         if (!regexPatterns[field].test(value.trim())) {
+
+            
             if (field === "name") errorMsg = "Nome inválido! Use apenas letras e espaços.";
             if (field === "email") errorMsg = "Email inválido! Insira um email válido.";
             if (field === "phone") errorMsg = "Telefone inválido! Deve conter 9 dígitos, com ou sem +351.";
 
-            //Caso tenha algum erro, vai aparecer a errorMsg no lugar do erro 
+            //Caso o input não esteja de acordo com o regex, vai aparecer a mensagem de erro
 
 
         }

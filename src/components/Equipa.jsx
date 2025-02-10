@@ -18,29 +18,21 @@ import 'swiper/css/scrollbar';
 
 const Equipa = () => {
 
-    const equipa = [
-        {
-            nome: 'João Silva',
-            cargo: 'Trabalhador',
-            foto: fotohomem1,
-        },
-        {
-            nome: 'José Santos',
-            cargo: 'Engenheiro Civil',
-            foto: fotohomem2,
-        },
-        {
-            nome: 'Pedro Almeida',
-            cargo: 'Designer de Interiores',
-            foto: fotohomem3,
-        },
-        {
-            nome: 'Mohammed Ali',
-            cargo: 'Gerente de Marketing',
-            foto: fotohomem4,
-        },
-    ]
+    class Equipa {
+        constructor(nome, cargo, foto) {
+            this.nome = nome;
+            this.cargo = cargo;
+            this.foto = foto;
+        }
+    }
 
+    const equipa = [
+        new Equipa('João Silva', 'Trabalhador', fotohomem1),
+        new Equipa('José Santos', 'Engenheiro Civil', fotohomem2),
+        new Equipa('Pedro Almeida', 'Designer de Interiores', fotohomem3),
+        new Equipa('Mohammed Ali', 'Gerente de Marketing', fotohomem4),
+    ];
+    
 
     return (
         <div className="h-full rounded-lg w-full flex items-center p-20 justify-center relative">

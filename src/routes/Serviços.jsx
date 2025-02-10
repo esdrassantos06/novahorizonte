@@ -51,8 +51,8 @@ function Serviços() {
 
         <div className="cards flex items-center justify-center gap-10 w-full">
 
-          {services.map((servico, i) => (
-            <div key={i} className="card flex flex-col bg-quaternary w-90 h-100 rounded-2xl">
+          {services.map((servico, index) => (
+            <div key={index} className="card flex flex-col bg-quaternary w-90 h-100 rounded-2xl">
 
               <div className="px-5 py-7 gap-4 flex flex-col">
 

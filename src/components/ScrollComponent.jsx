@@ -1,11 +1,11 @@
-import agaKhan from '../assets/premios/aga-khan.png'
-import mipim from '../assets/premios/mipim.png'
-import pritz from '../assets/premios/pritzker.png'
-import riba from '../assets/premios/riba.png'
-import breeam from '../assets/premios/breeam.svg'
-import ipa from '../assets/premios/ipa.png'
-import europanostra from '../assets/premios/europanostra.png'
-import miesarch from '../assets/premios/miesarch.png'
+import agaKhan from '../assets/premios/aga-khan.webp'
+import mipim from '../assets/premios/mipim.webp'
+import pritz from '../assets/premios/pritzker.webp'
+import riba from '../assets/premios/riba.webp'
+import breeam from '../assets/premios/breeam.webp'
+import ipa from '../assets/premios/ipa.webp'
+import europanostra from '../assets/premios/europanostra.webp'
+import miesarch from '../assets/premios/miesarch.webp'
 
 const ScrollComponent = () => {
     const images = [

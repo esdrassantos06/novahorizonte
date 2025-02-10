@@ -66,11 +66,11 @@ function Serviços() {
         <div className="cards flex items-center justify-center gap-10 w-full">
 
           {services.map((servico, index) => (
-            <div key={index} className="card flex flex-col bg-quaternary w-90 h-100 rounded-2xl">
+            <div key={index} className="card flex flex-col transition-colors duration-300 hover:bg-quaternary/50 shadow-2xl shadow-black bg-quaternary w-90 h-100 rounded-2xl">
 
               <div className="px-5 py-7 gap-4 flex flex-col">
 
-                <div className='icon select-none hover:bg-neutral-800/70 transition-colors duration-300 ease-in-out outline outline-neutral-800 flex items-center justify-center h-18 w-18 bg-primary/40 rounded-lg'>
+                <div className='icon select-none  ease-in-out outline outline-neutral-800 flex items-center justify-center h-18 w-18 bg-primary/40 rounded-lg'>
 
                   {servico.icon}
 

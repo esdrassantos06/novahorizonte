@@ -8,7 +8,7 @@ useLocation está sendo usado para localizar onde o url da página está e modif
 Ex: Quando você sai da página home e vai para "quem somos", a cor do quem somos muda para laranja e o underline aparece sem precisar fazer hover
 
 */
-import image from '../assets/favicon/Favicon.png'
+import image from '../assets/favicon/Favicon.webp'
 
 // Para a navbar, irei utilizar a fonte titillium
 

@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import AnimatedAside from "../components/AnimatedAside"
 import { ReadCvLogo, CheckCircle, ArrowCircleUpRight } from '@phosphor-icons/react'
-import peopleHome from '../assets/images/PeopleHome.png'
-import signature from '../assets/images/signature.png'
+import peopleHome from '../assets/images/PeopleHome.webp'
+import signature from '../assets/images/signature.webp'
 
 function Home() {
     return (

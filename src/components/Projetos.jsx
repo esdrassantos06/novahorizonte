@@ -21,14 +21,14 @@ const Projetos = () => {
     } // Classe para criar objetos de projetos e deixar código mais fácil de fazer manutenção
 
     const projetos = [
-        new Projeto("Casa de 2 Andares", "Lorem Ipsum", "backgroundDestaque1", "Stellar Ltda", "15 Out 2020", "8M", "234,567"),
-        new Projeto("Prédio Branco", "Lorem Ipsum", "backgroundDestaque2", "Construtora Apex S.A.", "23 Mar 2021", "1A, 2M", "345,678"),
-        new Projeto("Prédio Amarelo", "Lorem Ipsum", "backgroundDestaque4", "Incorporadora Summit", "07 Jan 2022", "1A", "456,789"),
-        new Projeto("Casa em Grécia", "Lorem Ipsum", "backgroundDestaque3", "Global Ventures Corp", "30 Jun 2021", "6M", "567,890"),
-        new Projeto("Casa de 2 Andares", "Lorem Ipsum", "backgroundDestaque1", "PI Group", "12 Ago 2022", "9M", "678,901"),
-        new Projeto("Prédio Branco", "Lorem Ipsum", "backgroundDestaque2", "Elite Properties Inc", "19 Nov 2021", "1A, 3M", "789,012"),
-        new Projeto("Prédio Amarelo", "Lorem Ipsum", "backgroundDestaque4", "Nexus Development", "03 Mai 2022", "11M", "890,123"),
-        new Projeto("Casa em Grécia", "Lorem Ipsum", "backgroundDestaque3", "Horizon Builders Group", "28 Fev 2021", "7M", "901,234"),
+        new Projeto("Casa de 2 Andares", "Lorem Ipsum", "backgroundDestaque1", "Stellar Ltda", "15 Out 2020", "8M", "234 567"),
+        new Projeto("Prédio Branco", "Lorem Ipsum", "backgroundDestaque2", "Construtora Apex S.A.", "23 Mar 2021", "1A, 2M", "345 678"),
+        new Projeto("Prédio Amarelo", "Lorem Ipsum", "backgroundDestaque4", "Incorporadora Summit", "07 Jan 2022", "1A", "456 789"),
+        new Projeto("Casa em Grécia", "Lorem Ipsum", "backgroundDestaque3", "Global Ventures Corp", "30 Jun 2021", "6M", "567 890"),
+        new Projeto("Casa de 2 Andares", "Lorem Ipsum", "backgroundDestaque1", "PI Group", "12 Ago 2022", "9M", "678 901"),
+        new Projeto("Prédio Branco", "Lorem Ipsum", "backgroundDestaque2", "Elite Properties Inc", "19 Nov 2021", "1A, 3M", "789 012"),
+        new Projeto("Prédio Amarelo", "Lorem Ipsum", "backgroundDestaque4", "Nexus Development", "03 Mai 2022", "11M", "890 123"),
+        new Projeto("Casa em Grécia", "Lorem Ipsum", "backgroundDestaque3", "Horizon Builders Group", "28 Fev 2021", "7M", "901 234"),
     ];
 
 

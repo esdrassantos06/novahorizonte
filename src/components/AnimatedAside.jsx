@@ -8,15 +8,30 @@ const AnimatedAside = () => {
 
 
   const animateNumber = (targetValue, setterFunction) => {
+
+
     let currentValue = 0;
+
     const interval = setInterval(() => {
+
+
       currentValue += Math.ceil(targetValue / 30); // Dividindo por 30, a animação fica mais suave
+
+
       if (currentValue >= targetValue) {
+
         currentValue = targetValue; // Quando atingir o valor final, para
         clearInterval(interval); // Para a animação
+
       }
+
+
       setterFunction(currentValue); // Atualiza o estado com o novo valor
+
+
     }, 50); // Intervalo de 50ms para atualizar o número
+
+
   };
 
   useEffect(() => {
@@ -25,6 +40,8 @@ const AnimatedAside = () => {
     animateNumber(200, setNumber2);
     animateNumber(20, setNumber3);
   }, []);
+
+
 
   return (
     <aside id="animated-aside" className="w-1/2 select-none p-10 flex space-x-40">

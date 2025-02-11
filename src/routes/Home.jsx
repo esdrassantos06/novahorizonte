@@ -63,13 +63,13 @@ function Home() {
                     </header>
 
                     {/* Features List */} 
-                    <aside className="absolute select-none md:left-[80%] transform z-40 -skew-1 -translate-x-1/2 bottom-[-50px] w-150 text-nowrap bg-orange-500 text-text p-6 rounded-lg shadow-lg">
+                    <aside className="absolute select-none md:left-[80%] h-40 transform z-40 -skew-1 -translate-x-1/2 bottom-[-50px] w-150 text-nowrap bg-orange-500 text-text p-6 rounded-lg shadow-lg">
                         <ul className="space-y-2 circularBook" role="list">
                             <li className="flex items-center animate-pulse transform transition-all gap-2">
                                 <CheckCircle size={28} aria-hidden="true" /> Sistema de Qualidade Rigoroso, Garantia de Satisfação a 100%!
                             </li>
                             <li className="flex items-center animate-pulse transform transition-all gap-2">
-                                <CheckCircle size={28} aria-hidden="true" /> Equipa Profissional Altamente Qualificada, Processos de Testes Precisos!
+                                <CheckCircle size={28} aria-hidden="true" /> Equipa Profissional Qualificada, Processos de Testes Precisos!
                             </li>
                             <li className="flex items-center animate-pulse transform transition-all gap-2">
                                 <CheckCircle size={28} aria-hidden="true" /> Mão-de-obra Imbatível, Profissionais Certificados e Experientes!

@@ -52,10 +52,10 @@ const Navbar = () => {
         >
           <img
             src={image}
-            className="w-14 select-none h-14 object-contain"
+            className={`md:w-14 select-none md:h-14  ${menuOpen ? 'w-14 h-14' : 'w-18 h-18'} object-contain`}
             alt="Logo"
           />
-          <div className="flex select-none flex-col items-center -space-y-1">
+          <div className={`md:flex ${menuOpen ? 'flex' : 'hidden'}  select-none flex-col items-center -space-y-1`}>
             <p className="montserrat select-none text-xs">Construtora</p>
             <p className="montserrat select-none text-nowrap text-sm font-bold">
               Nova <span className="text-secondary">Horizonte</span>
@@ -64,13 +64,13 @@ const Navbar = () => {
         </Link>
 
         <div
-          className={`absolute left-0 top-20 flex justify-center items-center text-center w-full min-h-[40vh] md:min-h-0 md:top-1/2 md:-translate-y-1/2 bg-primary md:left-1/2 z-10 md:-translate-x-1/2 transition-all duration-300 ${menuOpen ? "block" : "hidden md:flex"}`}
+          className={`absolute left-0 top-20 flex text-nowrap justify-start max-md:pl-10 text-start items-start max-md:w-[70%] min-h-screen md:min-h-0 md:top-1/2 md:-translate-y-1/2 bg-primary md:left-1/2 z-10 md:-translate-x-1/2 transition-all duration-300 ${menuOpen ? "block" : "hidden md:flex"}`}
         >
-          <ul className="flex z-19 md:flex-row flex-col titilliumSemiBold gap-5">
+          <ul className="flex max-md:w-[90%] z-19 md:flex-row max-md:gap-10 flex-col max-md:mt-5 titilliumSemiBold gap-5">
             {links.map((link, index) => (
               <li
                 key={index}
-                className={`${location.pathname === link.path ? "text-secondary underline" : "text-text hover:underline"} underline-offset-5 decoration-2 decoration-secondary transition-all duration-300`}
+                className={`${location.pathname === link.path ? "text-secondary md:underline" : "text-text md:hover:underline"} max-md:hover:text-secondary underline-offset-5 decoration-2 decoration-secondary max-md:pb-4 max-md:border-b-[1px] border-secondary transition-all duration-300`}
               >
                 <Link
                   to={link.path}

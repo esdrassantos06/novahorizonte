@@ -28,40 +28,41 @@ const AnimatedAside = () => {
   }, []);
 
   return (
-    <aside
-      id="animated-aside"
-      className="w-1/2 mt-10 xl:mt-10 select-none p-10 flex sm:gap-10 md:gap-20 lg:gap-40"
-    >
-      <div className="flex gap-2 items-center">
-        <span className="text-6xl titilliumBold text-secondary">
-          {number1}+
-        </span>
-        <span className="text-text text-sm titilliumRegular">
-          Anos de <br />
-          experiência
-        </span>
-      </div>
+<aside
+  id="animated-aside"
+  className=" grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-20 lg:gap-40 mt-10 sm:mb-40 select-none max-sm:w-screen w-full items-center"
+>
+  <div className="flex justify-center w-full gap-2 items-center">
+    <span className="md:text-6xl text-4xl titilliumBold text-secondary">
+      {number1}+
+    </span>
+    <span className="text-text text-sm titilliumRegular">
+      Anos de <br />
+      experiência
+    </span>
+  </div>
 
-      <div className="flex gap-2 items-center">
-        <span className="text-6xl titilliumBold text-secondary">
-          {number2}+
-        </span>
-        <span className="text-text text-sm titilliumRegular">
-          Projetos <br />
-          Completos
-        </span>
-      </div>
+  <div className="flex w-full justify-center gap-2 items-center">
+    <span className="md:text-6xl text-4xl titilliumBold text-secondary">
+      {number2}+
+    </span>
+    <span className="text-text text-sm titilliumRegular">
+      Projetos <br />
+      Completos
+    </span>
+  </div>
 
-      <div className="flex gap-2 items-center">
-        <span className="text-6xl titilliumBold text-secondary">
-          {number3}+
-        </span>
-        <span className="text-text text-sm titilliumRegular">
-          Prémios <br />
-          Globais
-        </span>
-      </div>
-    </aside>
+  <div className="flex max-md:w-full gap-2 items-center justify-center md:text-center col-span-2 md:col-span-1">
+    <span className="md:text-6xl text-4xl titilliumBold text-secondary">
+      {number3}+
+    </span>
+    <span className="text-text text-sm titilliumRegular">
+      Prémios <br />
+      Globais
+    </span>
+  </div>
+</aside>
+
   );
 };
 

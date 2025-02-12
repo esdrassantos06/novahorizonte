@@ -40,7 +40,7 @@ const Equipa = () => {
     <div className="h-full rounded-lg w-full flex items-center p-20 justify-center relative">
       {/* Custom Buttons (Fora do Swiper) */}
       <button
-        className="prev-button absolute left-[30px] top-[40%] -translate-y-1/2 z-50"
+        className="prev-button absolute left-[30px] top-[40%] -translate-y-1/2 z-20"
         aria-label="Ir para a imagem anterior"
       >
         <div className="bg-primary outline-text/20 outline hover:bg-zinc-800 cursor-pointer p-2 rounded-lg">
@@ -49,7 +49,7 @@ const Equipa = () => {
       </button>
 
       <button
-        className="next-button absolute right-[30px] top-[40%] -translate-y-1/2 z-50"
+        className="next-button absolute right-[30px] top-[40%] -translate-y-1/2 z-20"
         aria-label="Ir para a próxima imagem"
       >
         <div className="bg-primary outline-text/20 outline hover:bg-zinc-800 cursor-pointer p-2 rounded-lg">

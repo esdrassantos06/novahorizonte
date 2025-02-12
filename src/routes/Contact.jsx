@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
 import { CheckCircle } from "@phosphor-icons/react";
+import Navbar from "../components/Navbar";
 
 import emailjs from "@emailjs/browser";
 // Estou utilizando a lib EmailJS para enviar o email
@@ -115,7 +116,8 @@ function Contact() {
 
   return (
     <>
-      <main className="w-full pt-10 flex items-center flex-col justify-center px-20 bg-primary min-h-screen">
+    <Navbar />
+      <main className="w-full pt-20 flex items-center flex-col justify-center px-20 bg-primary min-h-screen">
         <div className="container mb-10 w-full items-center justify-center flex flex-col">
           <h1 className="text-6xl circularBold text-text">
             Liderança na Construção Civil e Engenharia

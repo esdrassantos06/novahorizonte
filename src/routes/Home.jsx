@@ -27,20 +27,20 @@ function Home() {
           ></div>
 
           {/* Hero Content */}
-          <header className="relative z-10 px-20 flex space-y-5 flex-col justify-center h-full">
-            <h1 className="text-5xl/tight circularBold text-text">
+          <section className="relative z-10 md:px-20 px-5 flex gap-5 flex-col justify-center max-sm:mx-auto w-full h-full">
+            <h1 className="md:text-5xl/tight text-4xl/tight md:text-nowrap circularBold text-text">
               Construindo o Futuro, <br /> Tijolo por{" "}
               <span className="text-secondary">Tijolo</span>.
             </h1>
-            <p className="text-text w-1/2 text-base titilliumRegular">
+            <p className="text-text sm:w-1/2 w-full flex items-center justify-center text-base titilliumRegular">
               A Construtora Nova Horizonte é especializada em construção civil,
               oferecendo serviços completos para projetos residenciais,
               comerciais e industriais. Nosso compromisso é com a qualidade,
               segurança e inovação em cada obra.
             </p>
-            <nav className="buttons mt-4 gap-8 flex">
+            <nav className="buttons mt-4 max-sm:w-full gap-8 flex flex-row max-xs:flex-col">
               <Link
-                className="group text-text flex items-center gap-2 text-base px-4 py-2 circularBook transition-all duration-300 ease-in-out transform bg-secondary hover:bg-secondary/70 rounded-2xl"
+                className="group text-text flex items-center justify-center gap-2 text-base w-32 h-11.5 circularBook transition-all duration-300 ease-in-out transform bg-secondary hover:bg-secondary/70 rounded-2xl"
                 to="/servicos"
                 aria-label="Ir para página de serviços"
               >
@@ -55,7 +55,7 @@ function Home() {
               </Link>
 
               <Link
-                className="text-black gap-2 group transform flex items-center justify-center px-4 py-2 text-base circularBook p-1 border border-gray-800 bg-white transition-all duration-150 hover:bg-text/80 rounded-2xl"
+                className="text-black gap-2 group transform flex items-center justify-center w-32 h-11.5 text-base circularBook bg-white transition-all duration-150 hover:bg-text/80 rounded-2xl"
                 to="/obras"
                 aria-label="Ir para página de projetos"
               >
@@ -69,10 +69,10 @@ function Home() {
                 </span>
               </Link>
             </nav>
-          </header>
+          </section>
 
           {/* Features List */}
-          <aside className="absolute flex items-center select-none xl:left-[78%] lg:left-[30%] left-[40%] h-40 transform z-40 -skew-1 -translate-x-1/2 bottom-[-50px] w-fit xl:w-140 lg:text-nowrap bg-orange-500 text-text p-6 rounded-lg shadow-lg">
+          <aside className="absolute flex max-md:hidden items-center select-none xl:left-[78%] lg:left-[30%] left-[40%] h-40 transform z-99 -skew-1 -translate-x-1/2 bottom-[-50px] w-fit xl:w-140 lg:text-nowrap bg-orange-500 text-text p-6 rounded-lg shadow-lg">
             <ul className="gap-2 flex flex-col circularBook" role="list">
               <li className="flex items-center animate-pulse transform transition-all gap-2">
                 <CheckCircle size={28} aria-hidden="true" /> Sistema de
@@ -90,49 +90,49 @@ function Home() {
           </aside>
         </article>
 
-        <AnimatedAside />
 
         {/* About Section */}
-        <article className="w-full max-w-screen bg-primary flex items-center lg:-mt-25 mt-30 p-30 h-screen">
+        <article className="w-full flex-col max-w-screen bg-primary flex items-center lg:-mt-25 md:mt-10 lg:pt-30 px-10 h-full">
+        <AnimatedAside />
           <div className="gap-20 relative lg:px-20 flex-col-reverse flex lg:flex-row items-center justify-center w-full">
             <img
               src={peopleHome}
               loading="lazy"
               alt="Equipe da Construtora Nova Horizonte"
-              className="lg:w-[50rem] w-[30rem] -mt-20 lg:mt-0 select-none xl:h-auto h-90 object-cover"
+              className="md:w-[50rem] max-md:max-w-80 md:-mt-20 lg:mt-0 select-none h-auto object-cover"
             />
-            <div className="flex flex-col gap-5">
-              <h2 className="text-6xl/15 text-center lg:text-start text-nowrap circularBold text-text">
+            <div className="flex flex-col max-md:mt-20 gap-5">
+              <h2 className="md:text-6xl/15 text-5xl text-center lg:text-start md:text-nowrap circularBold text-text">
                 <span className="text-secondary">25 anos</span> <br /> de
                 experiência!
               </h2>
 
-              <div className="about-content flex flex-col gap-2 lg:gap-0 items-center w-full justify-center">
-                <p className="mt-4 w-full lg:text-justify text-center text-text italic titilliumRegular text-base">
+              <div className="about-content mt-4 flex flex-col gap-2 lg:gap-0 lg:items-start items-center w-full justify-center">
+                <p className="w-fit md:w-[70%] lg:text-justify text-center text-text italic titilliumRegular text-base">
                   A Construtora Nova Horizonte é referência no mercado, com 25
                   anos de tradição que atestam nosso compromisso com a qualidade
                   e a confiança em todos os projetos de construção e reforma.
                 </p>
 
-                <p className="lg:text-justify text-center w-full text-text italic titilliumRegular text-base mt-2">
+                <p className="w-fit md:w-[70%] lg:text-justify text-center  text-text italic titilliumRegular text-base ">
                   Nossa equipe é composta por profissionais altamente
                   qualificados, cuja expertise e dedicação se traduzem em cada
                   projeto executado.
                 </p>
 
-                <p className="lg:text-justify text-center w-full text-text italic titilliumRegular text-base mt-2">
+                <p className="lg:text-justify text-center w-fit md:w-[70%] text-text italic titilliumRegular text-base">
                   Nós entendemos que cada obra é única, e por isso, adotamos uma
                   abordagem personalizada em cada etapa do processo.
                 </p>
 
-                <p className="lg:text-justify text-center w-full text-text italic titilliumRegular text-base mt-2">
+                <p className="lg:text-justify text-center w-fit md:w-[70%] text-text italic titilliumRegular text-base">
                   Seja na construção de imóveis residenciais, comerciais ou em
                   reformas que rejuvenescem espaços, nossa missão é transformar
                   cada projeto em realidade.
                 </p>
               </div>
 
-              <footer className="pt-5 w-full flex flex-col items-center lg:items-start justify-center">
+              <div className="pt-5 w-full flex flex-col items-center lg:items-start justify-center">
                 <img
                   className="invert-100 w-40 select-none"
                   loading="lazy"
@@ -142,7 +142,7 @@ function Home() {
                 <p className="text-text italic titilliumRegular text-sm mt-2">
                   Esdras Santos - Fundador
                 </p>
-              </footer>
+              </div>
             </div>
           </div>
         </article>

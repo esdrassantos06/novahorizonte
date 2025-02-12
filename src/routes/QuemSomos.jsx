@@ -152,7 +152,7 @@ function QuemSomos() {
         <section className="our-team-container w-full flex flex-col justify-center gap-4 bg-primary items-center h-screen">
           <div className="flex flex-col bg-primary shadow-2xl shadow-primary rounded-lg p-10 items-center justify-center w-[80vw]">
             <div className="title-our-team py-4 flex items-center justify-start ml-60 w-full">
-              <h1 className="text-text circularBold text-5xl">
+              <h1 className="text-text text-center circularBold text-5xl">
                 Uma Equipa Dedicada de Profissionais Qualificados <br />{" "}
                 Comprometidos com a{" "}
                 <span className="text-secondary">Excelência</span>

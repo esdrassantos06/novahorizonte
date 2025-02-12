@@ -25,7 +25,7 @@ const Footer = () => {
 
 
   return (
-    <footer className="font-sans tracking-wide bg-terceary text-text px-10 pt-12 pb-6">
+    <footer className="tracking-wide relative z-999 bg-terceary text-text px-10 pt-12 pb-6">
       <div className="flex flex-wrap justify-between gap-10">
         <div className="max-w-md">
           <Link to='/' aria-label="Logo da Empresa" className="logo-footer cursor-pointer select-none flex flex-col text-start -space-y-1 self-start">
@@ -143,7 +143,7 @@ const Footer = () => {
 
 
         <div className="max-lg:min-w-[140px]">
-          <h4 className="titilliumSemiBold text-base relative max-sm:cursor-pointer">Escritório</h4>
+          <h4 className="titilliumSemiBold text-lg relative max-sm:cursor-pointer">Escritório</h4>
 
           <ul className="mt-6 space-y-4">
             <li>
@@ -153,7 +153,7 @@ const Footer = () => {
         </div>
 
         <div className="max-lg:min-w-[140px]">
-          <h4 className="titilliumSemiBold text-base relative max-sm:cursor-pointer">Contacto</h4>
+          <h4 className="titilliumSemiBold text-lg relative max-sm:cursor-pointer">Contacto</h4>
           <ul className="space-y-2 titilliumRegular mt-6">
             <li>
               <span className='text-sm'>novahorizonteempresa@gmail.com</span>
@@ -166,8 +166,8 @@ const Footer = () => {
 
 
 
-        <div className="max-lg:min-w-[140px] ">
-          <h4 className=" text-base titilliumSemiBold relative max-sm:cursor-pointer">Link</h4>
+        <div className="max-lg:min-w-[140px]">
+          <h4 className=" text-lg titilliumSemiBold relative max-sm:cursor-pointer">Link</h4>
 
           <ul className="space-y-3 titilliumRegular mt-6">
             {links.map((link, index) => (
@@ -182,6 +182,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
+
         <div
           id="backToTop"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -200,8 +201,8 @@ const Footer = () => {
 
       <hr className="mt-10 mb-6 border-gray-600/70" />
 
-      <div className="flex flex-wrap max-md:flex-col gap-4">
-        <ul className="md:flex titilliumRegular text-zinc-400 md:space-x-6 max-md:space-y-2">
+      <div className="flex titilliumRegular flex-wrap max-md:flex-col gap-4">
+        <ul className="md:flex text-zinc-400 md:space-x-6 max-md:space-y-2">
           <li>
             <Link
               className="hover:text-secondary text-sm text-zinc-400 transition-colors duration-200"

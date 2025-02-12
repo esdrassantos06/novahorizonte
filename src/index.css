@@ -5,4 +5,8 @@
   --color-secondary: #ff7420;
   --color-terceary: #141416;
   --color-text: #f5f5f5;
+
+  --breakpoint-xs: 20rem;
 }
+
+

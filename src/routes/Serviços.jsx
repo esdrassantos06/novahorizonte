@@ -51,23 +51,23 @@ function Serviços() {
   return (
     <>
       <Navbar />
-      <main className="w-full bg-primary flex flex-col items-center justify-center gap-10 min-h-screen">
+      <main className="w-full bg-primary flex flex-col items-center justify-center max-md:pt-70 gap-10 min-h-screen">
         <h1 className="text-5xl text-center -mt-34 text-text circularBold">
           Fornecemos um serviço excelente <br /> para nossos clientes
         </h1>
 
-        <div className="cards flex items-center justify-center gap-10 w-full">
+        <div className="cards flex md:flex-row flex-col  items-center justify-center md:gap-10 gap-40 w-full">
           {services.map((servico, index) => (
             <div
               key={index}
-              className="card flex flex-col transition-colors duration-300 hover:bg-terceary/50 shadow-2xl shadow-black bg-terceary w-90 h-100 rounded-2xl"
+              className="card relative flex flex-col transition-all duration-300 hover:bg-terceary/50 shadow-xl hover:shadow-2xl shadow-black bg-terceary md:w-90 md:h-100 w-60 h-fit rounded-2xl"
             >
-              <div className="px-5 py-7 gap-4 flex flex-col">
-                <div className="icon select-none  ease-in-out outline outline-neutral-800 flex items-center justify-center h-18 w-18 bg-primary/40 rounded-lg">
+              <div className="px-5 pb-60 py-7 gap-4 flex flex-col">
+                <div className="icon select-none ease-in-out outline outline-neutral-800 flex items-center justify-center md:h-18 md:w-18 bg-primary/40 rounded-lg">
                   {servico.icon}
                 </div>
 
-                <div className="text flex flex-col gap-1 h-40 text-text">
+                <div className="text pb-20 flex flex-col gap-1 h-40 text-text">
                   <h2 className="title text-xl circularBold">
                     {servico.title}
                   </h2>
@@ -79,7 +79,7 @@ function Serviços() {
               <img
                 src={servico.image}
                 alt={servico.alt}
-                className="w-full h-[50%] select-none object-cover rounded-lg"
+                className="w-full h-[50%] absolute -bottom-20  select-none object-cover rounded-lg"
               />
             </div>
           ))}

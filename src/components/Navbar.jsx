@@ -81,11 +81,21 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            <Link
+            className="text-text md:hidden flex w-full h-10 items-center justify-center z-99 titilliumBold mr-10 cursor-pointer  rounded-lg transition-colors duration-300 hover:bg-amber-700 bg-secondary"
+            to="/contact"
+            aria-label="Ir para a página de contato"
+          >
+            Contacte-nos
+          </Link>
           </ul>
+
         </div>
+
+        
         <div className="z-50 flex items-center">
           <Link
-            className="text-text z-99 titilliumBold mr-10 cursor-pointer px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-amber-700 bg-secondary"
+            className="text-text md:flex hidden z-99 titilliumBold mr-10 cursor-pointer px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-amber-700 bg-secondary"
             to="/contact"
             aria-label="Ir para a página de contato"
           >

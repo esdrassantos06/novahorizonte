@@ -23,27 +23,34 @@ const Footer = () => {
     },
   ];
 
-
   return (
-    <footer className="tracking-wide relative z-999 bg-terceary text-text px-10 pt-12 pb-6">
+    <footer className="bg-terceary text-text relative z-999 px-10 pt-12 pb-6 tracking-wide">
       <div className="flex flex-wrap justify-between gap-10">
         <div className="max-w-md">
-          <Link to='/' aria-label="Logo da Empresa" className="logo-footer cursor-pointer select-none flex flex-col text-start -space-y-1 self-start">
-            <p className='montserrat text-base'>Construtora</p>
-            <p className='montserrat text-nowrap text-lg font-bold'>Nova <span className='text-secondary'>Horizonte</span></p>
+          <Link
+            to="/"
+            aria-label="Logo da Empresa"
+            className="logo-footer flex cursor-pointer flex-col -space-y-1 self-start text-start select-none"
+          >
+            <p className="montserrat text-base">Construtora</p>
+            <p className="montserrat text-lg font-bold text-nowrap">
+              Nova <span className="text-secondary">Horizonte</span>
+            </p>
           </Link>
 
           <div className="mt-6">
-            <p className="text-text titilliumRegular leading-relaxed text-sm">A Construtora Nova Horizonte é especialista em construção civil,
+            <p className="text-text titilliumRegular text-sm leading-relaxed">
+              A Construtora Nova Horizonte é especialista em construção civil,
               oferecendo soluções completas e personalizadas para projetos
-              residenciais, comerciais e industriais.</p>
+              residenciais, comerciais e industriais.
+            </p>
           </div>
 
           <ul className="mt-10 flex space-x-5">
             <li>
               <a
                 href="https://linkedin.com"
-                className="flex items-center justify-center group rounded-full"
+                className="group flex items-center justify-center rounded-full"
                 target="_blank"
                 aria-label="LinkedIn"
               >
@@ -64,7 +71,7 @@ const Footer = () => {
             <li>
               <a
                 href="https://instagram.com"
-                className="flex items-center justify-center group  rounded-full"
+                className="group flex items-center justify-center rounded-full"
                 target="_blank"
                 aria-label="Instagram"
               >
@@ -91,7 +98,7 @@ const Footer = () => {
             <li>
               <a
                 href="https://X.com"
-                className="flex items-center justify-center group rounded-full"
+                className="group flex items-center justify-center rounded-full"
                 target="_blank"
                 aria-label="X (Twitter)"
               >
@@ -112,13 +119,12 @@ const Footer = () => {
                   <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
                 </svg>
               </a>
-
             </li>
 
             <li>
               <a
                 href="https://facebook.com"
-                className="flex items-center justify-center group rounded-full"
+                className="group flex items-center justify-center rounded-full"
                 target="_blank"
                 aria-label="Facebook"
               >
@@ -136,40 +142,43 @@ const Footer = () => {
                 </svg>
               </a>
             </li>
-
           </ul>
         </div>
 
-
-
         <div className="max-lg:min-w-[140px]">
-          <h4 className="titilliumSemiBold text-lg relative max-sm:cursor-pointer">Escritório</h4>
+          <h4 className="titilliumSemiBold relative text-lg max-sm:cursor-pointer">
+            Escritório
+          </h4>
 
           <ul className="mt-6 space-y-4">
             <li>
-              <p className='titilliumRegular text-sm'>Avenida dos Construtores, <br /> 456, Porto, Portugal</p>
+              <p className="titilliumRegular text-sm">
+                Avenida dos Construtores, <br /> 456, Porto, Portugal
+              </p>
             </li>
           </ul>
         </div>
 
         <div className="max-lg:min-w-[140px]">
-          <h4 className="titilliumSemiBold text-lg relative max-sm:cursor-pointer">Contacto</h4>
-          <ul className="space-y-2 titilliumRegular mt-6">
+          <h4 className="titilliumSemiBold relative text-lg max-sm:cursor-pointer">
+            Contacto
+          </h4>
+          <ul className="titilliumRegular mt-6 space-y-2">
             <li>
-              <span className='text-sm'>novahorizonteempresa@gmail.com</span>
+              <span className="text-sm">novahorizonteempresa@gmail.com</span>
             </li>
             <li>
-              <span className='text-sm'>Telefone: (+351) 912 345 678</span>
+              <span className="text-sm">Telefone: (+351) 912 345 678</span>
             </li>
           </ul>
         </div>
 
-
-
         <div className="max-lg:min-w-[140px]">
-          <h4 className=" text-lg titilliumSemiBold relative max-sm:cursor-pointer">Link</h4>
+          <h4 className="titilliumSemiBold relative text-lg max-sm:cursor-pointer">
+            Link
+          </h4>
 
-          <ul className="space-y-3 titilliumRegular mt-6">
+          <ul className="titilliumRegular mt-6 space-y-3">
             {links.map((link, index) => (
               <li
                 key={index}
@@ -186,10 +195,10 @@ const Footer = () => {
         <div
           id="backToTop"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className={`flex flex-col ${location.pathname === "/obrigado-pelo-contacto" ? "hidden" : ""} gap-1 titilliumSemiBold justify-center items-center cursor-pointer`}
+          className={`flex flex-col ${location.pathname === "/obrigado-pelo-contacto" ? "hidden" : ""} titilliumSemiBold cursor-pointer items-center justify-center gap-1`}
         >
           <button
-            className="bg-secondary cursor-pointer flex items-center justify-center h-10 w-10 rounded-full shadow-lg hover:bg-amber-700 transition"
+            className="bg-secondary flex h-10 w-10 cursor-pointer items-center justify-center rounded-full shadow-lg transition hover:bg-amber-700"
             aria-label="Voltar ao topo"
           >
             <CaretUp size={20} />
@@ -201,8 +210,8 @@ const Footer = () => {
 
       <hr className="mt-10 mb-6 border-gray-600/70" />
 
-      <div className="flex titilliumRegular flex-wrap max-md:flex-col gap-4">
-        <ul className="md:flex text-zinc-400 md:space-x-6 max-md:space-y-2">
+      <div className="titilliumRegular flex flex-wrap gap-4 max-md:flex-col">
+        <ul className="text-zinc-400 max-md:space-y-2 md:flex md:space-x-6">
           <li>
             <Link
               className="hover:text-secondary text-sm text-zinc-400 transition-colors duration-200"
@@ -223,13 +232,11 @@ const Footer = () => {
           </li>
         </ul>
 
-
-        <p className="text-sm md:ml-auto text-zinc-400 ">
+        <p className="text-sm text-zinc-400 md:ml-auto">
           &copy; {new Date().getFullYear()} Esdras Santos. All Rights Reserved.
         </p>
       </div>
     </footer>
-
   );
 };
 

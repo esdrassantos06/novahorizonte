@@ -42,35 +42,37 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <header className="bg-primary flex fixed top-0 w-full h-20 z-50">
+    <header className="bg-primary fixed top-0 z-50 flex h-20 w-full">
       <nav className="flex w-full items-center justify-between">
         <Link
           to="/"
           title="Construtora Nova Horizonte"
-          className="select-none -space-y-3 ml-10 z-99 mb-1 flex flex-col items-center"
+          className="z-99 mb-1 ml-10 flex flex-col items-center -space-y-3 select-none"
           aria-label="Ir para a página inicial"
         >
           <img
             src={image}
-            className={`md:w-14 select-none md:h-14  ${menuOpen ? 'w-14 h-14' : 'w-18 h-18'} object-contain`}
+            className={`select-none md:h-14 md:w-14 ${menuOpen ? "h-14 w-14" : "h-18 w-18"} object-contain`}
             alt="Logo"
           />
-          <div className={`md:flex ${menuOpen ? 'flex' : 'hidden'}  select-none flex-col items-center -space-y-1`}>
-            <p className="montserrat select-none text-xs">Construtora</p>
-            <p className="montserrat select-none text-nowrap text-sm font-bold">
+          <div
+            className={`md:flex ${menuOpen ? "flex" : "hidden"} flex-col items-center -space-y-1 select-none`}
+          >
+            <p className="montserrat text-xs select-none">Construtora</p>
+            <p className="montserrat text-sm font-bold text-nowrap select-none">
               Nova <span className="text-secondary">Horizonte</span>
             </p>
           </div>
         </Link>
 
         <div
-          className={`absolute left-0 top-20 flex text-nowrap justify-start max-md:pl-10 text-start items-start max-md:w-[70%] min-h-screen md:min-h-0 md:top-1/2 md:-translate-y-1/2 bg-primary md:left-1/2 z-10 md:-translate-x-1/2 transition-all duration-300 ${menuOpen ? "block" : "hidden md:flex"}`}
+          className={`bg-primary absolute top-20 left-0 z-10 flex min-h-screen items-start justify-start text-start text-nowrap transition-all duration-300 max-md:w-[70%] max-md:pl-10 md:top-1/2 md:left-1/2 md:min-h-0 md:-translate-x-1/2 md:-translate-y-1/2 ${menuOpen ? "block" : "hidden md:flex"}`}
         >
-          <ul className="flex max-md:w-[90%] z-19 md:flex-row max-md:gap-10 flex-col max-md:mt-5 titilliumSemiBold gap-5">
+          <ul className="titilliumSemiBold z-19 flex flex-col gap-5 max-md:mt-5 max-md:w-[90%] max-md:gap-10 md:flex-row">
             {links.map((link, index) => (
               <li
                 key={index}
-                className={`${location.pathname === link.path ? "text-secondary md:underline" : "text-text md:hover:underline"} max-md:hover:text-secondary underline-offset-5 decoration-2 decoration-secondary max-md:pb-4 max-md:border-b-[1px] border-secondary transition-all duration-300`}
+                className={`${location.pathname === link.path ? "text-secondary md:underline" : "text-text md:hover:underline"} max-md:hover:text-secondary decoration-secondary border-secondary decoration-2 underline-offset-5 transition-all duration-300 max-md:border-b-[1px] max-md:pb-4`}
               >
                 <Link
                   to={link.path}
@@ -82,20 +84,18 @@ const Navbar = () => {
               </li>
             ))}
             <Link
-            className="text-text md:hidden flex w-full h-10 items-center justify-center z-99 titilliumBold mr-10 cursor-pointer  rounded-lg transition-colors duration-300 hover:bg-amber-700 bg-secondary"
-            to="/contact"
-            aria-label="Ir para a página de contato"
-          >
-            Contacte-nos
-          </Link>
+              className="text-text titilliumBold bg-secondary z-99 mr-10 flex h-10 w-full cursor-pointer items-center justify-center rounded-lg transition-colors duration-300 hover:bg-amber-700 md:hidden"
+              to="/contact"
+              aria-label="Ir para a página de contato"
+            >
+              Contacte-nos
+            </Link>
           </ul>
-
         </div>
 
-        
         <div className="z-50 flex items-center">
           <Link
-            className="text-text md:flex hidden z-99 titilliumBold mr-10 cursor-pointer px-4 py-2 rounded-lg transition-colors duration-300 hover:bg-amber-700 bg-secondary"
+            className="text-text titilliumBold bg-secondary z-99 mr-10 hidden cursor-pointer rounded-lg px-4 py-2 transition-colors duration-300 hover:bg-amber-700 md:flex"
             to="/contact"
             aria-label="Ir para a página de contato"
           >
@@ -103,7 +103,7 @@ const Navbar = () => {
           </Link>
           <button
             onClick={toggleMenu}
-            className="text-text mr-10 md:hidden cursor-pointer"
+            className="text-text mr-10 cursor-pointer md:hidden"
           >
             {menuOpen ? <X size={40} /> : <List size={40} />}
           </button>

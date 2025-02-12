@@ -43,17 +43,17 @@ const testemunhas = [
 
 const Testemunhas = () => {
   return (
-    <div className="w-150 pb-4 mx-auto relative bg-zinc-800 px-14 titilliumRegular shadow-2xl rounded-lg overflow-hidden">
+    <div className="titilliumRegular relative mx-auto w-150 overflow-hidden rounded-lg bg-zinc-800 px-14 pb-4 shadow-2xl">
       {/* Custom Buttons (Fora do Swiper) */}
       <button
-        className="prev-button absolute z-50  text-gray-700 left-2 bottom-1/2 translate-y-1/2 cursor-pointer p-2 w-10 h-10 justify-center rounded-full bg-secondary hover:bg-amber-600 duration-200 transition flex items-center hover:text-gray-900"
+        className="prev-button bg-secondary absolute bottom-1/2 left-2 z-50 flex h-10 w-10 translate-y-1/2 cursor-pointer items-center justify-center rounded-full p-2 text-gray-700 transition duration-200 hover:bg-amber-600 hover:text-gray-900"
         aria-label="Ir para o testemunho anterior"
       >
         <CaretLeft color="#F5F5F5" size={20} />
       </button>
 
       <button
-        className="next-button absolute z-50 text-gray-700 right-2 bottom-1/2 translate-y-1/2 cursor-pointer bg-secondary hover:bg-amber-600 duration-200 transition p-2 w-10 h-10 justify-center rounded-full flex items-center hover:text-gray-900"
+        className="next-button bg-secondary absolute right-2 bottom-1/2 z-50 flex h-10 w-10 translate-y-1/2 cursor-pointer items-center justify-center rounded-full p-2 text-gray-700 transition duration-200 hover:bg-amber-600 hover:text-gray-900"
         aria-label="Ir para o próximo testemunho"
       >
         <CaretRight color="#F5F5F5" size={20} />
@@ -81,17 +81,17 @@ const Testemunhas = () => {
       >
         {testemunhas.map((membro, index) => (
           <SwiperSlide key={index}>
-            <div className="px-10 pb-10 min-h-90 justify-center  flex flex-col">
+            <div className="flex min-h-90 flex-col justify-center px-10 pb-10">
               <p className="text-text z-50 min-h-20 text-center">
                 &quot;{membro.text}&quot;
               </p>
-              <div className="flex flex-col pt-4 gap-1 items-center justify-center">
-                <p className="text-text font-bold text-lg">{membro.author}</p>
+              <div className="flex flex-col items-center justify-center gap-1 pt-4">
+                <p className="text-text text-lg font-bold">{membro.author}</p>
                 <p className="text-text mb-2 text-sm">{membro.role}</p>
                 <img
                   src={membro.photo}
                   alt={membro.author}
-                  className="w-14 object-cover h-14 rounded-full"
+                  className="h-14 w-14 rounded-full object-cover"
                 />
               </div>
             </div>

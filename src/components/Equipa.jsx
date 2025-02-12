@@ -37,22 +37,22 @@ const Equipa = () => {
   ];
 
   return (
-    <div className="h-full rounded-lg w-full flex items-center p-20 justify-center relative">
+    <div className="relative flex h-full w-full items-center justify-center rounded-lg p-20">
       {/* Custom Buttons (Fora do Swiper) */}
       <button
-        className="prev-button absolute left-[30px] top-[40%] -translate-y-1/2 z-20"
+        className="prev-button absolute top-[40%] left-[30px] z-20 -translate-y-1/2"
         aria-label="Ir para a imagem anterior"
       >
-        <div className="bg-primary outline-text/20 outline hover:bg-zinc-800 cursor-pointer p-2 rounded-lg">
+        <div className="bg-primary outline-text/20 cursor-pointer rounded-lg p-2 outline hover:bg-zinc-800">
           <ArrowLeft size={25} color="#fff" />
         </div>
       </button>
 
       <button
-        className="next-button absolute right-[30px] top-[40%] -translate-y-1/2 z-20"
+        className="next-button absolute top-[40%] right-[30px] z-20 -translate-y-1/2"
         aria-label="Ir para a próxima imagem"
       >
-        <div className="bg-primary outline-text/20 outline hover:bg-zinc-800 cursor-pointer p-2 rounded-lg">
+        <div className="bg-primary outline-text/20 cursor-pointer rounded-lg p-2 outline hover:bg-zinc-800">
           <ArrowRight size={25} color="#fff" />
         </div>
       </button>
@@ -86,16 +86,16 @@ const Equipa = () => {
       >
         {equipa.map((membro, index) => (
           <SwiperSlide key={index}>
-            <div className="membro mb-20 flex text-text flex-col items-center gap-2">
+            <div className="membro text-text mb-20 flex flex-col items-center gap-2">
               <img
                 src={membro.foto}
-                className="w-82.5 h-94 select-none rounded-lg object-cover"
+                className="h-94 w-82.5 rounded-lg object-cover select-none"
                 alt={membro.nome}
                 loading="lazy"
               />
               <div className="flex flex-col">
-                <h3 className="text-lg circularBold">{membro.nome}</h3>
-                <p className="text-base titilliumRegular">{membro.cargo}</p>
+                <h3 className="circularBold text-lg">{membro.nome}</h3>
+                <p className="titilliumRegular text-base">{membro.cargo}</p>
               </div>
             </div>
           </SwiperSlide>

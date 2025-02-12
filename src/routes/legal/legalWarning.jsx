@@ -3,14 +3,14 @@ import Footer from "../../components/Footer";
 function legalWarning() {
   return (
     <>
-      <div className="w-full mx-auto px-6 py-10 text-text flex flex-col items-center titilliumRegular bg-primary min-h-screen">
-        <h1 className="text-5xl titilliumBold mb-6">Aviso Legal</h1>
+      <div className="text-text titilliumRegular bg-primary mx-auto flex min-h-screen w-full flex-col items-center px-6 py-10">
+        <h1 className="titilliumBold mb-6 text-5xl">Aviso Legal</h1>
         <p className="mb-4">
           Este Aviso Legal regula o acesso, a navegação e a utilização deste
           website (doravante, o “Website”).
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Direito à Informação
         </h2>
         <p className="mb-4">
@@ -20,7 +20,7 @@ function legalWarning() {
           novahorizonteempresa@gmail.com
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Usuários
         </h2>
         <p className="mb-4">
@@ -28,7 +28,7 @@ function legalWarning() {
           aceitando, a partir desse acesso e/ou utilização, este Aviso Legal.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Uso do Website
         </h2>
         <p className="mb-4">
@@ -36,7 +36,7 @@ function legalWarning() {
           informações oferecidas na <strong>Nova Horizonte</strong>, incluindo,
           mas não se limitando a:
         </p>
-        <ul className="list-disc pl-6 space-y-2">
+        <ul className="list-disc space-y-2 pl-6">
           <li>
             Não se envolver em atividades ilícitas ou contrárias à ordem
             pública.
@@ -51,7 +51,7 @@ function legalWarning() {
           </li>
         </ul>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Propriedade Intelectual
         </h2>
         <p className="mb-4">
@@ -61,7 +61,7 @@ function legalWarning() {
           distribuição ou modificação sem a devida autorização.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Responsabilidade e Garantias
         </h2>
         <p className="mb-4">
@@ -71,7 +71,7 @@ function legalWarning() {
           Website.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Links para Sites Externos
         </h2>
         <p className="mb-4">
@@ -79,7 +79,7 @@ function legalWarning() {
           responsabilizamos pelo conteúdo e políticas desses sites.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Modificações
         </h2>
         <p className="mb-4">

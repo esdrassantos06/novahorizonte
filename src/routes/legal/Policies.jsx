@@ -3,8 +3,8 @@ import Footer from "../../components/Footer";
 function Policies() {
   return (
     <>
-      <div className="w-full mx-auto px-6 py-10 text-text flex flex-col items-center titilliumRegular bg-primary min-h-screen">
-        <h1 className="text-5xl titilliumBold mb-6">Política de Privacidade</h1>
+      <div className="text-text titilliumRegular bg-primary mx-auto flex min-h-screen w-full flex-col items-center px-6 py-10">
+        <h1 className="titilliumBold mb-6 text-5xl">Política de Privacidade</h1>
         <p className="mb-4">
           A sua privacidade é importante para nós. É política da{" "}
           <strong>Nova Horizonte</strong> respeitar a sua privacidade em relação
@@ -13,17 +13,17 @@ function Policies() {
           operamos.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Coleta de Informações
         </h2>
-        <p className="mb-4 ">
+        <p className="mb-4">
           Solicitamos informações pessoais apenas quando realmente precisamos
           delas para lhe fornecer um serviço. Fazemo-lo por meios justos e
           legais, com o seu conhecimento e consentimento. Também informamos por
           que estamos coletando e como será usado.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Retenção e Proteção de Dados
         </h2>
         <p className="mb-4 text-center">
@@ -34,7 +34,7 @@ function Policies() {
           autorizados.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Compartilhamento de Informações
         </h2>
         <p className="mb-4">
@@ -42,7 +42,7 @@ function Policies() {
           ou com terceiros, exceto quando exigido por lei.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Links para Sites Externos
         </h2>
         <p className="mb-4">
@@ -52,7 +52,7 @@ function Policies() {
           respectivas políticas de privacidade.
         </p>
 
-        <h2 className="text-2xl font-semibold text-secondary mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Compromisso do Usuário
         </h2>
         <p className="mb-4">
@@ -60,7 +60,7 @@ function Policies() {
           informações que o <strong>Nova Horizonte</strong> oferece no site,
           incluindo mas não se limitando a:
         </p>
-        <ul className="list-disc pl-6 space-y-2">
+        <ul className="list-disc space-y-2 pl-6">
           <li>
             Não se envolver em atividades ilegais ou contrárias à boa fé e à
             ordem pública.
@@ -76,7 +76,7 @@ function Policies() {
           </li>
         </ul>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Mais Informações
         </h2>
         <p className="mb-4">

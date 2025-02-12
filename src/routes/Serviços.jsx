@@ -51,27 +51,27 @@ function Serviços() {
   return (
     <>
       <Navbar />
-      <main className="w-full bg-primary flex flex-col items-center justify-center max-md:pt-70 gap-10 min-h-screen">
-        <h1 className="text-5xl text-center -mt-34 text-text circularBold">
+      <main className="bg-primary flex min-h-screen w-full flex-col items-center justify-center gap-10 max-md:pt-70">
+        <h1 className="text-text circularBold -mt-34 text-center text-5xl">
           Fornecemos um serviço excelente <br /> para nossos clientes
         </h1>
 
-        <div className="cards flex md:flex-row flex-col  items-center justify-center md:gap-10 gap-40 w-full">
+        <div className="cards flex w-full flex-col items-center justify-center gap-40 md:flex-row md:gap-10">
           {services.map((servico, index) => (
             <div
               key={index}
-              className="card relative flex flex-col transition-all duration-300 hover:bg-terceary/50 shadow-xl hover:shadow-2xl shadow-black bg-terceary md:w-90 md:h-100 w-60 h-fit rounded-2xl"
+              className="card hover:bg-terceary/50 bg-terceary relative flex h-fit w-60 flex-col rounded-2xl shadow-xl shadow-black transition-all duration-300 hover:shadow-2xl md:h-100 md:w-90"
             >
-              <div className="px-5 pb-60 py-7 gap-4 flex flex-col">
-                <div className="icon select-none ease-in-out outline outline-neutral-800 flex items-center justify-center md:h-18 md:w-18 bg-primary/40 rounded-lg">
+              <div className="flex flex-col gap-4 px-5 py-7 pb-60">
+                <div className="icon bg-primary/40 flex items-center justify-center rounded-lg outline outline-neutral-800 ease-in-out select-none md:h-18 md:w-18">
                   {servico.icon}
                 </div>
 
-                <div className="text pb-20 flex flex-col gap-1 h-40 text-text">
-                  <h2 className="title text-xl circularBold">
+                <div className="text text-text flex h-40 flex-col gap-1 pb-20">
+                  <h2 className="title circularBold text-xl">
                     {servico.title}
                   </h2>
-                  <p className="description text-neutral-400 text-base titilliumRegular">
+                  <p className="description titilliumRegular text-base text-neutral-400">
                     {servico.description}
                   </p>
                 </div>
@@ -79,7 +79,7 @@ function Serviços() {
               <img
                 src={servico.image}
                 alt={servico.alt}
-                className="w-full h-[50%] absolute -bottom-20  select-none object-cover rounded-lg"
+                className="absolute -bottom-20 h-[50%] w-full rounded-lg object-cover select-none"
               />
             </div>
           ))}

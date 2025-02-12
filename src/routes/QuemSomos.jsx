@@ -10,16 +10,16 @@ function QuemSomos() {
   return (
     <>
       <Navbar />
-      <main className="w-full bg-primary pt-20 min-h-screen">
-        <section className="about-us-container flex w-full h-[84vh]">
-          <div className="basis-1/2 px-20 py-30 flex items-start h-full part-1">
-            <div className="w-full pt-18 flex flex-col items-center justify-center">
+      <main className="bg-primary min-h-screen w-full pt-20">
+        <section className="about-us-container flex h-[84vh] w-full">
+          <div className="part-1 flex h-full basis-1/2 items-start px-20 py-30">
+            <div className="flex w-full flex-col items-center justify-center pt-18">
               <div className="title-about-us mb-10">
                 <h1 className="text-text circularBold text-6xl">
                   Sobre <span className="text-secondary">Nós</span>
                 </h1>
               </div>
-              <div className="text-text flex flex-col gap-2 text-base titilliumRegular paragraph-about-us">
+              <div className="text-text titilliumRegular paragraph-about-us flex flex-col gap-2 text-base">
                 <p className="text-justify">
                   Na Construtora Nova Horizonte, acreditamos que cada obra é
                   mais do que uma estrutura física; é a materialização de
@@ -40,11 +40,11 @@ function QuemSomos() {
             </div>
           </div>
 
-          <div className="basis-1/2 flex justify-start pl-5 items-center titilliumRegular part-2">
-            <div className="w-150 select-none h-150 flex flex-col items-center justify-center shadow-2xl shadow-secondary/20  rounded-lg">
+          <div className="titilliumRegular part-2 flex basis-1/2 items-center justify-start pl-5">
+            <div className="shadow-secondary/20 flex h-150 w-150 flex-col items-center justify-center rounded-lg shadow-2xl select-none">
               <img
                 src={photo1}
-                className="w-full inset-shadow-sm inset-shadow-black  h-full object-cover rounded-lg"
+                className="h-full w-full rounded-lg object-cover inset-shadow-sm inset-shadow-black"
                 alt="Duas pessoas na construção"
               />
             </div>
@@ -55,44 +55,44 @@ function QuemSomos() {
           <ScrollComponent />
         </div>
 
-        <section className="our-mission-container w-full flex bg-secondary justify-center items-center h-screen">
-          <div className="basis-1/2 flex pr-20 justify-end items-center titilliumRegular part-2">
-            <div className="w-180 select-none h-180 flex flex-col items-center justify-center shadow-2xl shadow-secondary/20  rounded-lg">
+        <section className="our-mission-container bg-secondary flex h-screen w-full items-center justify-center">
+          <div className="titilliumRegular part-2 flex basis-1/2 items-center justify-end pr-20">
+            <div className="shadow-secondary/20 flex h-180 w-180 flex-col items-center justify-center rounded-lg shadow-2xl select-none">
               <img
                 src={photo2}
                 loading="lazy"
-                className="w-full inset-shadow-sm inset-shadow-black  h-full object-cover rounded-lg"
+                className="h-full w-full rounded-lg object-cover inset-shadow-sm inset-shadow-black"
                 alt="Foto de uma pessoa segurando uma chave de construção"
               />
             </div>
           </div>
 
-          <div className="basis-1/2 h-full bg-secondary flex flex-col justify-center items-center">
-            <div className="title-mission flex flex-col pt-4 gap-3 w-full ">
+          <div className="bg-secondary flex h-full basis-1/2 flex-col items-center justify-center">
+            <div className="title-mission flex w-full flex-col gap-3 pt-4">
               <h2 className="text-primary titilliumBold text-lg">
                 COMO TRABALHAMOS?
               </h2>
-              <h1 className="text-text w-[60%] text-5xl circularBold">
+              <h1 className="text-text circularBold w-[60%] text-5xl">
                 Como Trabalhar com a Nova Horizonte
               </h1>
             </div>
 
-            <div className="flex flex-col gap-10 w-full px-10 mt-10">
-              <div className="modo1 flex items-center justify-center gap-10 relative w-full h-40">
+            <div className="mt-10 flex w-full flex-col gap-10 px-10">
+              <div className="modo1 relative flex h-40 w-full items-center justify-center gap-10">
                 <div className="icon-1">
-                  <div className="absolute top-6 select-none outline shadow-2xl shadow-black outline-zinc-500/50 flex w-9 h-9 rounded-full bg-white justify-center items-center">
+                  <div className="absolute top-6 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-2xl shadow-black outline outline-zinc-500/50 select-none">
                     <span className="text-secondary circularBook">1</span>
                   </div>
-                  <div className="icon-hammer bg-white w-25 h-25 p-2 flex justify-center items-center rounded-full">
+                  <div className="icon-hammer flex h-25 w-25 items-center justify-center rounded-full bg-white p-2">
                     <Hammer color="#FF7420" size={45} />
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <h2 className="text-2xl text-text circularBold">
+                  <h2 className="text-text circularBold text-2xl">
                     Consulta & Planeamento
                   </h2>
-                  <p className="titilliumRegular text-slate-200 w-[80%] text-base">
+                  <p className="titilliumRegular w-[80%] text-base text-slate-200">
                     Iniciamos com uma consulta detalhada para compreender a sua
                     visão, orçamento e objetivos do projeto. A nossa equipa
                     trabalha consigo para desenvolver um plano personalizado.
@@ -100,21 +100,21 @@ function QuemSomos() {
                 </div>
               </div>
 
-              <div className="modo2 flex items-center justify-center gap-10 relative w-full h-40">
+              <div className="modo2 relative flex h-40 w-full items-center justify-center gap-10">
                 <div className="icon-1">
-                  <div className="absolute top-6 select-none outline shadow-2xl shadow-black outline-zinc-500/50 flex w-9 h-9 rounded-full bg-white justify-center items-center">
+                  <div className="absolute top-6 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-2xl shadow-black outline outline-zinc-500/50 select-none">
                     <span className="text-secondary circularBook">2</span>
                   </div>
-                  <div className="icon-hammer bg-white w-25 h-25 p-2 flex justify-center items-center rounded-full">
+                  <div className="icon-hammer flex h-25 w-25 items-center justify-center rounded-full bg-white p-2">
                     <LightbulbFilament color="#FF7420" size={45} />
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <h2 className="text-2xl text-text circularBold">
+                  <h2 className="text-text circularBold text-2xl">
                     Design & Pré-Construção
                   </h2>
-                  <p className="titilliumRegular text-slate-200 w-[80%] text-base">
+                  <p className="titilliumRegular w-[80%] text-base text-slate-200">
                     Transformamos a sua ideia num conceito concreto,
                     desenvolvendo esboços, modelos e planeamentos técnicos.
                     Cuidamos de todas as aprovações e preparações necessárias
@@ -123,21 +123,21 @@ function QuemSomos() {
                 </div>
               </div>
 
-              <div className="modo3 flex items-center justify-center gap-10 relative w-full h-40">
+              <div className="modo3 relative flex h-40 w-full items-center justify-center gap-10">
                 <div className="icon-1">
-                  <div className="absolute top-6 select-none outline shadow-2xl shadow-black outline-zinc-500/50 flex w-9 h-9 rounded-full bg-white justify-center items-center">
+                  <div className="absolute top-6 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-2xl shadow-black outline outline-zinc-500/50 select-none">
                     <span className="text-secondary circularBook">3</span>
                   </div>
-                  <div className="icon-hammer bg-white w-25 h-25 p-2 flex justify-center items-center rounded-full">
+                  <div className="icon-hammer flex h-25 w-25 items-center justify-center rounded-full bg-white p-2">
                     <HandWithdraw color="#FF7420" size={45} />
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <h2 className="text-2xl text-text circularBold">
+                  <h2 className="text-text circularBold text-2xl">
                     Construção & Entrega
                   </h2>
-                  <p className="titilliumRegular text-slate-200 w-[80%] text-base">
+                  <p className="titilliumRegular w-[80%] text-base text-slate-200">
                     Damos vida ao projeto com uma execução precisa e controlada.
                     Utilizamos materiais de qualidade e seguimos as melhores
                     práticas para garantir durabilidade, segurança e excelência
@@ -149,10 +149,10 @@ function QuemSomos() {
           </div>
         </section>
 
-        <section className="our-team-container w-full flex flex-col justify-center gap-4 bg-primary items-center h-screen">
-          <div className="flex flex-col bg-primary shadow-2xl shadow-primary rounded-lg p-10 items-center justify-center w-[80vw]">
-            <div className="title-our-team py-4 flex items-center justify-start ml-60 w-full">
-              <h1 className="text-text text-center circularBold text-5xl">
+        <section className="our-team-container bg-primary flex h-screen w-full flex-col items-center justify-center gap-4">
+          <div className="bg-primary shadow-primary flex w-[80vw] flex-col items-center justify-center rounded-lg p-10 shadow-2xl">
+            <div className="title-our-team ml-60 flex w-full items-center justify-start py-4">
+              <h1 className="text-text circularBold text-center text-5xl">
                 Uma Equipa Dedicada de Profissionais Qualificados <br />{" "}
                 Comprometidos com a{" "}
                 <span className="text-secondary">Excelência</span>

@@ -3,15 +3,15 @@ import Footer from "../../components/Footer";
 function Cookies() {
   return (
     <>
-      <div className="w-full mx-auto px-6 py-10 text-text flex flex-col items-center titilliumRegular bg-primary min-h-screen">
-        <h1 className="text-5xl titilliumBold mb-6">Política de Cookies</h1>
+      <div className="text-text titilliumRegular bg-primary mx-auto flex min-h-screen w-full flex-col items-center px-6 py-10">
+        <h1 className="titilliumBold mb-6 text-5xl">Política de Cookies</h1>
         <p className="mb-4">
           Esta Política de Cookies explica como o{" "}
           <strong>Nova Horizonte</strong> utiliza cookies e tecnologias
           similares para reconhecer você quando visita nosso site.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           O que são Cookies?
         </h2>
         <p className="mb-4">
@@ -20,23 +20,23 @@ function Cookies() {
           usuário, lembrando preferências e informações de navegação.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Como Usamos os Cookies?
         </h2>
         <p className="mb-4">
           Utilizamos cookies para vários propósitos, incluindo:
         </p>
-        <ul className="list-disc pl-6 space-y-2">
+        <ul className="list-disc space-y-2 pl-6">
           <li>Melhorar a experiência do usuário e personalizar o conteúdo.</li>
           <li>Armazenar preferências do usuário para futuras visitas.</li>
           <li>Fornecer análise de tráfego e métricas do site.</li>
           <li>Permitir a exibição de anúncios relevantes.</li>
         </ul>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Tipos de Cookies que Utilizamos
         </h2>
-        <ul className="list-disc pl-6 space-y-2">
+        <ul className="list-disc space-y-2 pl-6">
           <li>
             <strong>Cookies Essenciais:</strong> Necessários para o
             funcionamento básico do site.
@@ -55,7 +55,7 @@ function Cookies() {
           </li>
         </ul>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Gerenciamento de Cookies
         </h2>
         <p className="mb-4">
@@ -64,7 +64,7 @@ function Cookies() {
           você recuse ou exclua cookies quando desejar.
         </p>
 
-        <h2 className="text-2xl text-secondary font-semibold mt-6 mb-2">
+        <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Mais Informações
         </h2>
         <p className="mb-4">

@@ -116,39 +116,39 @@ function Contact() {
 
   return (
     <>
-    <Navbar />
-      <main className="w-full pt-20 flex items-center flex-col justify-center px-20 bg-primary min-h-screen">
-        <div className="container mb-10 w-full items-center justify-center flex flex-col">
-          <h1 className="text-6xl circularBold text-text">
+      <Navbar />
+      <main className="bg-primary flex min-h-screen w-full flex-col items-center justify-center px-20 pt-20">
+        <div className="container mb-10 flex w-full flex-col items-center justify-center">
+          <h1 className="circularBold text-text text-6xl">
             Liderança na Construção Civil e Engenharia
           </h1>
           <div className="icons-contact titilliumRegular flex space-x-4 p-2">
-            <p className="gap-1 text-text flex">
+            <p className="text-text flex gap-1">
               <CheckCircle size={24} color="#fefbfb" weight="fill" /> Equipa
               Profissional
             </p>
-            <p className="gap-1 text-text flex">
+            <p className="text-text flex gap-1">
               <CheckCircle size={24} color="#fefbfb" weight="fill" /> 100%
               Satisfação
             </p>
-            <p className="gap-1 text-text flex">
+            <p className="text-text flex gap-1">
               <CheckCircle size={24} color="#fefbfb" weight="fill" /> Testes
               Precisos
             </p>
-            <p className="gap-1 text-text flex">
+            <p className="text-text flex gap-1">
               <CheckCircle size={24} color="#fefbfb" weight="fill" /> Preços
               Transparentes
             </p>
           </div>
         </div>
 
-        <div className="principal mb-10 space-x-5 w-full flex">
-          <div className="container rounded-lg bg-secondary p-10 w-[60%] formDiv">
-            <div className="title flex mb-5 flex-col">
-              <h2 className="mb-5 text-text text-4xl circularBold">
+        <div className="principal mb-10 flex w-full space-x-5">
+          <div className="bg-secondary formDiv container w-[60%] rounded-lg p-10">
+            <div className="title mb-5 flex flex-col">
+              <h2 className="text-text circularBold mb-5 text-4xl">
                 Solicitar um Orçamento
               </h2>
-              <p className="w-[80%] titilliumRegular text-base text-text">
+              <p className="titilliumRegular text-text w-[80%] text-base">
                 Oferecemos aos nossos clientes os melhores preços e serviços com
                 qualidade garantida. Orgulhamo-nos de tudo o que fazemos na Nova
                 Horizonte.
@@ -157,60 +157,60 @@ function Contact() {
 
             <form
               onSubmit={handleSubmit}
-              className="flex titilliumRegular w-full flex-col"
+              className="titilliumRegular flex w-full flex-col"
             >
-              <div className="flex items-center gap-4 justify-between">
-                <div className="mb-8 w-1/2 relative">
+              <div className="flex items-center justify-between gap-4">
+                <div className="relative mb-8 w-1/2">
                   <input
                     title=""
                     type="text"
                     id="name"
-                    className={`px-5 py-3 rounded-lg outline-secondary bg-white w-full ${errors.name ? "border-2 border-red-700" : ""} placeholder-custom`}
+                    className={`outline-secondary w-full rounded-lg bg-white px-5 py-3 ${errors.name ? "border-2 border-red-700" : ""} placeholder-custom`}
                     required
                     placeholder="Nome *"
                     value={formData.name}
                     onChange={handleChange}
                   />
                   {errors.name && (
-                    <span className="absolute left-0 bottom-[-24px] text-red-700 text-sm">
+                    <span className="absolute bottom-[-24px] left-0 text-sm text-red-700">
                       {errors.name}
                     </span>
                   )}
                 </div>
 
-                <div className="mb-8 w-1/2 relative">
+                <div className="relative mb-8 w-1/2">
                   <input
                     title=""
                     type="email"
                     id="email"
-                    className={`px-5 outline-secondary py-3 rounded-lg bg-white w-full ${errors.email ? "border-2 border-red-700" : ""} placeholder-custom`}
+                    className={`outline-secondary w-full rounded-lg bg-white px-5 py-3 ${errors.email ? "border-2 border-red-700" : ""} placeholder-custom`}
                     required
                     placeholder="Email *"
                     value={formData.email}
                     onChange={handleChange}
                   />
                   {errors.email && (
-                    <span className="absolute left-0 bottom-[-24px] text-red-700 text-sm">
+                    <span className="absolute bottom-[-24px] left-0 text-sm text-red-700">
                       {errors.email}
                     </span>
                   )}
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 justify-between">
-                <div className="mb-8 w-1/2 relative">
+              <div className="flex items-center justify-between gap-4">
+                <div className="relative mb-8 w-1/2">
                   <input
                     title=""
                     type="tel"
                     id="phone"
-                    className={`px-5 outline-secondary py-3 rounded-lg bg-white w-full ${errors.phone ? "border-2 border-red-700" : ""} placeholder-custom`}
+                    className={`outline-secondary w-full rounded-lg bg-white px-5 py-3 ${errors.phone ? "border-2 border-red-700" : ""} placeholder-custom`}
                     placeholder="Telefone *"
                     required
                     value={formData.phone}
                     onChange={handleChange}
                   />
                   {errors.phone && (
-                    <span className="absolute left-0 bottom-[-24px] text-red-700 text-sm">
+                    <span className="absolute bottom-[-24px] left-0 text-sm text-red-700">
                       {errors.phone}
                     </span>
                   )}
@@ -220,7 +220,7 @@ function Contact() {
                   <select
                     title=""
                     id="service"
-                    className="w-full outline-secondary px-5 py-3 rounded-lg bg-white"
+                    className="outline-secondary w-full rounded-lg bg-white px-5 py-3"
                     required
                     value={formData.service}
                     onChange={handleChange}
@@ -245,7 +245,7 @@ function Contact() {
                 <div className="mb-8 w-full">
                   <textarea
                     id="details"
-                    className="w-full outline-secondary rounded-lg bg-white px-5 py-3 h-40 resize-none"
+                    className="outline-secondary h-40 w-full resize-none rounded-lg bg-white px-5 py-3"
                     placeholder="Detalhes Adicionais..."
                     value={formData.details}
                     onChange={handleChange}
@@ -256,7 +256,7 @@ function Contact() {
               <div className="flex items-center justify-center">
                 <button
                   type="submit"
-                  className="w-full flex items-center justify-center bg-primary transition-colors duration-200 cursor-pointer hover:bg-zinc-800 text-text px-5 py-3 rounded-lg"
+                  className="bg-primary text-text flex w-full cursor-pointer items-center justify-center rounded-lg px-5 py-3 transition-colors duration-200 hover:bg-zinc-800"
                   aria-label="Submeter pedido"
                 >
                   Submeter Pedido
@@ -265,36 +265,36 @@ function Contact() {
             </form>
           </div>
 
-          <div className="container rounded-lg contactDiv p-10 bg-secondary w-[40%]">
-            <h1 className="mb-5 text-text text-4xl circularBold">Contactos</h1>
+          <div className="contactDiv bg-secondary container w-[40%] rounded-lg p-10">
+            <h1 className="text-text circularBold mb-5 text-4xl">Contactos</h1>
 
             <div className="info-contact mb-5">
-              <h2 className="text-text text-xl circularMedium">
+              <h2 className="text-text circularMedium text-xl">
                 Nossa Localização
               </h2>
-              <p className="titilliumRegular text-base text-text">
+              <p className="titilliumRegular text-text text-base">
                 Avenida dos Construtores, 456, Porto, Portugal
               </p>
             </div>
 
             <div className="info-contact mb-5">
-              <h2 className="text-text text-xl circularMedium">Contacto</h2>
+              <h2 className="text-text circularMedium text-xl">Contacto</h2>
               <div className="space-y-2">
-                <p className="titilliumRegular text-base text-text">
+                <p className="titilliumRegular text-text text-base">
                   novahorizonteempresa@gmail.com
                 </p>
-                <p className="titilliumRegular text-base text-text">
+                <p className="titilliumRegular text-text text-base">
                   Telefone: (+351) 912 345 678
                 </p>
               </div>
             </div>
 
             <div className="info-contact mb-5">
-              <h2 className="text-text text-xl circularMedium">Horário</h2>
-              <p className="titilliumRegular text-base text-text">
+              <h2 className="text-text circularMedium text-xl">Horário</h2>
+              <p className="titilliumRegular text-text text-base">
                 Segunda - Sexta
               </p>
-              <p className="titilliumBold  text-base text-text">
+              <p className="titilliumBold text-text text-base">
                 09:00 - 19:00{" "}
               </p>
             </div>

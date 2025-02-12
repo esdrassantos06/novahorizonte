@@ -44,7 +44,7 @@ Javascript, HTML, CSS...
 
 ```bash
  git clone https://github.com/esdrassantos06/novahorizonte.git
- 
+
  cd novahorizonte
 
 ```

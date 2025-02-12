@@ -1,227 +1,245 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
-    font-family: 'CircularStd';
-    src: url('/src/assets/fonts/CircularStd-Black.otf') format('opentype');
-    font-weight: 900;
+  font-family: "CircularStd";
+  src: url("/src/assets/fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
 }
 
 @font-face {
-    font-family: 'CircularStd';
-    src: url('/src/assets/fonts/CircularStd-Bold.otf') format('opentype');
-    font-weight: 700;
+  font-family: "CircularStd";
+  src: url("/src/assets/fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: 'CircularStd';
-    src: url('/src/assets/fonts/CircularStd-Book.otf') format('opentype');
-    font-weight: 400;
+  font-family: "CircularStd";
+  src: url("/src/assets/fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'CircularStd';
-    src: url('/src/assets/fonts/CircularStd-Medium.otf') format('opentype');
-    font-weight: 500;
+  font-family: "CircularStd";
+  src: url("/src/assets/fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
 }
 
 @font-face {
-    font-family: 'TitilliumWeb';
-    src: url('/src/assets/fonts/TitilliumWeb-Black.ttf') format('truetype');
-    font-weight: 900;
+  font-family: "TitilliumWeb";
+  src: url("/src/assets/fonts/TitilliumWeb-Black.ttf") format("truetype");
+  font-weight: 900;
 }
 
 @font-face {
-    font-family: 'TitilliumWeb';
-    src: url('/src/assets/fonts/TitilliumWeb-Bold.ttf') format('truetype');
-    font-weight: 700;
+  font-family: "TitilliumWeb";
+  src: url("/src/assets/fonts/TitilliumWeb-Bold.ttf") format("truetype");
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: 'TitilliumWeb';
-    src: url('/src/assets/fonts/TitilliumWeb-Regular.ttf') format('truetype');
-    font-weight: 400;
+  font-family: "TitilliumWeb";
+  src: url("/src/assets/fonts/TitilliumWeb-Regular.ttf") format("truetype");
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'TitilliumWeb';
-    src: url('/src/assets/fonts/TitilliumWeb-SemiBold.ttf') format('truetype');
-    font-weight: 600;
+  font-family: "TitilliumWeb";
+  src: url("/src/assets/fonts/TitilliumWeb-SemiBold.ttf") format("truetype");
+  font-weight: 600;
 }
 
 .circularBlack {
-    font-family: 'CircularStd', serif;
-    font-weight: 900;
+  font-family: "CircularStd", serif;
+  font-weight: 900;
 }
 
 .circularBold {
-    font-family: 'CircularStd', serif;
-    font-weight: 700;
+  font-family: "CircularStd", serif;
+  font-weight: 700;
 }
 
 .circularBook {
-    font-family: 'CircularStd', serif;
-    font-weight: 400;
+  font-family: "CircularStd", serif;
+  font-weight: 400;
 }
 
 .circularMedium {
-    font-family: 'CircularStd', serif;
-    font-weight: 500;
+  font-family: "CircularStd", serif;
+  font-weight: 500;
 }
 
 .titilliumBlack {
-    font-family: 'TitilliumWeb', sans-serif;
-    font-weight: 900;
+  font-family: "TitilliumWeb", sans-serif;
+  font-weight: 900;
 }
 
 .titilliumBold {
-    font-family: 'TitilliumWeb', sans-serif;
-    font-weight: 700;
+  font-family: "TitilliumWeb", sans-serif;
+  font-weight: 700;
 }
 
 .titilliumRegular {
-    font-family: 'TitilliumWeb', sans-serif;
-    font-weight: 400;
+  font-family: "TitilliumWeb", sans-serif;
+  font-weight: 400;
 }
 
 .titilliumSemiBold {
-    font-family: 'TitilliumWeb', sans-serif;
-    font-weight: 600;
+  font-family: "TitilliumWeb", sans-serif;
+  font-weight: 600;
 }
 
-
-
 .montserrat {
-    font-family: 'Montserrat', serif;
-    color: white;
+  font-family: "Montserrat", serif;
+  color: white;
 }
 
 .backgroundHome1 {
-    background: url('./assets/images/backgroundHome.webp') no-repeat center center fixed;
-    background-size: cover;
+  background: url("./assets/images/backgroundHome.webp") no-repeat center center
+    fixed;
+  background-size: cover;
 }
 
 .backgroundThanks {
-    background: url('./assets/images/backgroundThanks.webp') no-repeat center center fixed;
-    background-size: cover;
+  background: url("./assets/images/backgroundThanks.webp") no-repeat center
+    center fixed;
+  background-size: cover;
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    background-color: #191A19;
-    z-index: 100;
+  width: 8px;
+  height: 8px;
+  background-color: #191a19;
+  z-index: 100;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #FF7420;
-    border-radius: 8px;
+  background-color: #ff7420;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #191A19;
-    border-radius: 8px;
+  background-color: #191a19;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: #FF5722;
-    /* Color change on hover */
+  background-color: #ff5722;
+  /* Color change on hover */
 }
 
 ::-webkit-scrollbar-track:hover {
-    background-color: #2C2C2C;
-    /* Slightly lighter track on hover */
+  background-color: #2c2c2c;
+  /* Slightly lighter track on hover */
 }
 
-
 .backgroundDestaque1 {
-    background: url(./assets/images/destaques/destaque1.webp) no-repeat center center scroll;
-    background-size: cover;
+  background: url(./assets/images/destaques/destaque1.webp) no-repeat center
+    center scroll;
+  background-size: cover;
 }
 
 .backgroundDestaque2 {
-    background: url(./assets/images/destaques/destaque2.webp) no-repeat center center scroll;
-    background-size: cover;
+  background: url(./assets/images/destaques/destaque2.webp) no-repeat center
+    center scroll;
+  background-size: cover;
 }
 
 .backgroundDestaque3 {
-    background: url(./assets/images/destaques/destaque3.webp) no-repeat center center scroll;
-    background-size: cover;
+  background: url(./assets/images/destaques/destaque3.webp) no-repeat center
+    center scroll;
+  background-size: cover;
 }
 
 .backgroundDestaque4 {
-    background: url(./assets/images/destaques/destaque4.webp) no-repeat center center scroll;
-    background-size: cover;
+  background: url(./assets/images/destaques/destaque4.webp) no-repeat center
+    center scroll;
+  background-size: cover;
 }
-
 
 /* Scroll Component Start */
 
-
 .slider {
-    width: 100%;
-    position: relative;
-    height: var(--height);
-    background-color: rgba(255, 255, 255, 0.05);
-    overflow: hidden;
-    -webkit-mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
-    mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+  width: 100%;
+  position: relative;
+  height: var(--height);
+  background-color: rgba(255, 255, 255, 0.05);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10% 90%,
+    transparent
+  );
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
 }
 
 .slider .list {
-    display: flex;
-    min-width: calc(var(--width) * var(--quantity));
-
+  display: flex;
+  min-width: calc(var(--width) * var(--quantity));
 }
 
 .slider .list .item {
-    width: var(--width);
-    height: var(--height);
-    position: absolute;
-    left: 100%;
-    animation: autoScroll 10s linear infinite;
-    animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
-    transition: filter 0.5s;
-
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  left: 100%;
+  animation: autoScroll 10s linear infinite;
+  animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1));
+  transition: filter 0.5s;
 }
 
 .image-scroll {
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-    user-select: none;
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  user-select: none;
 }
 
 @keyframes autoScroll {
-    from {
-        left: 100%;
-    }
+  from {
+    left: 100%;
+  }
 
-    to {
-        left: calc(var(--width) * -1);
-    }
+  to {
+    left: calc(var(--width) * -1);
+  }
 }
 
 .slider:hover .item {
-    animation-play-state: paused;
-    filter: grayscale(1);
-    filter: invert(0);
+  animation-play-state: paused;
+  filter: grayscale(1);
+  filter: invert(0);
 }
 
 .slider .item:hover {
-    filter: grayscale(0);
-    filter: invert(1);
-
+  filter: grayscale(0);
+  filter: invert(1);
 }
 
 /* Scroll Component End */
 
 .swiper-scrollbar-drag {
-    background-color: #FF7420 !important;
+  background-color: #ff7420 !important;
 }
-
 
 .swiper-scrollbar {
-    background-color: rgba(245, 245, 245, 0.082) !important;
+  background-color: rgba(245, 245, 245, 0.082) !important;
 }
+
+/***** Css reset *****/
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/***** End css reset *****/

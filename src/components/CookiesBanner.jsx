@@ -22,19 +22,28 @@ const CookiesBanner = () => {
     isVisible && (
       <div className="fixed z-50 titilliumRegular bottom-0 left-0 bg-neutral-800 right-0 text-text p-4 flex justify-between items-center">
         <p>
-          Usamos cookies para melhorar sua experiência. Ao continuar, você concorda com nossa
-          <Link to='/cookies' target="_blank" className="text-secondary hover:underline"> Política de Cookies</Link>.
+          Usamos cookies para melhorar sua experiência. Ao continuar, você
+          concorda com nossa
+          <Link
+            to="/cookies"
+            target="_blank"
+            className="text-secondary hover:underline"
+          >
+            {" "}
+            Política de Cookies
+          </Link>
+          .
         </p>
         <button
           onClick={handleAccept}
           className="bg-secondary cursor-pointer text-text px-4 py-2 rounded hover:bg-secondary/80"
-          aria-label="Aceitar ação">
+          aria-label="Aceitar ação"
+        >
           Aceitar
         </button>
-
       </div>
     )
   );
 };
 
-export default CookiesBanner
+export default CookiesBanner;

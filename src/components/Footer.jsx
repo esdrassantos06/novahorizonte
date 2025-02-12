@@ -23,194 +23,212 @@ const Footer = () => {
     },
   ];
 
+
   return (
-    <footer className="relative w-full h-fit bg-terceary text-text p-4 flex flex-col items-center">
-      <div className="top-footer w-full items-start h-full gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-4">
-        <div className="aboutus-and-icons flex justify-center items-start flex-col flex-grow ">
-          <div className="aboutUS titilliumSemiBold mb-4 gap-4 text-start flex justify-center w-full h-full items-start self-center">
-            <div className="flex flex-col gap-2">
-              <h2 className="text-lg">Sobre Nós</h2>
-              <p className="w-[70%] titilliumRegular text-sm">
-                A Construtora Nova Horizonte é especialista em construção civil,
-                oferecendo soluções completas e personalizadas para projetos
-                residenciais, comerciais e industriais.
-              </p>
-            </div>
+    <footer className="font-sans tracking-wide bg-terceary text-text px-10 pt-12 pb-6">
+      <div className="flex flex-wrap justify-between gap-10">
+        <div className="max-w-md">
+          <Link to='/' aria-label="Logo da Empresa" className="logo-footer cursor-pointer select-none flex flex-col text-start -space-y-1 self-start">
+            <p className='montserrat text-base'>Construtora</p>
+            <p className='montserrat text-nowrap text-lg font-bold'>Nova <span className='text-secondary'>Horizonte</span></p>
+          </Link>
+
+          <div className="mt-6">
+            <p className="text-text titilliumRegular leading-relaxed text-sm">A Construtora Nova Horizonte é especialista em construção civil,
+              oferecendo soluções completas e personalizadas para projetos
+              residenciais, comerciais e industriais.</p>
           </div>
 
-          <div className="icons flex items-center gap-4">
-            <a
-              href="https://linkedin.com"
-              className="p-2 group bg-secondary rounded-full"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="group-hover:text-white/70"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="currentColor"
+          <ul className="mt-10 flex space-x-5">
+            <li>
+              <a
+                href="https://linkedin.com"
+                className="flex items-center justify-center group rounded-full"
+                target="_blank"
+                aria-label="LinkedIn"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
-              </svg>
-            </a>
-
-            <a
-              href="https://instagram.com"
-              className="p-2 group bg-secondary rounded-full"
-              target="_blank"
-              aria-label="Instagram"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="group-hover:text-white/70"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-                <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-                <path d="M16.5 7.5v.01" />
-              </svg>
-            </a>
-
-            <a
-              href="https://X.com"
-              className="p-2 group bg-secondary rounded-full"
-              target="_blank"
-              aria-label="X (Twitter)"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="group-hover:text-white/70"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-              </svg>
-            </a>
-
-            <a
-              href="https://facebook.com"
-              className="p-2 group bg-secondary rounded-full"
-              target="_blank"
-              aria-label="Facebook"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="group-hover:text-white/70"
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path d="M7 9v4h2v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-grow justify-center titilliumSemiBold gap-4 text-start items-start self-stretch">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-lg">Escritório</h2>
-            <p className="w-[10rem] titilliumRegular text-sm">
-              Avenida dos Construtores, 456, Porto, Portugal
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-grow justify-center titilliumSemiBold text-start items-start self-stretch">
-          <div className="flex flex-col gap-2">
-            <h2 className="text-lg">Contacto</h2>
-            <p className="w-[15rem] titilliumRegular text-sm">
-              novahorizonteempresa@gmail.com
-            </p>
-            <p className="w-[15rem] titilliumRegular text-sm">
-              Telefone: (+351) 912 345 678
-            </p>
-          </div>
-        </div>
-
-        <div className="flex flex-grow titilliumSemiBold justify-center text-start items-start gap-10 self-stretch">
-          <div>
-            <h2 className="text-lg">Link</h2>
-            <ul className="titilliumRegular flex flex-col text-base">
-              {links.map((link, index) => (
-                <li
-                  key={index}
-                  className="hover:text-secondary text-nowrap transition-colors duration-200"
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="group-hover:text-white/70"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
                 >
-                  <Link to={link.path} aria-label={link.name}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div
-            id="backToTop"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className={`flex ${location.pathname === "/obrigado-pelo-contacto" ? "hidden" : ""} gap-1 titilliumSemiBold h-full flex-col justify-center items-center cursor-pointer`}
-          >
-            <button
-              className="bg-secondary cursor-pointer p-3 rounded-full shadow-lg hover:bg-amber-700 transition"
-              aria-label="Voltar ao topo"
-            >
-              <CaretUp />
-            </button>
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M17 2a5 5 0 0 1 5 5v10a5 5 0 0 1 -5 5h-10a5 5 0 0 1 -5 -5v-10a5 5 0 0 1 5 -5zm-9 8a1 1 0 0 0 -1 1v5a1 1 0 0 0 2 0v-5a1 1 0 0 0 -1 -1m6 0a3 3 0 0 0 -1.168 .236l-.125 .057a1 1 0 0 0 -1.707 .707v5a1 1 0 0 0 2 0v-3a1 1 0 0 1 2 0v3a1 1 0 0 0 2 0v-3a3 3 0 0 0 -3 -3m-6 -3a1 1 0 0 0 -.993 .883l-.007 .127a1 1 0 0 0 1.993 .117l.007 -.127a1 1 0 0 0 -1 -1" />
+                </svg>
+              </a>
+            </li>
 
-            <span className={`text-sm text-nowrap`}>Back to Top</span>
-          </div>
+            <li>
+              <a
+                href="https://instagram.com"
+                className="flex items-center justify-center group  rounded-full"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="group-hover:text-white/70"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                  <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+                  <path d="M16.5 7.5v.01" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://X.com"
+                className="flex items-center justify-center group rounded-full"
+                target="_blank"
+                aria-label="X (Twitter)"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="group-hover:text-white/70"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                </svg>
+              </a>
+
+            </li>
+
+            <li>
+              <a
+                href="https://facebook.com"
+                className="flex items-center justify-center group rounded-full"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  className="group-hover:text-white/70"
+                  viewBox="0 0 256 256"
+                  fill="currentColor"
+                >
+                  <g transform="scale(8.53333,8.53333)">
+                    <path d="M15,3c-6.627,0 -12,5.373 -12,12c0,6.016 4.432,10.984 10.206,11.852v-8.672h-2.969v-3.154h2.969v-2.099c0,-3.475 1.693,-5 4.581,-5c1.383,0 2.115,0.103 2.461,0.149v2.753h-1.97c-1.226,0 -1.654,1.163 -1.654,2.473v1.724h3.593l-0.487,3.154h-3.106v8.697c5.857,-0.794 10.376,-5.802 10.376,-11.877c0,-6.627 -5.373,-12 -12,-12z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+
+
+        <div className="max-lg:min-w-[140px]">
+          <h4 className="titilliumSemiBold text-base relative max-sm:cursor-pointer">Escritório</h4>
+
+          <ul className="mt-6 space-y-4">
+            <li>
+              <p className='titilliumRegular text-sm'>Avenida dos Construtores, <br /> 456, Porto, Portugal</p>
+            </li>
+          </ul>
+        </div>
+
+        <div className="max-lg:min-w-[140px]">
+          <h4 className="titilliumSemiBold text-base relative max-sm:cursor-pointer">Contacto</h4>
+          <ul className="space-y-2 titilliumRegular mt-6">
+            <li>
+              <span className='text-sm'>novahorizonteempresa@gmail.com</span>
+            </li>
+            <li>
+              <span className='text-sm'>Telefone: (+351) 912 345 678</span>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div className="max-lg:min-w-[140px] ">
+          <h4 className=" text-base titilliumSemiBold relative max-sm:cursor-pointer">Link</h4>
+
+          <ul className="space-y-3 titilliumRegular mt-6">
+            {links.map((link, index) => (
+              <li
+                key={index}
+                className="hover:text-secondary text-sm transition-colors duration-200"
+              >
+                <Link to={link.path} aria-label={link.name}>
+                  {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div
+          id="backToTop"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className={`flex flex-col ${location.pathname === "/obrigado-pelo-contacto" ? "hidden" : ""} gap-1 titilliumSemiBold justify-center items-center cursor-pointer`}
+        >
+          <button
+            className="bg-secondary cursor-pointer flex items-center justify-center h-10 w-10 rounded-full shadow-lg hover:bg-amber-700 transition"
+            aria-label="Voltar ao topo"
+          >
+            <CaretUp size={20} />
+          </button>
+
+          <span className={`text-sm text-nowrap`}>Back to Top</span>
         </div>
       </div>
 
-      <div className="border-b border-gray-600/70 w-full"></div>
+      <hr className="mt-10 mb-6 border-gray-600/70" />
 
-      <div className="bottom-footer titilliumRegular text-nowrap gap-10 pt-2 flex items-center justify-between px-40 xl:px-80 h-10 w-full">
-        <p className="text-sm text-zinc-400 ">
+      <div className="flex flex-wrap max-md:flex-col gap-4">
+        <ul className="md:flex titilliumRegular text-zinc-400 md:space-x-6 max-md:space-y-2">
+          <li>
+            <Link
+              className="hover:text-secondary text-sm text-zinc-400 transition-colors duration-200"
+              to="/legal-notice"
+              aria-label="Aviso Legal"
+            >
+              Aviso Legal
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-secondary text-sm text-zinc-400 transition-colors duration-200"
+              to="/privacy-policy"
+              aria-label="Política de Privacidade"
+            >
+              Política de Privacidade
+            </Link>
+          </li>
+        </ul>
+
+
+        <p className="text-sm md:ml-auto text-zinc-400 ">
           &copy; {new Date().getFullYear()} Esdras Santos. All Rights Reserved.
         </p>
-
-        <div className="text-sm space-x-4">
-          <Link
-            className="hover:text-secondary text-zinc-400 transition-colors duration-200"
-            to="/privacy-policy"
-            aria-label="Política de Privacidade"
-          >
-            Política de Privacidade
-          </Link>
-          <Link
-            className="hover:text-secondary text-zinc-400 transition-colors duration-200"
-            to="/legal-notice"
-            aria-label="Aviso Legal"
-          >
-            Aviso Legal
-          </Link>
-        </div>
       </div>
     </footer>
+
   );
 };
 

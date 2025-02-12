@@ -21,6 +21,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Equipa = () => {
+
+  
   class Equipa {
     constructor(nome, cargo, foto) {
       this.nome = nome;

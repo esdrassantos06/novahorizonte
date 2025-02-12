@@ -9,7 +9,24 @@ import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom"; // Para navegar para pagina de agradecimento pelo envio
 
 function Contact() {
-  // Como esse é menor, não vou utilizar classes
+
+
+  const checkItems = [
+    {
+      title: "Equipa Profissional",
+    },
+    {
+      title: "100% Satisfação",
+    },
+    {
+      title: "Testes Precisos",
+    },
+    {
+      title: "Preços Transparentes",
+    }
+  ];
+
+
   const servicos = [
     {
       title: "Instalação de HVAC",
@@ -67,35 +84,38 @@ function Contact() {
     if (regexPatterns[id]) validateField(id, value);
   }; // é chamado quando o valor do input é alterado
 
-  const templateParams = {
-    from_name: formData.name,
-    message: formData.details,
-    email: formData.email,
-    phone: formData.phone,
-    service: formData.service,
-  }; // Parâmetros do template que eu estou utilizando para fazer o envio do formulário
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     let newErrors = {};
+    // Verificar se há erros
+    
     Object.keys(regexPatterns).forEach((field) => {
       if (!regexPatterns[field].test(formData[field].trim())) {
         newErrors[field] = "Campo inválido!";
       }
     });
 
+
+    const templateParams = {
+      from_name: formData.name,
+      message: formData.details,
+      email: formData.email,
+      phone: formData.phone,
+      service: formData.service,
+    }; // Parâmetros do template que eu estou utilizando para fazer o envio do formulário
+
+    // Se houver erros, atualizar o estado de erros
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      emailjs
-        .send(
+      emailjs.send(
           "service_ez303t9",
           "template_r70fl89",
           templateParams,
           "HbWhhUXf0e_FdxCic",
-        )
-        .then(() => {
+        ).then(() => {
           // Limpar os inputs
           setFormData({
             name: "",
@@ -105,11 +125,10 @@ function Contact() {
             details: "",
           });
 
-          navigate("/obrigado-pelo-contacto"); // Redirecionar para a página de agradecimento
+          navigate("/obrigado-pelo-contacto");
         })
-        .catch((error) => {
+        .catch( () => {
           alert("Erro ao enviar o formulário, tente novamente.");
-          console.error(error);
         });
     }
   }; // Se houver algum erro, ele será armazenado no estado error e vai aparecer abaixo do input que estiver errado
@@ -123,22 +142,11 @@ function Contact() {
             Liderança na Construção Civil e Engenharia
           </h1>
           <div className="icons-contact titilliumRegular flex space-x-4 p-2">
-            <p className="text-text flex gap-1">
-              <CheckCircle size={24} color="#fefbfb" weight="fill" /> Equipa
-              Profissional
+          {checkItems.map( (item, index) => (
+            <p className="text-text flex gap-1" key={index}>
+              <CheckCircle size={24} color="#fefbfb" weight="fill" /> {item.title}
             </p>
-            <p className="text-text flex gap-1">
-              <CheckCircle size={24} color="#fefbfb" weight="fill" /> 100%
-              Satisfação
-            </p>
-            <p className="text-text flex gap-1">
-              <CheckCircle size={24} color="#fefbfb" weight="fill" /> Testes
-              Precisos
-            </p>
-            <p className="text-text flex gap-1">
-              <CheckCircle size={24} color="#fefbfb" weight="fill" /> Preços
-              Transparentes
-            </p>
+          ))}
           </div>
         </div>
 

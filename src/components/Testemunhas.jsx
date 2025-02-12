@@ -17,34 +17,38 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+class Testemunha {
+  constructor(text, author, role, photo) {
+    this.text = text;
+    this.author = author;
+    this.role = role;
+    this.photo = photo;
+  }
+}
+
 const testemunhas = [
-  {
-    id: 1,
-    text: "Estou muito satisfeito com os serviços. A equipa é muito profissional e eficiente, completando o nosso projeto a tempo e a um custo muito acessível.",
-    author: "Tom Delange",
-    role: "CEO, Lexmark",
-    photo: people1,
-  },
-  {
-    id: 2,
-    text: "Serviço excelente e qualidade excecional. Entregaram além das nossas expectativas e foram muito fáceis de trabalhar.",
-    author: "Jane Smith",
-    role: "CTO, TechCorp",
-    photo: people2,
-  },
-  {
-    id: 3,
-    text: "Um parceiro confiável para todas as nossas necessidades de construção. A atenção ao detalhe e o compromisso com os prazos são de louvar.",
-    author: "John Doe",
-    role: "Gestor de Projeto, BuildIt",
-    photo: people3,
-  },
+  new Testemunha(
+    "Estou muito satisfeito com os serviços. A equipa é muito profissional e eficiente, completando o nosso projeto a tempo e a um custo muito acessível.",
+    "Tom Delange",
+    "CEO, Lexmark",
+    people1
+  ),
+  new Testemunha(
+    "Serviço excelente e qualidade excecional. Entregaram além das nossas expectativas e foram muito fáceis de trabalhar.",
+    "Jane Smith", "CTO, TechCorp", people2
+  ),
+  new Testemunha(
+    "Um parceiro confiável para todas as nossas necessidades de construção. A atenção ao detalhe e o compromisso com os prazos são de louvar.",
+    "John Doe",
+    "Gestor de Projeto, BuildIt",
+    people3
+  ),
 ];
 
 const Testemunhas = () => {
   return (
     <div className="titilliumRegular relative mx-auto w-150 overflow-hidden rounded-lg bg-zinc-800 px-14 pb-4 shadow-2xl">
-      {/* Custom Buttons (Fora do Swiper) */}
+
       <button
         className="prev-button bg-secondary absolute bottom-1/2 left-2 z-50 flex h-10 w-10 translate-y-1/2 cursor-pointer items-center justify-center rounded-full p-2 text-gray-700 transition duration-200 hover:bg-amber-600 hover:text-gray-900"
         aria-label="Ir para o testemunho anterior"

@@ -1,9 +1,11 @@
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 
 function legalWarning() {
   return (
     <>
-      <div className="text-text titilliumRegular bg-primary mx-auto flex min-h-screen w-full flex-col items-center px-6 py-10">
+    <Navbar />
+      <div className="text-text titilliumRegular pt-20 bg-primary mx-auto flex min-h-screen w-full flex-col items-center px-6 py-10">
         <h1 className="titilliumBold mb-6 text-5xl">Aviso Legal</h1>
         <p className="mb-4">
           Este Aviso Legal regula o acesso, a navegação e a utilização deste

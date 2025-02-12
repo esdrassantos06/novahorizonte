@@ -1,9 +1,12 @@
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
+
 
 function Cookies() {
   return (
     <>
-      <div className="text-text titilliumRegular bg-primary mx-auto flex min-h-screen w-full flex-col items-center px-6 py-10">
+    <Navbar />
+      <div className="text-text titilliumRegular bg-primary mx-auto pt-20 flex min-h-screen w-full flex-col items-center px-6 py-10">
         <h1 className="titilliumBold mb-6 text-5xl">Política de Cookies</h1>
         <p className="mb-4">
           Esta Política de Cookies explica como o{" "}

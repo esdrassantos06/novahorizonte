@@ -91,7 +91,7 @@ const Projetos = () => {
     ),
   ];
 
-  const projetosVisiveis = mostrarProj ? projetos : projetos.slice(0, 3);
+  const projetosVisiveis = mostrarProj ? projetos : projetos.slice(0, 3); // mostra 3 projetos por padrão e o resto é mostrado ao clicar no botão
 
   return (
     <>

@@ -8,13 +8,15 @@ const CookiesBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (!Cookies.get("cookiesAccepted")) {
+    if (!Cookies.get("cookiesAccepted")) /* Se o valor 'cookiesAccepted' não existir, vai aparecer o banner */ {
       setIsVisible(true);
     }
   }, []);
 
+  const expireDays = 30; //aplicando clean code no código
+
   const handleAccept = () => {
-    Cookies.set("cookiesAccepted", "true", { expires: 30 }); // Expira em 30 dias
+    Cookies.set("cookiesAccepted", "true", { expires: expireDays });
     setIsVisible(false);
   };
 

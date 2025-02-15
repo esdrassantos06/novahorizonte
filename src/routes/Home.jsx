@@ -14,7 +14,7 @@ function Home() {
   return (
     <>
       <Navbar />
-      <main className="bg-primary min-h-screen w-full pb-20">
+      <main className="Home bg-primary min-h-screen w-full pb-20">
         {/* Hero Section */}
         <article className="hero-section relative h-[50em]">
           {/* Background Overlay */}

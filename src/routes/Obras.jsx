@@ -8,7 +8,7 @@ function Obras() {
     <>
       <Navbar />
 
-      <main className="bg-secondary flex min-h-screen w-full flex-col items-center pt-20">
+      <main className="Obras bg-secondary flex min-h-screen w-full flex-col items-center pt-20">
         <div className="flex w-full flex-col items-center p-20">
           <div className="TitleObras mb-10">
             <h1 className="text-primary circularBold text-5xl">

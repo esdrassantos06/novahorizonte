@@ -51,18 +51,20 @@ function Serviços() {
   return (
     <>
       <Navbar />
-      <main className="bg-primary flex min-h-screen w-full flex-col items-center justify-center gap-10 max-md:pt-70">
-        <h1 className="text-text circularBold -mt-34 text-center text-5xl">
+      <main className="Serviços bg-primary flex min-h-screen w-full flex-col items-center pt-30 gap-10">
+        <h1 className="text-text circularBold text-center text-5xl">
           Fornecemos um serviço excelente <br /> para nossos clientes
         </h1>
 
-        <div className="cards flex w-full flex-col items-center justify-center gap-40 md:flex-row md:gap-10">
+        <div className="cards  grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 place-items-center gap-10 items-center justify-center">
           {services.map((servico, index) => (
             <div
               key={index}
-              className="card hover:bg-terceary/50 bg-terceary relative flex h-fit w-60 flex-col rounded-2xl shadow-xl shadow-black transition-all duration-300 hover:shadow-2xl md:h-100 md:w-90"
+              className="card hover:bg-terceary/50 bg-terceary relative flex flex-col rounded-2xl shadow-xl shadow-black transition-all duration-300 hover:shadow-2xl w-60 md:w-100"
             >
-              <div className="flex flex-col gap-4 px-5 py-7 pb-60">
+
+
+              <div className="flex flex-col gap-4 h-100 px-5 py-7">
                 <div className="icon bg-primary/40 flex items-center justify-center rounded-lg outline outline-neutral-800 ease-in-out select-none md:h-18 md:w-18">
                   {servico.icon}
                 </div>
@@ -79,11 +81,12 @@ function Serviços() {
               <img
                 src={servico.image}
                 alt={servico.alt}
-                className="absolute -bottom-20 h-[50%] w-full rounded-lg object-cover select-none"
+                className="absolute -bottom-40 h-60 w-full rounded-lg object-cover select-none"
               />
             </div>
           ))}
-        </div>
+        </div> {/* cards */}
+
       </main>
       <Footer />
     </>

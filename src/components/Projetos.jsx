@@ -95,7 +95,7 @@ const Projetos = () => {
 
   return (
     <>
-      <div className="ml-40 grid w-full grid-cols-1 gap-5 lg:grid-cols-3">
+      <div className=" grid grid-cols-1 gap-10 lg:grid-cols-3">
         {projetosVisiveis.map((projeto, index) => (
           <div
             key={index}

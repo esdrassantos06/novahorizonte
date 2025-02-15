@@ -19,19 +19,21 @@ const ScrollComponent = () => {
     { src: miesarch, alt: "Prêmio Mies van der Rohe de Arquitetura" },
   ];
 
+  const styles = {
+    "--width": "100px",
+    "--height": "70px",
+    "--quantity": "8",
+  };
+
   return (
     <div
       className="slider"
-      style={{
-        "--width": "100px",
-        "--height": "70px",
-        "--quantity": "8",
-      }}
+      style={styles}
     >
       <div className="list">
         {images.map((image, index) => (
-          <div key={index} style={{ "--position": index + 1 }} className="item">
-            <img src={image.src} alt={image.alt} className="image-scroll" />
+          <div key={index} style={{ "--position": index + 1 }} className="item lg:w-full lg:h-full">
+            <img src={image.src} alt={image.alt} className="image-scroll " />
           </div>
         ))}
       </div>

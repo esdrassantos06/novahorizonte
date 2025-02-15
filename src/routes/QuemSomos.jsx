@@ -44,15 +44,15 @@ function QuemSomos() {
   return (
     <>
       <Navbar />
-      <main className="bg-primary min-h-screen w-full lg:pt-20 pt-40">
+      <main className="Quem-Somos bg-primary min-h-screen w-full pt-20">
 
 
-        <section className="about-us-container px-10 py-20 lg:px-20 gap-10 relative pb-60 flex items-center justify-center md:flex-nowrap md:flex-row flex-col lg:h-[84vh] h-screen w-full">
+        <section className="about-us-container px-10 py-20 lg:px-20 gap-10 relative pb-60 flex items-center justify-center md:flex-nowrap md:flex-row flex-col xl:h-[84vh] h-fit w-full">
 
           <div className="part-1 flex h-full basis-1/2 items-start">
             <div className="flex w-full flex-col items-center justify-center lg:pt-18">
               <div className="title-about-us mb-10">
-                <h1 className="text-text circularBold text-6xl">
+                <h1 className="text-text circularBold text-nowrap text-5xl md:text-6xl">
                   Sobre <span className="text-secondary">Nós</span>
                 </h1>
               </div>
@@ -77,8 +77,8 @@ function QuemSomos() {
             </div>
           </div>
 
-          <div className="titilliumRegular part-2 flex basis-1/2 mb-40 lg:mb-0 items-center justify-center">
-            <div className="shadow-secondary/20 flex xl:h-150 xl:w-150 lg:w-120 lg:h-120 h-100 w-100 flex-col items-center justify-center rounded-lg shadow-2xl select-none">
+          <div className="titilliumRegular part-2 flex basis-1/2 items-center justify-center">
+            <div className="shadow-secondary/20 flex w-[80%] max-w-screen h-auto flex-col items-center justify-center rounded-lg shadow-2xl select-none">
               <img
                 src={photo1}
                 className="h-full w-full rounded-lg object-cover inset-shadow-sm inset-shadow-black"
@@ -86,78 +86,82 @@ function QuemSomos() {
               />
             </div>
           </div>
+
+          <div className="absolute sm:w-full bottom-2">
+            <ScrollComponent />
+          </div>
         </section>
 
-        <div className="absolute w-full lg:bottom-20 -bottom-18">
-          <ScrollComponent />
-        </div>
 
-        <section className="our-mission-container bg-secondary flex lg:flex-row flex-col-reverse pt-40 h-screen w-full items-center justify-center">
+        <section className="our-mission-container bg-secondary flex lg:flex-row flex-col-reverse py-10 h-fit items-center justify-center">
 
-          <div className="titilliumRegular part-1 flex basis-1/2 items-center justify-end pr-20">
-            <div className="shadow-secondary/20 flex xl:h-180 xl:w-180 lg:w-150 lg:h-150 h-120 w-120 flex-col items-center justify-center rounded-lg shadow-2xl select-none">
+          <div className="titilliumRegular part-1 flex basis-1/2 px-20 items-center justify-center">
+            <div className="shadow-secondary/20 max-w-screen flex xl:h-180 xl:w-180 lg:w-150 lg:h-150 md:w-120 md:h-120 sm:w-100 w-50 h-50 flex-col items-center justify-center rounded-lg shadow-2xl select-none">
               <img
                 src={photo2}
                 loading="lazy"
-                className="h-full w-full rounded-lg object-cover inset-shadow-sm inset-shadow-black"
+                className="h-full w-full rounded-lg object-cover"
                 alt="Foto de uma pessoa segurando uma chave de construção"
               />
             </div>
           </div>
 
-          <div className="bg-secondary part-2 flex h-full w-full pt-10 basis-1/2 flex-col items-center justify-center">
 
-            <div className="title-mission flex items-center lg:items-start justify-center w-full flex-col gap-3 pt-4">
+          <div className="bg-secondary part-2 flex basis-1/2 flex-col">
+
+            <div className="title-mission flex flex-col justify-center lg:items-start items-center w-full gap-3">
               <h2 className="text-primary titilliumBold text-lg">
                 COMO TRABALHAMOS?
               </h2>
-              <h1 className="text-text circularBold text-5xl">
+              <h1 className="text-text lg:text-start text-center circularBold text-4xl md:text-5xl">
                 Como Trabalhar com <br /> a Nova Horizonte
               </h1>
             </div>
 
-            <div className="mt-10 flex w-full flex-col gap-10">
+
+            <div className="how-to-work mt-10">
 
               {passos.map((passo, index) => (
-                <div className={`modo${index + 1} relative flex h-40 w-full items-center justify-center gap-10 `} key={index}>
+                <div className={`modo${index + 1} relative flex h-40 w-full items-center justify-center lg:justify-start gap-10 `} key={index}>
 
                   <div className={`icon-${index + 1}`}>
                     <div className="absolute top-6 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-2xl shadow-black outline outline-zinc-500/50 select-none">
                       <span className="text-secondary circularBook">{index + 1}</span>
                     </div>
+
                     <div className="icon flex h-25 w-25 items-center justify-center rounded-full bg-white p-2">
                       {passo.icon}
                     </div>
                   </div> {/* Icon */}
 
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col w-[60%] gap-2">
                     <h2 className="text-text  circularBold text-2xl">
                       {passo.title}
                     </h2>
-                    <p className="titilliumRegular w-[80%] text-base text-slate-200">
+                    <p className="titilliumRegular text-base text-slate-200">
                       {passo.description}
                     </p>
                   </div>
                 </div>
               ))}
-              
-            </div>
-          </div>
 
+            </div>
+
+
+          </div>
         </section>
 
 
 
-        <section className="our-team-container bg-primary flex h-screen w-full flex-col items-center justify-center gap-4">
-          <div className="bg-primary shadow-primary flex w-[80vw] h-full flex-col items-center justify-center rounded-lg p-10 shadow-2xl">
-            <div className="title-our-team ml-60 flex w-full items-center justify-start py-4">
-              <h1 className="text-text circularBold text-center text-5xl">
+        <section className="our-team-container bg-primary flex lg:h-screen mt-10 w-full flex-col items-center justify-center gap-4">
+          <div className="bg-primary shadow-primary flex w-full h-full flex-col items-center justify-center rounded-lg p-10 shadow-2xl">
+            <div className="title-our-team flex w-full items-center justify-center py-4">
+              <h1 className="text-text circularBold text-center text-4xl lg:text-5xl">
                 Uma Equipa Dedicada de Profissionais Qualificados <br />{" "}
                 Comprometidos com a{" "}
                 <span className="text-secondary">Excelência</span>
               </h1>
             </div>
-
             <Equipa />
           </div>
         </section>

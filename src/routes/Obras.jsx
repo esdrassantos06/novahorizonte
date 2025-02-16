@@ -8,9 +8,9 @@ function Obras() {
     <>
       <Navbar />
 
-      <main className="Obras bg-secondary flex min-h-screen w-full flex-col items-center pt-20">
-        <div className="flex w-full flex-col items-center p-20">
-          <div className="TitleObras mb-10">
+      <main className="Obras bg-secondary flex min-h-screen w-full flex-col items-center pt-40">
+        <div className="flex w-full flex-col items-center pb-10 gap-5">
+          <div className="TitleObras w-full text-center mb-10">
             <h1 className="text-primary circularBold text-5xl">
               Obras Em <span className="text-text">Destaque</span>
             </h1>
@@ -19,7 +19,7 @@ function Obras() {
           <Projetos />
         </div>
 
-        <div className="bg-primary flex h-[40em] w-full flex-col items-center justify-center gap-5 pt-20">
+        <div className="bg-primary flex h-[40em] w-full flex-col items-center justify-center gap-5 pt-10">
           <div className="pb-5">
             <h1 className="text-secondary titilliumBold text-5xl">
               Opniões de nossos clientes
@@ -30,6 +30,8 @@ function Obras() {
         </div>
       </main>
       <Footer />
+
+  
     </>
   );
 }

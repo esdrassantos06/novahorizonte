@@ -19,6 +19,8 @@ const ScrollComponent = () => {
     { src: miesarch, alt: "Prêmio Mies van der Rohe de Arquitetura" },
   ];
 
+  //Basicamente, esse componente é um componente de slider que faz o scroll infinito de imagens, quando você clica (Mobile) ou faz hover (Desktop) em alguma imagem, ela vai parar por um tempo e vai voltar a se mover
+
   const styles = {
     "--width": "100px",
     "--height": "70px",

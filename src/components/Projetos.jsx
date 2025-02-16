@@ -95,59 +95,62 @@ const Projetos = () => {
 
   return (
     <>
-      <div className=" grid grid-cols-1 gap-10 lg:grid-cols-3">
+      <div className="projects grid grid-cols-1 place-items-center gap-10 px-10 lg:grid-cols-2 xl:grid-cols-3">
         {projetosVisiveis.map((projeto, index) => (
-          <div
-            key={index}
-            className={`group text-primary relative ${projeto.background} flex h-[40em] w-[25em] flex-col items-start justify-end gap-2 rounded-lg pb-14`}
-          >
-            <div className="absolute inset-0 rounded-lg bg-black opacity-50"></div>
+          <div className="image-wrapper select-none group relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-[101%] after:h-[101%] bg-transparent" key={index}>
+            <div
+              className={`text-primary relative ${projeto.background} flex md:h-180 md:w-100 w-60 h-80 sm:w-80 sm:h-120 flex-col items-start justify-end gap-2 rounded-lg pb-14`}
+            >
+              <div className="absolute inset-0 rounded-lg bg-black/50"></div>
 
-            <div className="z-20 -mb-14 flex h-80 w-[90%] flex-col items-center justify-center rounded-lg bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <div className="mb-4 flex w-full flex-col items-start justify-center px-4">
-                <h2 className="circularBold z-10 text-xl">{projeto.nome}</h2>
-                <h3 className="text-primary/70 circularBook z-10 text-sm">
-                  {projeto.tipo}
-                </h3>
-              </div>
 
-              <div className="flex w-full flex-col items-center justify-center gap-4 p-4">
-                <div className="flex gap-2 px-2">
-                  <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
-                    <h3 className="titilliumRegular text-sm">Preço:</h3>
-                    <h3 className="titilliumBold text-base">{projeto.preco}</h3>
-                  </div>
-
-                  <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
-                    <h3 className="titilliumRegular text-sm">Cliente:</h3>
-                    <h3 className="titilliumBold text-base">
-                      {projeto.cliente}
-                    </h3>
-                  </div>
+              <div className="z-20 -mb-14 flex h-[50%] w-[90%] flex-col items-center justify-center rounded-lg bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 focus-within:opacity-100 group-active:visible group-active:opacity-100">
+                <div className="mb-4 flex w-full flex-col items-start justify-center px-4">
+                  <h2 className="circularBold z-10 text-xl">{projeto.nome}</h2>
+                  <h3 className="text-primary/70 circularBook z-10 text-sm">
+                    {projeto.tipo}
+                  </h3>
                 </div>
 
-                <div className="flex gap-2 px-2">
-                  <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
-                    <h3 className="titilliumRegular text-sm">
-                      Ano do projeto:
-                    </h3>
-                    <h3 className="titilliumBold text-base">{projeto.data}</h3>
+                <div className="flex w-full flex-col items-center justify-center gap-4 p-4">
+                  <div className="flex gap-2 px-2">
+                    <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
+                      <h3 className="titilliumRegular text-sm">Preço:</h3>
+                      <h3 className="titilliumBold text-base">{projeto.preco}</h3>
+                    </div>
+
+                    <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
+                      <h3 className="titilliumRegular text-sm">Cliente:</h3>
+                      <h3 className="titilliumBold text-base">
+                        {projeto.cliente}
+                      </h3>
+                    </div>
                   </div>
 
-                  <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
-                    <h3 className="titilliumRegular text-sm">Duração:</h3>
-                    <h3 className="titilliumBold text-base">
-                      {projeto.duracao}
-                    </h3>
+                  <div className="flex gap-2 px-2">
+                    <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
+                      <h3 className="titilliumRegular text-sm">
+                        Ano do projeto:
+                      </h3>
+                      <h3 className="titilliumBold text-base">{projeto.data}</h3>
+                    </div>
+
+                    <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
+                      <h3 className="titilliumRegular text-sm">Duração:</h3>
+                      <h3 className="titilliumBold text-base">
+                        {projeto.duracao}
+                      </h3>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         ))}
-      </div>
 
-      <div className="text-primary mt-4 flex w-full items-center justify-end pr-40">
+
+      </div>
+      <div className="text-primary select-none flex w-full justify-center items-center py-2">
         <button
           onClick={() => setMostrarProj(!mostrarProj)}
           className="circularBold flex cursor-pointer items-center gap-2 underline-offset-2 hover:underline"

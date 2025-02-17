@@ -24,7 +24,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-terceary text-text relative z-999 px-10 pt-12 pb-6 tracking-wide">
+    <footer className="bg-terceary text-text relative w-full z-999 px-10 pt-12 pb-6 tracking-wide">
       <div className="flex flex-wrap justify-between gap-10">
         <div className="max-w-md">
           <Link

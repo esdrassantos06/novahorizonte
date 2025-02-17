@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
-import { CheckCircle } from "@phosphor-icons/react";
+import { CheckCircle, CircleNotch } from "@phosphor-icons/react";
 import Navbar from "../components/Navbar";
 
 import emailjs from "@emailjs/browser";
@@ -41,6 +41,8 @@ function Contact() {
 
   const navigate = useNavigate();
 
+  const [isLoading, setIsLoading] = useState(false); // Spinner para mostrar que o formulário está sendo enviado
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -54,7 +56,7 @@ function Contact() {
   const regexPatterns = {
     name: /^[A-Za-zÀ-ú\s]{2,}$/,
     email: /^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/,
-    phone: /^(\+351\s?)?\d{9}$/,
+    phone: /^(\+351\s?)?(\d\s?){9}$/,
   }; // Regex para validar email, nome e telefone
 
   const validateField = (field, value) => {
@@ -83,6 +85,8 @@ function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    setIsLoading(true);
 
     let newErrors = {};
     // Verificar se há erros
@@ -133,14 +137,14 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <main className="bg-primary flex min-h-screen w-full flex-col items-center justify-center px-20 pt-20">
+      <main className="bg-primary flex min-h-screen w-full flex-col items-center justify-center px-5 md:px-20 pt-40 md:pt-20">
         <div className="container mb-10 flex w-full flex-col items-center justify-center">
-          <h1 className="circularBold text-text text-6xl">
+          <h1 className="circularBold text-text text-center text-5xl md:text-6xl">
             Liderança na Construção Civil e Engenharia
           </h1>
-          <div className="icons-contact titilliumRegular flex space-x-4 p-2">
+          <div className="icons-contact titilliumRegular grid grid-cols-2 gap-4 lg:grid-cols-4 p-2">
             {checkItems.map((item, index) => (
-              <p className="text-text flex gap-1" key={index}>
+              <p className="text-text flex items-center justify-center gap-1" key={index}>
                 <CheckCircle size={24} color="#fefbfb" weight="fill" />{" "}
                 {item.title}
               </p>
@@ -148,13 +152,14 @@ function Contact() {
           </div>
         </div>
 
-        <div className="principal mb-10 flex w-full space-x-5">
-          <div className="bg-secondary formDiv container w-[60%] rounded-lg p-10">
+        <div className="principal mb-10 w-full grid place-items-center grid-cols-1 md:grid-cols-2 gap-5">
+
+          <div className="bg-secondary formDiv w-full h-full rounded-lg p-5 sm:p-10">
             <div className="title mb-5 flex flex-col">
-              <h2 className="text-text circularBold mb-5 text-4xl">
+              <h2 className="text-text text-center circularBold mb-5 text-4xl">
                 Solicitar um Orçamento
               </h2>
-              <p className="titilliumRegular text-text w-[80%] text-base">
+              <p className="titilliumRegular text-center w-full text-text text-base">
                 Oferecemos aos nossos clientes os melhores preços e serviços com
                 qualidade garantida. Orgulhamo-nos de tudo o que fazemos na Nova
                 Horizonte.
@@ -163,70 +168,70 @@ function Contact() {
 
             <form
               onSubmit={handleSubmit}
-              className="titilliumRegular flex w-full flex-col"
+              className="titilliumRegular flex gap-12 w-full flex-col"
             >
-              <div className="flex items-center justify-between gap-4">
-                <div className="relative mb-8 w-1/2">
+              <div className="flex lg:flex-row flex-col items-center gap-12">
+                <div className="relative flex flex-col w-full lg:w-1/2">
                   <input
                     title=""
                     type="text"
                     id="name"
-                    className={`outline-secondary w-full rounded-lg bg-white px-5 py-3 ${errors.name ? "border-2 border-red-700" : ""} placeholder-custom`}
+                    className={`outline-secondary w-full rounded-lg bg-white px-5 h-12 ${errors.name ? "border-2 border-red-700" : ""} placeholder-custom`}
                     required
                     placeholder="Nome *"
                     value={formData.name}
                     onChange={handleChange}
                   />
                   {errors.name && (
-                    <span className="absolute bottom-[-24px] left-0 text-sm text-red-700">
+                    <span className="absolute top-full left-0 mt-1 text-sm text-red-700">
                       {errors.name}
                     </span>
                   )}
                 </div>
 
-                <div className="relative mb-8 w-1/2">
+                <div className="relative w-full lg:w-1/2">
                   <input
                     title=""
                     type="email"
                     id="email"
-                    className={`outline-secondary w-full rounded-lg bg-white px-5 py-3 ${errors.email ? "border-2 border-red-700" : ""} placeholder-custom`}
+                    className={`outline-secondary w-full rounded-lg bg-white px-5 h-12 ${errors.email ? "border-2 border-red-700" : ""} placeholder-custom`}
                     required
                     placeholder="Email *"
                     value={formData.email}
                     onChange={handleChange}
                   />
                   {errors.email && (
-                    <span className="absolute bottom-[-24px] left-0 text-sm text-red-700">
+                    <span className="absolute top-full left-0 mt-1 text-sm text-red-700">
                       {errors.email}
                     </span>
                   )}
                 </div>
               </div>
 
-              <div className="flex items-center justify-between gap-4">
-                <div className="relative mb-8 w-1/2">
+              <div className="flex lg:flex-row flex-col items-center justify-between gap-12">
+                <div className="relative w-full lg:w-1/2">
                   <input
                     title=""
                     type="tel"
                     id="phone"
-                    className={`outline-secondary w-full rounded-lg bg-white px-5 py-3 ${errors.phone ? "border-2 border-red-700" : ""} placeholder-custom`}
+                    className={`outline-secondary w-full rounded-lg bg-white px-5 h-12 ${errors.phone ? "border-2 border-red-700" : ""} placeholder-custom`}
                     placeholder="Telefone *"
                     required
                     value={formData.phone}
                     onChange={handleChange}
                   />
                   {errors.phone && (
-                    <span className="absolute bottom-[-24px] left-0 text-sm text-red-700">
+                    <span className="absolute top-full left-0 mt-1 text-sm text-red-700">
                       {errors.phone}
                     </span>
                   )}
                 </div>
 
-                <div className="mb-8 w-1/2">
+                <div className="select-services  w-full lg:w-1/2">
                   <select
-                    title=""
+
                     id="service"
-                    className="outline-secondary w-full rounded-lg bg-white px-5 py-3"
+                    className="outline-secondary w-full rounded-lg px-3 bg-white h-12"
                     required
                     value={formData.service}
                     onChange={handleChange}
@@ -248,7 +253,7 @@ function Contact() {
               </div>
 
               <div className="flex items-center justify-center">
-                <div className="mb-8 w-full">
+                <div className=" w-full">
                   <textarea
                     id="details"
                     className="outline-secondary h-40 w-full resize-none rounded-lg bg-white px-5 py-3"
@@ -264,14 +269,19 @@ function Contact() {
                   type="submit"
                   className="bg-primary text-text flex w-full cursor-pointer items-center justify-center rounded-lg px-5 py-3 transition-colors duration-200 hover:bg-zinc-800"
                   aria-label="Submeter pedido"
+                  disabled={isLoading}
                 >
-                  Submeter Pedido
+                  {isLoading ? (
+                    <CircleNotch size={30} className="animate-spin" />
+                  ) : (
+                    "Submeter Pedido"
+                  )}
                 </button>
               </div>
             </form>
           </div>
 
-          <div className="contactDiv bg-secondary container w-[40%] rounded-lg p-10">
+          <div className="contactDiv bg-secondary w-full h-full rounded-lg p-8 sm:p-10">
             <h1 className="text-text circularBold mb-5 text-4xl">Contactos</h1>
 
             <div className="info-contact mb-5">
@@ -305,6 +315,8 @@ function Contact() {
               </p>
             </div>
           </div>
+
+
         </div>
       </main>
       <Footer />

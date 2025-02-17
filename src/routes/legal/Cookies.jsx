@@ -5,9 +5,9 @@ const Cookies = () => {
   return (
     <>
       <Navbar />
-      <div className="text-text titilliumRegular bg-primary mx-auto flex min-h-screen w-full flex-col items-center px-6 py-10 pt-20">
-        <h1 className="titilliumBold mb-6 text-5xl">Política de Cookies</h1>
-        <p className="mb-4">
+      <div className="text-text titilliumRegular bg-primary mx-auto flex min-h-screen w-full flex-col items-center mt-20">
+        <h1 className="titilliumBold text-center mb-6 text-5xl">Política de Cookies</h1>
+        <p className="mb-4 text-center">
           Esta Política de Cookies explica como o{" "}
           <strong>Nova Horizonte</strong> utiliza cookies e tecnologias
           similares para reconhecer você quando visita nosso site.
@@ -16,7 +16,7 @@ const Cookies = () => {
         <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           O que são Cookies?
         </h2>
-        <p className="mb-4">
+        <p className="mb-4 text-center">
           Cookies são pequenos arquivos de texto armazenados no seu dispositivo
           quando você acessa um site. Eles ajudam a melhorar a experiência do
           usuário, lembrando preferências e informações de navegação.
@@ -25,7 +25,7 @@ const Cookies = () => {
         <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Como Usamos os Cookies?
         </h2>
-        <p className="mb-4">
+        <p className="mb-4 text-center">
           Utilizamos cookies para vários propósitos, incluindo:
         </p>
         <ul className="list-disc space-y-2 pl-6">
@@ -51,16 +51,12 @@ const Cookies = () => {
             <strong>Cookies de Funcionalidade:</strong> Permitem que o site se
             lembre de escolhas feitas pelo usuário.
           </li>
-          <li>
-            <strong>Cookies de Publicidade:</strong> Utilizados para exibir
-            anúncios mais relevantes.
-          </li>
         </ul>
 
         <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Gerenciamento de Cookies
         </h2>
-        <p className="mb-4">
+        <p className="mb-4 text-center">
           Você pode gerenciar suas preferências de cookies através das
           configurações do seu navegador. A maioria dos navegadores permite que
           você recuse ou exclua cookies quando desejar.
@@ -69,9 +65,9 @@ const Cookies = () => {
         <h2 className="text-secondary mt-6 mb-2 text-2xl font-semibold">
           Mais Informações
         </h2>
-        <p className="mb-4">
+        <p className="mb-4 text-center">
           Se você tiver dúvidas sobre nossa Política de Cookies, entre em
-          contato conosco pelo e-mail <strong>suporte@novahorizonte.com</strong>
+          contato conosco pelo e-mail <strong>novahorizonteempresa@gmail.com</strong>
           .
         </p>
       </div>

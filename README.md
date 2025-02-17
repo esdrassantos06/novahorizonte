@@ -13,6 +13,8 @@ Nova Horizonte é um projeto voltado para serviços de construção civil e enge
 - Tailwind CSS (para estilização rápida e responsiva)
 
 - Phosphor Icons (biblioteca de ícones modernos)
+  
+- Shadcn UI (lib de componentes)
 
 ## Envio de Formulários:
 

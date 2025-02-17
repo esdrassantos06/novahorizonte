@@ -1,6 +1,15 @@
 import { useState } from "react";
 import { ArrowCircleRight } from "@phosphor-icons/react";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+
 const Projetos = () => {
   const [mostrarProj, setMostrarProj] = useState(false);
 
@@ -97,26 +106,32 @@ const Projetos = () => {
     <>
       <div className="projects grid grid-cols-1 place-items-center gap-10 px-10 lg:grid-cols-2 xl:grid-cols-3">
         {projetosVisiveis.map((projeto, index) => (
-          <div className="image-wrapper select-none group relative after:absolute after:content-[''] after:top-0 after:left-0 after:w-[101%] after:h-[101%] bg-transparent" key={index}>
-            <div
-              className={`text-primary relative ${projeto.background} flex md:h-180 md:w-100 w-60 h-80 sm:w-80 sm:h-120 flex-col items-start justify-end gap-2 rounded-lg pb-14`}
+          <Dialog
+            className="image-wrapper"
+            key={index}
+          >
+
+            <DialogTrigger
+              className={`text-primary cursor-pointer group relative rounded-lg ${projeto.background} flex h-80 w-60 flex-col items-start justify-end gap-2 pb-14 sm:h-120 sm:w-80 md:h-170 md:w-100`}
             >
               <div className="absolute inset-0 rounded-lg bg-black/50"></div>
 
+              <div className="hover-in-project select-none pointer-events-none flex flex-col items-center justify-center absolute bottom-0 rounded-md duration-300 transition-all md:group-hover:opacity-100 bg-white z-10 w-[90%] h-[50%] opacity-0">
 
-              <div className="z-20 -mb-14 flex h-[50%] w-[90%] flex-col items-center justify-center rounded-lg bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 focus-within:opacity-100 group-active:visible group-active:opacity-100">
-                <div className="mb-4 flex w-full flex-col items-start justify-center px-4">
-                  <h2 className="circularBold z-10 text-xl">{projeto.nome}</h2>
-                  <h3 className="text-primary/70 circularBook z-10 text-sm">
+                <div className="flex w-full flex-col items-start justify-center pt-5 px-4">
+                  <h2 className="circularBold text-xl">{projeto.nome}</h2>
+                  <h3 className="text-primary/70 circularBook text-sm">
                     {projeto.tipo}
                   </h3>
                 </div>
 
-                <div className="flex w-full flex-col items-center justify-center gap-4 p-4">
+                <div className="flex flex-col items-center w-full h-full justify-center gap-4 p-4">
                   <div className="flex gap-2 px-2">
                     <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
                       <h3 className="titilliumRegular text-sm">Preço:</h3>
-                      <h3 className="titilliumBold text-base">{projeto.preco}</h3>
+                      <h3 className="titilliumBold text-base">
+                        {projeto.preco}
+                      </h3>
                     </div>
 
                     <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
@@ -132,7 +147,9 @@ const Projetos = () => {
                       <h3 className="titilliumRegular text-sm">
                         Ano do projeto:
                       </h3>
-                      <h3 className="titilliumBold text-base">{projeto.data}</h3>
+                      <h3 className="titilliumBold text-base">
+                        {projeto.data}
+                      </h3>
                     </div>
 
                     <div className="flex w-40 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 text-center shadow-lg">
@@ -144,13 +161,63 @@ const Projetos = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
+            </DialogTrigger>
+
+            <DialogContent className="bg-white rounded-md max-md:w-fit">
+              <DialogHeader>
+                <DialogTitle className="flex flex-col items-start justify-center px-4">
+                  <h2 className="circularBold text-xl">{projeto.nome}</h2>
+                  <h3 className="text-primary/70 circularBook text-sm">
+                    {projeto.tipo}
+                  </h3>
+                </DialogTitle>
+              </DialogHeader>
+
+              <DialogDescription>
+                <div className="flex flex-col items-center justify-center gap-4 p-1 sm:p-2">
+                  <div className="flex gap-2">
+                    <div className="flex sm:w-40 w-30 flex-col gap-0.5 rounded-md bg-zinc-500/20 justify-center p-4 text-center shadow-lg">
+                      <h3 className="titilliumRegular text-sm">Preço:</h3>
+                      <h3 className="titilliumBold text-base">
+                        {projeto.preco}
+                      </h3>
+                    </div>
+
+                    <div className="flex sm:w-40 w-30 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 justify-center text-center shadow-lg">
+                      <h3 className="titilliumRegular text-sm">Cliente:</h3>
+                      <h3 className="titilliumBold text-base">
+                        {projeto.cliente}
+                      </h3>
+                    </div>
+                  </div>
+
+                  <div className="flex gap-2">
+                    <div className="flex sm:w-40 w-30 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 justify-center text-center shadow-lg">
+                      <h3 className="titilliumRegular text-sm">
+                        Ano do projeto:
+                      </h3>
+                      <h3 className="titilliumBold text-base">
+                        {projeto.data}
+                      </h3>
+                    </div>
+
+                    <div className="flex sm:w-40 w-30 flex-col gap-0.5 rounded-md bg-zinc-500/20 p-4 justify-center text-center shadow-lg">
+                      <h3 className="titilliumRegular text-sm">Duração:</h3>
+                      <h3 className="titilliumBold text-base">
+                        {projeto.duracao}
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </DialogDescription>
+            </DialogContent>
+          </Dialog>
         ))}
-
-
       </div>
-      <div className="text-primary select-none flex w-full justify-center items-center py-2">
+
+
+
+      <div className="text-primary flex w-full items-center justify-center py-2 select-none">
         <button
           onClick={() => setMostrarProj(!mostrarProj)}
           className="circularBold flex cursor-pointer items-center gap-2 underline-offset-2 hover:underline"
@@ -170,3 +237,8 @@ const Projetos = () => {
 };
 
 export default Projetos;
+
+
+
+
+

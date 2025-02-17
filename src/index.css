@@ -7,4 +7,38 @@
   --color-text: #f5f5f5;
 
   --breakpoint-xs: 20rem;
+
+
+  --animate-scale-in-center: scale-in-center 200ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+--animate-scale-out-center: scale-out-center 200ms cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+
+@keyframes scale-out-center {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+}
+
+
 }

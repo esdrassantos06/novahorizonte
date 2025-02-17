@@ -49,7 +49,7 @@ const testemunhas = [
 
 const Testemunhas = () => {
   return (
-    <div className="titilliumRegular relative mx-auto w-150 overflow-hidden rounded-lg bg-zinc-800 px-14 pb-4 shadow-2xl">
+    <div className="titilliumRegular relative mx-auto md:w-150 max-w-screen sm:w-100 rounded-lg bg-zinc-800 px-14 pb-4 shadow-2xl">
       <button
         className="prev-button bg-secondary absolute bottom-1/2 left-2 z-50 flex h-10 w-10 translate-y-1/2 cursor-pointer items-center justify-center rounded-full p-2 text-gray-700 transition duration-200 hover:bg-amber-600 hover:text-gray-900"
         aria-label="Ir para o testemunho anterior"
@@ -86,13 +86,15 @@ const Testemunhas = () => {
       >
         {testemunhas.map((membro, index) => (
           <SwiperSlide key={index}>
-            <div className="flex min-h-90 flex-col justify-center px-10 pb-10">
-              <p className="text-text z-50 min-h-20 text-center">
+            <div className="flex min-h-90 flex-col justify-center px-10 max-md:pb-12">
+            <div className="h-1/2">
+              <p className="text-text text-base text-center">
                 &quot;{membro.text}&quot;
               </p>
-              <div className="flex flex-col items-center justify-center gap-1 pt-4">
-                <p className="text-text text-lg font-bold">{membro.author}</p>
-                <p className="text-text mb-2 text-sm">{membro.role}</p>
+              </div>
+              <div className="flex flex-col h-1/2 items-center justify-center gap-1 pt-4">
+                <h3 className="text-text text-center text-lg font-bold">{membro.author}</h3>
+                <p className="text-text text-center mb-2 text-sm">{membro.role}</p>
                 <img
                   src={membro.photo}
                   alt={membro.author}

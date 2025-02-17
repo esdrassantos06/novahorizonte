@@ -19,9 +19,9 @@ function Obras() {
           <Projetos />
         </div>
 
-        <div className="bg-primary flex h-[40em] w-full flex-col items-center justify-center gap-5 pt-10">
-          <div className="pb-5">
-            <h1 className="text-secondary titilliumBold text-5xl">
+        <div className="bg-primary flex md:h-[40em] h-[50em] w-full flex-col items-center justify-center gap-5 pt-10">
+          <div className="mb-5">
+            <h1 className="text-secondary text-center titilliumBold text-4xl sm:text-5xl">
               Opniões de nossos clientes
             </h1>
           </div>

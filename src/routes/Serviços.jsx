@@ -51,20 +51,17 @@ function Serviços() {
   return (
     <>
       <Navbar />
-      <main className="Serviços bg-primary flex min-h-screen w-full flex-col items-center pt-30 gap-10">
+      <main className="Serviços bg-primary flex min-h-screen w-full flex-col items-center gap-10 pt-30">
         <h1 className="text-text circularBold text-center text-5xl">
           Fornecemos um serviço excelente <br /> para nossos clientes
         </h1>
-
-        <div className="cards  grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 place-items-center gap-10 items-center justify-center">
+        <div className="cards grid grid-cols-1 place-items-center items-center justify-center gap-10 md:grid-cols-2 lg:grid-cols-4">
           {services.map((servico, index) => (
             <div
               key={index}
-              className="card hover:bg-terceary/50 bg-terceary relative flex flex-col rounded-2xl shadow-xl shadow-black transition-all duration-300 hover:shadow-2xl w-60 md:w-100"
+              className="card hover:bg-terceary/50 bg-terceary relative flex w-60 flex-col rounded-2xl shadow-xl shadow-black transition-all duration-300 hover:shadow-2xl md:w-100"
             >
-
-
-              <div className="flex flex-col gap-4 h-100 px-5 py-7">
+              <div className="flex h-100 flex-col gap-4 px-5 py-7">
                 <div className="icon bg-primary/40 flex items-center justify-center rounded-lg outline outline-neutral-800 ease-in-out select-none md:h-18 md:w-18">
                   {servico.icon}
                 </div>
@@ -85,8 +82,8 @@ function Serviços() {
               />
             </div>
           ))}
-        </div> {/* cards */}
-
+        </div>{" "}
+        {/* cards */}
       </main>
       <Footer />
     </>

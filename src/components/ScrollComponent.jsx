@@ -28,14 +28,15 @@ const ScrollComponent = () => {
   };
 
   return (
-    <div
-      className="slider"
-      style={styles}
-    >
+    <div className="slider" style={styles}>
       <div className="list">
         {images.map((image, index) => (
-          <div key={index} style={{ "--position": index + 1 }} className="item lg:w-full lg:h-full">
-            <img src={image.src} alt={image.alt} className="image-scroll " />
+          <div
+            key={index}
+            style={{ "--position": index + 1 }}
+            className="item lg:h-full lg:w-full"
+          >
+            <img src={image.src} alt={image.alt} className="image-scroll" />
           </div>
         ))}
       </div>

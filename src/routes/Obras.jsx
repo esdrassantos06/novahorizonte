@@ -9,8 +9,8 @@ function Obras() {
       <Navbar />
 
       <main className="Obras bg-secondary flex min-h-screen w-full flex-col items-center pt-40">
-        <div className="flex w-full flex-col items-center pb-10 gap-5">
-          <div className="TitleObras w-full text-center mb-10">
+        <div className="flex w-full flex-col items-center gap-5 pb-10">
+          <div className="TitleObras mb-10 w-full text-center">
             <h1 className="text-primary circularBold text-5xl">
               Obras Em <span className="text-text">Destaque</span>
             </h1>
@@ -30,8 +30,6 @@ function Obras() {
         </div>
       </main>
       <Footer />
-
-  
     </>
   );
 }

@@ -4,8 +4,8 @@ import Navbar from "../../components/Navbar";
 function Policies() {
   return (
     <>
-    <Navbar />
-      <div className="text-text titilliumRegular pt-20 bg-primary mx-auto flex min-h-screen w-full flex-col items-center px-6 py-10">
+      <Navbar />
+      <div className="text-text titilliumRegular bg-primary mx-auto flex min-h-screen w-full flex-col items-center px-6 py-10 pt-20">
         <h1 className="titilliumBold mb-6 text-5xl">Política de Privacidade</h1>
         <p className="mb-4">
           A sua privacidade é importante para nós. É política da{" "}

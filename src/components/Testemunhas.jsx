@@ -31,24 +31,25 @@ const testemunhas = [
     "Estou muito satisfeito com os serviços. A equipa é muito profissional e eficiente, completando o nosso projeto a tempo e a um custo muito acessível.",
     "Tom Delange",
     "CEO, Lexmark",
-    people1
+    people1,
   ),
   new Testemunha(
     "Serviço excelente e qualidade excecional. Entregaram além das nossas expectativas e foram muito fáceis de trabalhar.",
-    "Jane Smith", "CTO, TechCorp", people2
+    "Jane Smith",
+    "CTO, TechCorp",
+    people2,
   ),
   new Testemunha(
     "Um parceiro confiável para todas as nossas necessidades de construção. A atenção ao detalhe e o compromisso com os prazos são de louvar.",
     "John Doe",
     "Gestor de Projeto, BuildIt",
-    people3
+    people3,
   ),
 ];
 
 const Testemunhas = () => {
   return (
     <div className="titilliumRegular relative mx-auto w-150 overflow-hidden rounded-lg bg-zinc-800 px-14 pb-4 shadow-2xl">
-
       <button
         className="prev-button bg-secondary absolute bottom-1/2 left-2 z-50 flex h-10 w-10 translate-y-1/2 cursor-pointer items-center justify-center rounded-full p-2 text-gray-700 transition duration-200 hover:bg-amber-600 hover:text-gray-900"
         aria-label="Ir para o testemunho anterior"

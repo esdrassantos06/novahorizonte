@@ -21,8 +21,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Equipa = () => {
-
-  
   class Equipa {
     constructor(nome, cargo, foto) {
       this.nome = nome;
@@ -39,10 +37,10 @@ const Equipa = () => {
   ];
 
   return (
-    <div className="relative flex h-full md:w-[80%] w-full items-center justify-center rounded-lg p-4 sm:p-10 lg:p-20">
+    <div className="relative flex h-full w-full items-center justify-center rounded-lg p-4 sm:p-10 md:w-[80%] lg:p-20">
       {/* Custom Buttons (Fora do Swiper) */}
       <button
-        className="prev-button absolute top-1/2 sm:left-2 md:left-0 left-1 z-20 -translate-y-1/2"
+        className="prev-button absolute top-1/2 left-1 z-20 -translate-y-1/2 sm:left-2 md:left-0"
         aria-label="Ir para a imagem anterior"
       >
         <div className="bg-primary outline-text/20 cursor-pointer rounded-lg p-2 outline hover:bg-zinc-800">
@@ -51,7 +49,7 @@ const Equipa = () => {
       </button>
 
       <button
-        className="next-button absolute top-1/2 sm:right-2 md:-right-0 right-1 z-20 -translate-y-1/2"
+        className="next-button absolute top-1/2 right-1 z-20 -translate-y-1/2 sm:right-2 md:-right-0"
         aria-label="Ir para a próxima imagem"
       >
         <div className="bg-primary outline-text/20 cursor-pointer rounded-lg p-2 outline hover:bg-zinc-800">
@@ -88,10 +86,10 @@ const Equipa = () => {
       >
         {equipa.map((membro, index) => (
           <SwiperSlide key={index}>
-            <div className="membro text-text md:mb-20 mb-10 flex flex-col items-center gap-2">
+            <div className="membro text-text mb-10 flex flex-col items-center gap-2 md:mb-20">
               <img
                 src={membro.foto}
-                className="md:h-94 md:w-82.5 w-50 h-50 rounded-lg object-cover select-none"
+                className="h-50 w-50 rounded-lg object-cover select-none md:h-94 md:w-82.5"
                 alt={membro.nome}
                 loading="lazy"
               />

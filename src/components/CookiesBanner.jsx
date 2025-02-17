@@ -8,8 +8,10 @@ const CookiesBanner = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (!Cookies.get("cookiesAccepted")) /* Se o valor 'cookiesAccepted' não existir, vai aparecer o banner */ {
-      setIsVisible(true);
+    if (!Cookies.get("cookiesAccepted")) {
+      /* Se o valor 'cookiesAccepted' não existir, vai aparecer o banner */ setIsVisible(
+        true,
+      );
     }
   }, []);
 

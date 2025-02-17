@@ -1,18 +1,14 @@
 import { useState, useEffect } from "react";
 
 const AnimatedAside = () => {
-
-
   const [number1, setNumber1] = useState(0);
   const [number2, setNumber2] = useState(0);
   const [number3, setNumber3] = useState(0);
 
   const animateNumber = (targetValue, setterFunction) => {
-
     let currentValue = 0;
 
-    const interval = setInterval( () => {
-
+    const interval = setInterval(() => {
       currentValue += Math.ceil(targetValue / 30); // Atualiza o valor atual a cada iteração e para depois de 30 iterações, deixando a animção mais suave
 
       if (currentValue >= targetValue) {
@@ -22,12 +18,9 @@ const AnimatedAside = () => {
       }
 
       setterFunction(currentValue); // Atualiza o estado com o novo valor
-
     }, 50); // Segundo argumento de setInterval, intervalo de 50ms para atualizar o número
-
   };
 
-  
   useEffect(() => {
     // Inicia a animação assim que o componente é carregado
     animateNumber(25, setNumber1);

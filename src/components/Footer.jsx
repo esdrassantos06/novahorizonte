@@ -231,13 +231,13 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-          <Link
-            className="hover:text-secondary text-sm text-zinc-400 transition-colors duration-200"
-            to="/cookies"
-            aria-label="Cookies"
-          >
-            Política de Cookies
-          </Link>
+            <Link
+              className="hover:text-secondary text-sm text-zinc-400 transition-colors duration-200"
+              to="/cookies"
+              aria-label="Cookies"
+            >
+              Política de Cookies
+            </Link>
           </li>
         </ul>
 

@@ -9,8 +9,6 @@ import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom"; // Para navegar para pagina de agradecimento pelo envio
 
 function Contact() {
-
-
   const checkItems = [
     {
       title: "Equipa Profissional",
@@ -23,9 +21,8 @@ function Contact() {
     },
     {
       title: "Preços Transparentes",
-    }
+    },
   ];
-
 
   const servicos = [
     {
@@ -84,19 +81,17 @@ function Contact() {
     if (regexPatterns[id]) validateField(id, value);
   }; // é chamado quando o valor do input é alterado
 
-  
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     let newErrors = {};
     // Verificar se há erros
-    
+
     Object.keys(regexPatterns).forEach((field) => {
       if (!regexPatterns[field].test(formData[field].trim())) {
         newErrors[field] = "Campo inválido!";
       }
     });
-
 
     const templateParams = {
       from_name: formData.name,
@@ -110,12 +105,14 @@ function Contact() {
     if (Object.keys(newErrors).length > 0) {
       setErrors(newErrors);
     } else {
-      emailjs.send(
+      emailjs
+        .send(
           "service_ez303t9",
           "template_r70fl89",
           templateParams,
           "HbWhhUXf0e_FdxCic",
-        ).then(() => {
+        )
+        .then(() => {
           // Limpar os inputs
           setFormData({
             name: "",
@@ -127,7 +124,7 @@ function Contact() {
 
           navigate("/obrigado-pelo-contacto");
         })
-        .catch( () => {
+        .catch(() => {
           alert("Erro ao enviar o formulário, tente novamente.");
         });
     }
@@ -142,11 +139,12 @@ function Contact() {
             Liderança na Construção Civil e Engenharia
           </h1>
           <div className="icons-contact titilliumRegular flex space-x-4 p-2">
-          {checkItems.map( (item, index) => (
-            <p className="text-text flex gap-1" key={index}>
-              <CheckCircle size={24} color="#fefbfb" weight="fill" /> {item.title}
-            </p>
-          ))}
+            {checkItems.map((item, index) => (
+              <p className="text-text flex gap-1" key={index}>
+                <CheckCircle size={24} color="#fefbfb" weight="fill" />{" "}
+                {item.title}
+              </p>
+            ))}
           </div>
         </div>
 

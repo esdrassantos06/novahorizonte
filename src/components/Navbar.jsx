@@ -87,6 +87,7 @@ const Navbar = () => {
               className="text-text titilliumBold bg-secondary z-99 mr-10 flex h-10 w-full cursor-pointer items-center justify-center rounded-lg transition-colors duration-300 hover:bg-amber-700 md:hidden"
               to="/contact"
               aria-label="Ir para a página de contato"
+              onClick={() => setMenuOpen(false)}
             >
               Contacte-nos
             </Link>

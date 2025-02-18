@@ -9,34 +9,19 @@ import emailjs from "@emailjs/browser";
 import { useNavigate } from "react-router-dom"; // Para navegar para pagina de agradecimento pelo envio
 
 function Contact() {
+
   const checkItems = [
-    {
-      title: "Equipa Profissional",
-    },
-    {
-      title: "100% Satisfação",
-    },
-    {
-      title: "Testes Precisos",
-    },
-    {
-      title: "Preços Transparentes",
-    },
+    { title: "Equipa Profissional" },
+    { title: "100% Satisfação" },
+    { title: "Testes Precisos" },
+    { title: "Preços Transparentes" },
   ];
 
   const servicos = [
-    {
-      title: "Instalação de HVAC",
-    },
-    {
-      title: "Engenharia Estrutural",
-    },
-    {
-      title: "Melhoria do Local",
-    },
-    {
-      title: "Pós-Construção",
-    },
+    { title: "Instalação de HVAC" },
+    { title: "Engenharia Estrutural" },
+    { title: "Melhoria do Local" },
+    { title: "Pós-Construção" },
   ];
 
   const navigate = useNavigate();

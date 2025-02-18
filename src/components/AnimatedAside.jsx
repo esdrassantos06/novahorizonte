@@ -1,23 +1,25 @@
 import { useState, useEffect } from "react";
 
 const AnimatedAside = () => {
+
   const [number1, setNumber1] = useState(0);
   const [number2, setNumber2] = useState(0);
   const [number3, setNumber3] = useState(0);
 
   const animateNumber = (targetValue, setterFunction) => {
+
     let currentValue = 0;
 
-    const interval = setInterval(() => {
+    const interval = setInterval( () => {
       currentValue += Math.ceil(targetValue / 30); // Atualiza o valor atual a cada iteração e para depois de 30 iterações, deixando a animção mais suave
 
       if (currentValue >= targetValue) {
-        currentValue = targetValue; // Quando atingir o valor final, para a animação
+        currentValue = targetValue; 
 
-        clearInterval(interval);
+        clearInterval(interval); // Quando atingir o valor final, para a animação
       }
 
-      setterFunction(currentValue); // Atualiza o estado com o novo valor
+      setterFunction(currentValue); // Atualiza a função do useState com o novo valor
     }, 50); // Segundo argumento de setInterval, intervalo de 50ms para atualizar o número
   };
 
@@ -31,10 +33,10 @@ const AnimatedAside = () => {
   return (
     <aside
       id="animated-aside"
-      className="mt-10 grid w-full grid-cols-2 items-center gap-10 select-none max-sm:w-screen sm:mb-40 md:grid-cols-3 md:gap-20 lg:gap-40"
+      className="mt-4 grid w-full grid-cols-2 items-center gap-5 select-none max-sm:w-screen md:grid-cols-3 md:mb-10 md:gap-20 lg:gap-40"
     >
       <div className="flex w-full items-center justify-center gap-2">
-        <span className="titilliumBold text-secondary text-3xl sm:text-4xl md:text-6xl">
+        <span className="titilliumBold text-secondary text-4xl xss:text-5xl md:text-6xl">
           {number1}+
         </span>
         <span className="text-text titilliumRegular text-sm">
@@ -44,7 +46,7 @@ const AnimatedAside = () => {
       </div>
 
       <div className="flex w-full items-center justify-center gap-2">
-        <span className="titilliumBold text-secondary text-3xl sm:text-4xl md:text-6xl">
+        <span className="titilliumBold text-secondary text-4xl xss:text-5xl md:text-6xl">
           {number2}+
         </span>
         <span className="text-text titilliumRegular text-sm">
@@ -54,7 +56,7 @@ const AnimatedAside = () => {
       </div>
 
       <div className="col-span-2 flex items-center justify-center gap-2 max-md:w-full md:col-span-1 md:text-center">
-        <span className="titilliumBold text-secondary text-3xl sm:text-4xl md:text-6xl">
+        <span className="titilliumBold text-secondary text-4xl xss:text-5xl md:text-6xl">
           {number3}+
         </span>
         <span className="text-text titilliumRegular text-sm">

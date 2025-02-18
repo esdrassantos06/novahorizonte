@@ -18,8 +18,8 @@ function legalWarning() {
         <p className="mb-4 text-center">
           Em conformidade com as normas vigentes, informamos que o Website é
           propriedade da <strong>Nova Horizonte</strong>, com sede em Avenida
-          dos Construtores, 456, Porto, Portugal Para contato, utilize o e-mail:
-          novahorizonteempresa@gmail.com
+          dos Construtores, 456, Porto, Portugal Para contato, utilize o e-mail: {" "}
+          <strong>novahorizonteempresa@gmail.com</strong>
         </p>
 
         <h2 className="text-secondary text-center mt-6 mb-2 text-2xl font-semibold">
@@ -49,7 +49,7 @@ function legalWarning() {
           </li>
           <li>
             Não causar danos aos sistemas físicos (hardware) e lógicos
-            (software) do <strong>Nova Horizonte</strong> ou de terceiros.
+            (software) da <strong>Nova Horizonte</strong> ou de terceiros.
           </li>
         </ul>
 

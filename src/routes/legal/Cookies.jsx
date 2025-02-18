@@ -8,7 +8,7 @@ const Cookies = () => {
       <div className="text-text titilliumRegular bg-primary mx-auto flex min-h-screen w-full flex-col items-center mt-20">
         <h1 className="titilliumBold text-center mb-6 text-5xl">Política de Cookies</h1>
         <p className="mb-4 text-center">
-          Esta Política de Cookies explica como o{" "}
+          Esta Política de Cookies explica como a{" "}
           <strong>Nova Horizonte</strong> utiliza cookies e tecnologias
           similares para reconhecer você quando visita nosso site.
         </p>

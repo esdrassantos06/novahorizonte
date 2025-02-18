@@ -111,7 +111,6 @@
   width: 8px;
   height: 8px;
   background-color: #191a19;
-  z-index: 100;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -252,3 +251,6 @@ body {
   user-select: none;
 }
 
+html body[data-scroll-locked] {
+  margin-right: 0 !important;
+}

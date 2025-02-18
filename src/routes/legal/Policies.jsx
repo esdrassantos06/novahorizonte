@@ -59,7 +59,7 @@ function Policies() {
         </h2>
         <p className="mb-4 text-center">
           O usuário se compromete a fazer uso adequado dos conteúdos e
-          informações que o <strong>Nova Horizonte</strong> oferece no site,
+          informações que a <strong>Nova Horizonte</strong> oferece no site,
           incluindo mas não se limitando a:
         </p>
         <ul className="list-disc space-y-2 pl-6">
@@ -74,7 +74,7 @@ function Policies() {
           </li>
           <li>
             Não causar danos aos sistemas físicos (hardware) e lógicos
-            (software) do <strong>Nova Horizonte</strong> ou de terceiros.
+            (software) da <strong>Nova Horizonte</strong> ou de terceiros.
           </li>
         </ul>
 

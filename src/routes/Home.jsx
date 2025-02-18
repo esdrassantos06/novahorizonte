@@ -66,7 +66,7 @@ function Home() {
           </section>
 
           {/* Features List */}
-          <aside className="text-text absolute bottom-[-50px] left-[40%] z-99 flex h-40 w-fit -translate-x-1/2 -skew-1 transform items-center rounded-lg bg-orange-500 p-6 shadow-lg select-none max-md:hidden lg:left-[30%] lg:text-nowrap xl:left-[78%] xl:w-140">
+          <aside className="text-text absolute bottom-[-50px] left-[40%] z-40 flex h-40 w-fit -translate-x-1/2 -skew-1 transform items-center rounded-lg bg-orange-500 p-6 shadow-lg select-none max-md:hidden lg:left-[30%] lg:text-nowrap xl:left-[78%] xl:w-140">
             <ul className="circularBook flex flex-col gap-2" role="list">
               <li className="flex transform animate-pulse items-center gap-2 transition-all">
                 <CheckCircle size={28} aria-hidden="true" /> Sistema de
@@ -85,7 +85,7 @@ function Home() {
         </article>
 
         {/* About Section */}
-        <article className="bg-primary flex h-full w-full max-w-screen flex-col items-center px-10 md:mt-10 lg:-mt-25 lg:pt-30">
+        <article className="bg-primary flex h-full w-full max-w-screen flex-col items-center px-10 md:mt-10">
           <AnimatedAside />
           <div className="relative flex w-full flex-col-reverse items-center justify-center gap-20 lg:flex-row lg:px-20">
             <img

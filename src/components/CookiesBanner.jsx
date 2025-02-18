@@ -5,13 +5,12 @@ import { Link } from "react-router-dom";
 // Irei utilizar a Lib js-cookie
 
 const CookiesBanner = () => {
+
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     if (!Cookies.get("cookiesAccepted")) {
-      /* Se o valor 'cookiesAccepted' não existir, vai aparecer o banner */ setIsVisible(
-        true,
-      );
+      setIsVisible(true); /* Se o valor 'cookiesAccepted' não existir, vai aparecer o banner */ 
     }
   }, []);
 
@@ -24,7 +23,7 @@ const CookiesBanner = () => {
 
   return (
     isVisible && (
-      <div className="titilliumRegular text-text fixed right-0 bottom-0 left-0 z-50 flex items-center justify-between bg-neutral-800 p-4">
+      <div className="titilliumRegular text-text fixed right-0 bottom-0 left-0 z-99 flex items-center justify-between bg-neutral-800 p-4">
         <p>
           Usamos cookies para melhorar sua experiência. Ao continuar, você
           concorda com nossa

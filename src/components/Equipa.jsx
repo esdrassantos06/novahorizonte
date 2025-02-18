@@ -14,13 +14,14 @@ import {
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
+// Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const Equipa = () => {
+  
   class Equipa {
     constructor(nome, cargo, foto) {
       this.nome = nome;

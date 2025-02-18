@@ -272,10 +272,12 @@ function Contact() {
                   disabled={isLoading}
                 >
                   {isLoading ? (
-                    <CircleNotch size={30} className="animate-spin" />
-                  ) : (
-                    "Submeter Pedido"
-                  )}
+                    <span className="flex gap-2 items-center">
+                      <CircleNotch size={24} className="animate-spin" /> Por Favor, Aguarde...
+                    </span>
+                  )
+                    : (<span>Submeter Pedido</span>)
+                  }
                 </button>
               </div>
             </form>

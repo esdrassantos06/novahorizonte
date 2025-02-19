@@ -50,12 +50,15 @@ function Contact() {
     let errorMsg = "";
 
     if (!regexPatterns[field].test(value.trim())) {
-      if (field === "name")
+      if (field === "name") {
         errorMsg = "Nome inválido! Use apenas letras e espaços.";
-      if (field === "email")
+      }
+      if (field === "email") {
         errorMsg = "Email inválido! Insira um email válido.";
-      if (field === "phone")
+      }
+      if (field === "phone") {
         errorMsg = "Telefone inválido! Deve conter 9 dígitos, com ou sem +351.";
+      }
 
       //Caso o input não esteja de acordo com o regex, vai aparecer a mensagem de erro
     }
@@ -101,8 +104,13 @@ function Contact() {
           templateParams,
           "HbWhhUXf0e_FdxCic",
         )
-        .then(() => {
-          // Limpar os inputs
+        .then(() =>{
+          navigate("/obrigado-pelo-contacto");
+        })
+
+        .catch(() => {
+          alert("Erro ao enviar o formulário, tente novamente.");
+          
           setFormData({
             name: "",
             email: "",
@@ -110,11 +118,6 @@ function Contact() {
             service: "",
             details: "",
           });
-
-          navigate("/obrigado-pelo-contacto");
-        })
-        .catch(() => {
-          alert("Erro ao enviar o formulário, tente novamente.");
         });
     }
   }; // Se houver algum erro, ele será armazenado no estado error e vai aparecer abaixo do input que estiver errado

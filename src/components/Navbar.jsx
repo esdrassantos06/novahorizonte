@@ -68,7 +68,7 @@ const Navbar = () => {
         <div
           className={`bg-primary absolute top-20 left-0 z-10 flex min-h-screen items-start justify-start text-start text-nowrap transition-all duration-300 max-md:w-[70%] max-md:pl-10 md:top-1/2 md:left-1/2 md:min-h-0 md:-translate-x-1/2 md:-translate-y-1/2 ${menuOpen ? "scale-y-100 opacity-100" : "max-md:scale-y-0 max-md:opacity-0 md:flex"}`}
         >
-          <ul className="titilliumSemiBold z-19 flex flex-col gap-5 max-md:mt-5 max-md:w-[90%] max-md:gap-10 md:flex-row">
+          <ul className="titilliumSemiBold z-91 flex flex-col gap-5 max-md:mt-5 max-md:w-[90%] max-md:gap-10 md:flex-row">
             {links.map((link, index) => (
               <li
                 key={index}
